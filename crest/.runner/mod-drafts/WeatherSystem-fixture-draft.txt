@@ -1,0 +1,13 @@
+# Mod: WeatherSystem
+# Created: 2026-05-09 12:00:00
+
+## Description (raw user input)
+
+Adds a dynamic weather system to Bannerlord campaign and battle scenes. Weather changes affect troop morale, archer accuracy, cavalry charge speed, and visibility on the battlefield. Rain, snow, fog, and clear conditions cycle based on season and region. Weather state is shared between the campaign map and battle missions, so a snowy region produces a snowy battle. Uses harmony to patch Mission tick and CampaignBehaviorBase for daily weather rolls.
+
+Author: Maxfield Management Group
+Version: 0.1.0
+
+## Spec status
+
+PENDING_AGENT_REVIEW

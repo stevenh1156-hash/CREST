@@ -1,0 +1,186 @@
+=== run started Wed 05/06/2026  6:24:56.88 === 
+Indexing 51 TaleWorlds DLLs from C:\Program Files (x86)\Steam\steamapps\common\Mount & Blade II Bannerlord\bin\Win64_Shipping_Client...
+  failed to index TaleWorlds.Native.dll: Exception calling "ReadAssembly" with "1" argument(s): "Format of the executable (.exe) or library (.dll) is invalid."
+Indexed 10686 TaleWorlds types, 162817 members.
+
+# Crest v1.4.2 compatibility scan -- 2026-05-06 06:24:57
+Game root: C:\Program Files (x86)\Steam\steamapps\common\Mount & Blade II Bannerlord
+Scanning 33 community modules.
+
+## ArtemsLivelyAnimations  [OK]
+  resolved: 950, unresolved types: 0, unresolved members: 0
+
+## AutoEquipCompanions  [OK]
+  resolved: 413, unresolved types: 0, unresolved members: 0
+
+## BanditBlackHole  [OK]
+  resolved: 59, unresolved types: 0, unresolved members: 0
+
+## BannerFixPerformance  [OK]
+  resolved: 20, unresolved types: 0, unresolved members: 0
+
+## Bannerlord.FluidCombatLite  [OK]
+  resolved: 68, unresolved types: 0, unresolved members: 0
+
+  WARN: could not analyze BewNativeCodeCrashTest.dll: Exception calling "ReadAssembly" with "1" argument(s): "Format of the executable (.exe) or library (.dll) is invalid."
+## BetterExceptionWindow  [OK]
+  resolved: 51, unresolved types: 0, unresolved members: 0
+
+## BetterTroopHUD  [WARN]
+  resolved: 195, unresolved types: 3, unresolved members: 0
+  Missing types:
+    - TaleWorlds.MountAndBlade.View.MissionViews.MissionBattleUIBaseView
+    - TaleWorlds.MountAndBlade.View.MissionViews.MissionView
+    - TaleWorlds.MountAndBlade.View.MissionViews.Order.OrderTroopPlacer
+
+## BirthAndDeath  [OK]
+  resolved: 1, unresolved types: 0, unresolved members: 0
+
+## BloodMod1313  [OK]
+  resolved: 0, unresolved types: 0, unresolved members: 0
+
+## CargoHolds  [OK]
+  resolved: 185, unresolved types: 0, unresolved members: 0
+
+## CharacterReload  [WARN]
+  resolved: 2673, unresolved types: 2, unresolved members: 1
+  Missing types:
+    - TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView
+    - TaleWorlds.MountAndBlade.View.Tableaus.Thumbnails.BannerPersistentTextureCache
+  Missing members (Type::Member):
+    - TaleWorlds.CampaignSystem.Clan::get_CommanderLimit
+
+## CompanionHotswap  [WARN]
+  resolved: 136, unresolved types: 2, unresolved members: 0
+  Missing types:
+    - TaleWorlds.MountAndBlade.View.MissionViews.MissionView
+    - TaleWorlds.MountAndBlade.View.Screens.MissionScreen
+
+## DismembermentPlus  [OK]
+  resolved: 428, unresolved types: 0, unresolved members: 0
+
+## DynaCulture  [OK]
+  resolved: 307, unresolved types: 0, unresolved members: 0
+
+## FasterTime  [OK]
+  resolved: 30, unresolved types: 0, unresolved members: 0
+
+## FastMode  [OK]
+  resolved: 8, unresolved types: 0, unresolved members: 0
+
+## IDontCare  [OK]
+  resolved: 183, unresolved types: 0, unresolved members: 0
+
+## ImmersiveBattlefields  [OK]
+  resolved: 1352, unresolved types: 0, unresolved members: 0
+
+## ImprovedGarrisons  [WARN]
+  resolved: 4724, unresolved types: 1, unresolved members: 0
+  Missing types:
+    - TaleWorlds.CampaignSystem.ViewModelCollection.Map.Tracker.MapTrackerItemVM
+
+## LifelongLearning  [OK]
+  resolved: 10, unresolved types: 0, unresolved members: 0
+
+## PerfectFireArrows  [OK]
+  resolved: 596, unresolved types: 0, unresolved members: 0
+
+## RaiseYourBanner  [OK]
+  resolved: 1251, unresolved types: 0, unresolved members: 0
+
+## RaiseYourTorch  [OK]
+  resolved: 893, unresolved types: 0, unresolved members: 0
+
+## RBM  [INCOMPATIBLE]
+  resolved: 10559, unresolved types: 37, unresolved members: 0
+  Missing types:
+    - TaleWorlds.MountAndBlade.CustomBattle.ArmyCompositionGroupVM
+    - TaleWorlds.MountAndBlade.CustomBattle.ArmyCompositionItemVM
+    - TaleWorlds.MountAndBlade.CustomBattle.CustomBattle.CustomBattleSiegeMachineVM
+    - TaleWorlds.MountAndBlade.CustomBattle.CustomBattle.GameTypeSelectionGroupVM
+    - TaleWorlds.MountAndBlade.CustomBattle.CustomBattle.MapSelectionGroupVM
+    - TaleWorlds.MountAndBlade.CustomBattle.CustomBattle.SelectionItem.CharacterItemVM
+    - TaleWorlds.MountAndBlade.CustomBattle.CustomBattle.SelectionItem.CustomBattleFactionSelectionVM
+    - TaleWorlds.MountAndBlade.CustomBattle.CustomBattle.SelectionItem.FactionItemVM
+    - TaleWorlds.MountAndBlade.CustomBattle.CustomBattle.SelectionItem.MapItemVM
+    - TaleWorlds.MountAndBlade.CustomBattle.CustomBattleSideVM
+    ... and 27 more
+
+## ReaperKeeper  [OK]
+  resolved: 1234, unresolved types: 0, unresolved members: 0
+
+## RTSCamera  [INCOMPATIBLE]
+  resolved: 2433, unresolved types: 21, unresolved members: 0
+  Missing types:
+    - TaleWorlds.MountAndBlade.GauntletUI.GauntletOrderUIHandler
+    - TaleWorlds.MountAndBlade.GauntletUI.KeybindingPopup
+    - TaleWorlds.MountAndBlade.GauntletUI.Mission.MissionGauntletCrosshair
+    - TaleWorlds.MountAndBlade.GauntletUI.Mission.MissionGauntletMainAgentEquipDropView
+    - TaleWorlds.MountAndBlade.GauntletUI.Mission.MissionGauntletMainAgentEquipmentControllerView
+    - TaleWorlds.MountAndBlade.GauntletUI.Mission.Singleplayer.MissionGauntletBattleScore
+    - TaleWorlds.MountAndBlade.GauntletUI.Mission.Singleplayer.MissionGauntletFormationMarker
+    - TaleWorlds.MountAndBlade.GauntletUI.Mission.Singleplayer.MissionGauntletSingleplayerOrderUIHandler
+    - TaleWorlds.MountAndBlade.GauntletUI.Mission.Singleplayer.MissionGauntletSpectatorControl
+    - TaleWorlds.MountAndBlade.View.MissionPlayerToggledOrderViewEvent
+    ... and 11 more
+
+## RTSCamera.CommandSystem  [INCOMPATIBLE]
+  resolved: 4031, unresolved types: 14, unresolved members: 0
+  Missing types:
+    - TaleWorlds.MountAndBlade.GauntletUI.GauntletOrderUIHandler
+    - TaleWorlds.MountAndBlade.GauntletUI.KeybindingPopup
+    - TaleWorlds.MountAndBlade.GauntletUI.Mission.Singleplayer.MissionGauntletSingleplayerOrderUIHandler
+    - TaleWorlds.MountAndBlade.View.MissionPlayerToggledOrderViewEvent
+    - TaleWorlds.MountAndBlade.View.MissionViews.MissionFormationTargetSelectionHandler
+    - TaleWorlds.MountAndBlade.View.MissionViews.MissionMainAgentController
+    - TaleWorlds.MountAndBlade.View.MissionViews.MissionMainAgentInteractionComponent
+    - TaleWorlds.MountAndBlade.View.MissionViews.MissionView
+    - TaleWorlds.MountAndBlade.View.MissionViews.Order.OrderFlag
+    - TaleWorlds.MountAndBlade.View.MissionViews.Order.OrderTroopPlacer
+    ... and 4 more
+
+## XorberaxLegacy  [WARN]
+  resolved: 1107, unresolved types: 1, unresolved members: 0
+  Missing types:
+    - TaleWorlds.MountAndBlade.View.Screens.MissionScreen
+
+
+# Summary
+========================================================================
+
+INCOMPATIBLE (likely to crash on v1.4.2): 3
+  - RBM  (types missing: 37, members missing: 0)
+  - RTSCamera  (types missing: 21, members missing: 0)
+  - RTSCamera.CommandSystem  (types missing: 14, members missing: 0)
+
+WARN (small mismatch, might still work): 5
+  - BetterTroopHUD  (types missing: 3, members missing: 0)
+  - CharacterReload  (types missing: 2, members missing: 1)
+  - CompanionHotswap  (types missing: 2, members missing: 0)
+  - ImprovedGarrisons  (types missing: 1, members missing: 0)
+  - XorberaxLegacy  (types missing: 1, members missing: 0)
+
+OK: 20
+  - ArtemsLivelyAnimations
+  - AutoEquipCompanions
+  - BanditBlackHole
+  - BannerFixPerformance
+  - Bannerlord.FluidCombatLite
+  - BetterExceptionWindow
+  - BirthAndDeath
+  - BloodMod1313
+  - CargoHolds
+  - DismembermentPlus
+  - DynaCulture
+  - FasterTime
+  - FastMode
+  - IDontCare
+  - ImmersiveBattlefields
+  - LifelongLearning
+  - PerfectFireArrows
+  - RaiseYourBanner
+  - RaiseYourTorch
+  - ReaperKeeper
+
+==> Report written to C:\dev\bannerlord\crest\v142-compat-report.md
+=== run finished, exit code 0 === 

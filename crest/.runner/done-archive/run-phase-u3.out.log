@@ -1,0 +1,26 @@
+=== run started Wed 05/06/2026  5:55:40.40 === 
+==> [1/5] Backing up user's crest.json
+    saved -> C:\Users\Steve\AppData\Local\Temp\crest-json-backup-20260506-055540.json
+
+==> [2/5] Deleting deployed CREST module + stubs
+    deleted C:\Program Files (x86)\Steam\steamapps\common\Mount & Blade II Bannerlord\Modules\CREST
+    deleted C:\Program Files (x86)\Steam\steamapps\common\Mount & Blade II Bannerlord\Modules\Bannerlord.Harmony
+    deleted C:\Program Files (x86)\Steam\steamapps\common\Mount & Blade II Bannerlord\Modules\Bannerlord.ButterLib
+    deleted C:\Program Files (x86)\Steam\steamapps\common\Mount & Blade II Bannerlord\Modules\Bannerlord.UIExtenderEx
+    deleted C:\Program Files (x86)\Steam\steamapps\common\Mount & Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen
+
+==> [3/5] Staging fresh Modules/CREST from C:\dev\bannerlord\crest\dist\CREST
+    copied 60 files
+
+==> [4/5] Restoring user's crest.json on top of fresh install
+    restored from C:\Users\Steve\AppData\Local\Temp\crest-json-backup-20260506-055540.json
+
+==> [5/5] Running Crest-Doctor -Health to verify the fresh install
+powershell.exe : At C:\dev\bannerlord\crest\tools\doctor\Crest-Doctor.ps1:250 char:98
+At C:\dev\bannerlord\crest\.runner\done\phase-u3-fresh-install.ps1:75 char:1
++ & powershell -NoProfile -ExecutionPolicy Bypass -File 'C:\dev\bannerl ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (At C:\dev\banne...ps1:250 char:98:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== run finished, exit code 1 === 

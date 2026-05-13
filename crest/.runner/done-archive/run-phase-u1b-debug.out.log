@@ -1,0 +1,66 @@
+=== run started Wed 05/06/2026  6:50:25.22 === 
+==> Building Crest.Harmony with full output -> C:\dev\bannerlord\crest\.runner\done\harmony-build-detail.log
+    exit code: 0
+
+==> Last 60 lines of build output:
+         C:\dev\bannerlord\Bannerlord.Harmony\src\Directory.Build.props(4,3): warning MSB4011: "C:\dev\bannerlord\Bannerlord.Harmony\build\common.props" cannot be imported again. It was already imported at "C:\dev\bannerlord\Bannerlord.Harmony\src\Directory.Build.props (3,3)". This is most likely a build authoring error. This subsequent import will be ignored. [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj]
+
+
+         C:\dev\bannerlord\Bannerlord.Harmony\src\Directory.Build.props(4,3): warning MSB4011: "C:\dev\bannerlord\Bannerlord.Harmony\build\common.props" cannot be imported again. It was already imported at "C:\dev\bannerlord\Bannerlord.Harmony\src\Directory.Build.props (3,3)". This is most likely a build authoring error. This subsequent import will be ignored. [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj]
+
+
+         C:\dev\bannerlord\Bannerlord.Harmony\src\Directory.Build.props(4,3): warning MSB4011: "C:\dev\bannerlord\Bannerlord.Harmony\build\common.props" cannot be imported again. It was already imported at "C:\dev\bannerlord\Bannerlord.Harmony\src\Directory.Build.props (3,3)". This is most likely a build authoring error. This subsequent import will be ignored. [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj]
+
+
+         C:\dev\bannerlord\Bannerlord.Harmony\src\Directory.Build.props(4,3): warning MSB4011: "C:\dev\bannerlord\Bannerlord.Harmony\build\common.props" cannot be imported again. It was already imported at "C:\dev\bannerlord\Bannerlord.Harmony\src\Directory.Build.props (3,3)". This is most likely a build authoring error. This subsequent import will be ignored. [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj]
+
+
+         C:\dev\bannerlord\Bannerlord.Harmony\src\Directory.Build.props(4,3): warning MSB4011: "C:\dev\bannerlord\Bannerlord.Harmony\build\common.props" cannot be imported again. It was already imported at "C:\dev\bannerlord\Bannerlord.Harmony\src\Directory.Build.props (3,3)". This is most likely a build authoring error. This subsequent import will be ignored. [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj]
+
+
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (default target) (1:15) ->
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (Build target) (1:16) ->
+       (WarningsForEnvs target) -> 
+         C:\Users\Steve\.nuget\packages\bannerlord.buildresources\1.1.0.129\build\Basic.targets(13,5): warning : Environment variable 'BANNERLORD_GAME_DIR' is not set! [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net472]
+
+
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (default target) (1:15) ->
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (Build target) (1:16) ->
+         C:\Users\Steve\.nuget\packages\bannerlord.buildresources\1.1.0.129\build\Basic.targets(14,5): warning : Environment variable 'BANNERLORD_STABLE_DIR' is not set! [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net472]
+
+
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (default target) (1:15) ->
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (Build target) (1:16) ->
+         C:\Users\Steve\.nuget\packages\bannerlord.buildresources\1.1.0.129\build\Basic.targets(15,5): warning : Environment variable 'BANNERLORD_BETA_DIR' is not set! [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net472]
+
+
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (default target) (1:15) ->
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (Build target) (1:17) ->
+         C:\Users\Steve\.nuget\packages\bannerlord.buildresources\1.1.0.129\build\Basic.targets(13,5): warning : Environment variable 'BANNERLORD_GAME_DIR' is not set! [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net6]
+
+
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (default target) (1:15) ->
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (Build target) (1:17) ->
+         C:\Users\Steve\.nuget\packages\bannerlord.buildresources\1.1.0.129\build\Basic.targets(14,5): warning : Environment variable 'BANNERLORD_STABLE_DIR' is not set! [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net6]
+
+
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (default target) (1:15) ->
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (Build target) (1:17) ->
+         C:\Users\Steve\.nuget\packages\bannerlord.buildresources\1.1.0.129\build\Basic.targets(15,5): warning : Environment variable 'BANNERLORD_BETA_DIR' is not set! [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net6]
+
+
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (default target) (1:15) ->
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (Build target) (1:16) ->
+       (CopyModule target) -> 
+         C:\Users\Steve\AppData\Local\Temp\MSBuildTempxeesmtfc.wjy\tmp5b97fdff298f4acc9dfe740dab724c0e.tmp(131,42): warning CS0168: The variable 'ex' is declared but never used [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net472]
+
+
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (default target) (1:15) ->
+       "C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj" (Build target) (1:17) ->
+         C:\Users\Steve\AppData\Local\Temp\MSBuildTempp5n3ht2o.3r3\tmpf28e758357e44b2088655b5afa0ad732.tmp(131,42): warning CS0168: The variable 'ex' is declared but never used [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net6]
+
+    15 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:04.36
+=== run finished, exit code 0 === 

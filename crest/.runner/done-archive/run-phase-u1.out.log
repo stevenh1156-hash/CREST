@@ -1,0 +1,27 @@
+=== run started Wed 05/06/2026  5:48:40.61 === 
+WARNING: The names of some imported commands from the module 'Crest.Dev' include unapproved verbs that might make them 
+less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the Verbose 
+parameter. For a list of approved verbs, type Get-Verb.
+==> [1/4] Building all CREST repos with GameVersion=v1.4.2 / v142
+
+  -> Harmony
+  cleaning bin/obj...
+  [Main          ] dotnet build src/Crest.Harmony/Crest.Harmony.csproj -c Release
+                   Build succeeded.
+
+  -> ButterLib
+  cleaning bin/obj...
+  [Main          ] dotnet build src/Crest.ButterLib/Crest.ButterLib.csproj -c Release
+                   Build succeeded.
+  [Implementation] dotnet build src/Crest.ButterLib.Implementation/Crest.ButterLib.Implementation.csproj -c Stable_Release
+                   FAILED (exit 1)
+                   C:\dev\bannerlord\Bannerlord.ButterLib\src\Crest.ButterLib.Implementation\Crest.ButterLib.Implementation.csproj : error NU1102: Unable to find package Bannerlord.ReferenceAssemblies.Core with version (>= 1.4.2-0)
+                   C:\dev\bannerlord\Bannerlord.ButterLib\src\Crest.ButterLib.Implementation\Crest.ButterLib.Implementation.csproj : error NU1102:   - Found 102 version(s) in nuget.org [ Nearest version: 1.4.1.113228-beta ]
+                   C:\dev\bannerlord\Bannerlord.ButterLib\src\Crest.ButterLib.Implementation\Crest.ButterLib.Implementation.csproj : error NU1102:   - Found 84 version(s) in butr.github [ Nearest version: 1.4.1.113228-beta ]
+                   C:\dev\bannerlord\Bannerlord.ButterLib\src\Crest.ButterLib.Implementation\Crest.ButterLib.Implementation.csproj : error NU1102:   - Found 0 version(s) in C:\Program Files\dotnet\library-packs
+                   C:\dev\bannerlord\Bannerlord.ButterLib\src\Crest.ButterLib.Implementation\Crest.ButterLib.Implementation.csproj : error NU1102: Unable to find package Bannerlord.ReferenceAssemblies.Native with version (>= 1.4.2-0)
+                   C:\dev\bannerlord\Bannerlord.ButterLib\src\Crest.ButterLib.Implementation\Crest.ButterLib.Implementation.csproj : error NU1102:   - Found 102 version(s) in nuget.org [ Nearest version: 1.4.1.113228-beta ]
+                   C:\dev\bannerlord\Bannerlord.ButterLib\src\Crest.ButterLib.Implementation\Crest.ButterLib.Implementation.csproj : error NU1102:   - Found 82 version(s) in butr.github [ Nearest version: 1.4.1.113228-beta ]
+                   C:\dev\bannerlord\Bannerlord.ButterLib\src\Crest.ButterLib.Implementation\Crest.ButterLib.Implementation.csproj : error NU1102:   - Found 0 version(s) in C:\Program Files\dotnet\library-packs
+ButterLib build failed
+=== run finished, exit code 1 === 

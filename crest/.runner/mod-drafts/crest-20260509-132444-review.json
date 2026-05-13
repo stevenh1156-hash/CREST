@@ -1,0 +1,70 @@
+﻿{
+    "schemaVersion":  "1.0.0",
+    "draftPath":  "C:\\dev\\bannerlord\\crest\\.runner\\mod-drafts\\crest-20260509-132444-draft.txt",
+    "modName":  "crest",
+    "status":  "GAPS",
+    "totalFields":  25,
+    "filledCount":  5,
+    "missingCount":  20,
+    "filled":  {
+                   "WhatItDoes":  "(68-word description)",
+                   "AffectedSystems":  [
+                                           "troops",
+                                           "battle"
+                                       ],
+                   "Name":  "crest",
+                   "DependsOn":  [
+                                     "CREST"
+                                 ],
+                   "TriggerConditions":  "(detected trigger keywords)"
+               },
+    "missing":  [
+                    "DisplayName",
+                    "Author",
+                    "Version",
+                    "OneLiner",
+                    "Category",
+                    "SinglePlayer",
+                    "MultiPlayer",
+                    "HookType",
+                    "TargetAssemblies",
+                    "PatchTargets",
+                    "EntryPoints",
+                    "ConfigurableSettings",
+                    "DefaultValues",
+                    "GameVersion",
+                    "CompatibilityNotes",
+                    "SaveSafe",
+                    "TestScenarios",
+                    "AcceptanceCriteria",
+                    "EdgeCases",
+                    "RolloutStrategy"
+                ],
+    "notes":  {
+                  "TestScenarios":  "optional -- ask whether sim coverage is wanted",
+                  "HookType":  "no hook keywords",
+                  "DisplayName":  "no explicit DisplayName declared",
+                  "Version":  "will offer default 0.1.0",
+                  "Author":  "will offer default Maxfield Management Group",
+                  "SinglePlayer":  "will assume singleplayer if user confirms",
+                  "TargetAssemblies":  "will offer default TaleWorlds.MountAndBlade",
+                  "PatchTargets":  "optional -- agent should ask if HookType=harmony",
+                  "TriggerConditions":  "when/on/every/tick found",
+                  "MultiPlayer":  "will offer default false",
+                  "AcceptanceCriteria":  "no acceptance keyword -- ask explicitly",
+                  "DependsOn":  "detected from text",
+                  "Name":  "parsed from draft header",
+                  "GameVersion":  "will offer default 1.4.3",
+                  "EntryPoints":  "will offer default OnSubModuleLoad",
+                  "Category":  "no category keyword",
+                  "SaveSafe":  "will offer \"unknown\"",
+                  "EdgeCases":  "optional -- invite user to list known concerns",
+                  "RolloutStrategy":  "will offer default preset-toggle",
+                  "OneLiner":  "description block is empty",
+                  "WhatItDoes":  "68 words",
+                  "ConfigurableSettings":  "optional -- ask whether MCM exposure is wanted",
+                  "DefaultValues":  "optional -- only if ConfigurableSettings filled",
+                  "CompatibilityNotes":  "optional -- defaults to \"none known\""
+              },
+    "generatedAt":  "2026-05-09T13:24:44.8095210-05:00"
+}

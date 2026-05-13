@@ -1,0 +1,2362 @@
+[2026-05-06 14:16:51] WATCHER UP
+[2026-05-06 14:17:03] START phase-w7-enumerate-campaign-info-mgr.ps1
+[2026-05-06 14:17:04] DONE  phase-w7-enumerate-campaign-info-mgr.ps1 exit=2 log=706 bytes
+[2026-05-06 14:17:50] START phase-w8-enumerate-campaign-info-mgr.ps1
+[2026-05-06 14:17:50] DONE  phase-w8-enumerate-campaign-info-mgr.ps1 exit=0 log=7906 bytes
+[2026-05-06 14:20:05] START phase-w9-rebuild-harmony.ps1
+[2026-05-06 14:20:10] DONE  phase-w9-rebuild-harmony.ps1 exit=0 log=1586 bytes
+[2026-05-06 14:26:07] START phase-z3-restore-and-verify.ps1
+[2026-05-06 14:26:07] DONE  phase-z3-restore-and-verify.ps1 exit=0 log=2304 bytes
+[2026-05-06 14:31:39] START phase-w11-rebuild-harmony.ps1
+[2026-05-06 14:31:39] DONE  phase-w11-rebuild-harmony.ps1 exit=1 log=1972 bytes
+[2026-05-06 14:32:41] START phase-w11-rebuild-harmony.ps1
+[2026-05-06 14:32:45] DONE  phase-w11-rebuild-harmony.ps1 exit=0 log=1540 bytes
+[2026-05-06 14:36:50] START phase-w12-rebuild-with-toast-filter.ps1
+[2026-05-06 14:36:52] DONE  phase-w12-rebuild-with-toast-filter.ps1 exit=0 log=1798 bytes
+[2026-05-06 14:39:13] START phase-w13-skill-pattern-fix.ps1
+[2026-05-06 14:39:15] DONE  phase-w13-skill-pattern-fix.ps1 exit=0 log=844 bytes
+[2026-05-06 14:45:49] START phase-w14-scope-and-mercpatterns.ps1
+[2026-05-06 14:45:51] DONE  phase-w14-scope-and-mercpatterns.ps1 exit=0 log=856 bytes
+[2026-05-06 14:53:23] START phase-w15-scope-as-whitelist-override.ps1
+[2026-05-06 14:53:25] DONE  phase-w15-scope-as-whitelist-override.ps1 exit=0 log=1342 bytes
+[2026-05-06 15:00:44] START phase-w16-perf-and-visibility.ps1
+[2026-05-06 15:00:55] DONE  phase-w16-perf-and-visibility.ps1 exit=1 log=362 bytes
+[2026-05-06 15:09:21] START phase-w17-build-fix-and-perf.ps1
+[2026-05-06 15:09:29] DONE  phase-w17-build-fix-and-perf.ps1 exit=0 log=1914 bytes
+[2026-05-06 15:33:50] START phase-w18-live-refresh-and-no-restart.ps1
+[2026-05-06 15:34:01] DONE  phase-w18-live-refresh-and-no-restart.ps1 exit=0 log=2012 bytes
+[2026-05-06 15:40:37] START phase-w19-verify-hook-and-debug.ps1
+[2026-05-06 15:40:37] DONE  phase-w19-verify-hook-and-debug.ps1 exit=0 log=964 bytes
+[2026-05-06 15:43:15] START phase-w20-diagnostic-build.ps1
+[2026-05-06 15:43:22] DONE  phase-w20-diagnostic-build.ps1 exit=0 log=1580 bytes
+[2026-05-06 15:52:30] START phase-w21-onpropertychanged-with-value.ps1
+[2026-05-06 15:52:36] DONE  phase-w21-onpropertychanged-with-value.ps1 exit=0 log=1406 bytes
+[2026-05-06 15:58:17] START phase-w22-write-through-on-change.ps1
+[2026-05-06 15:58:23] DONE  phase-w22-write-through-on-change.ps1 exit=0 log=1312 bytes
+[2026-05-06 16:04:02] START phase-w23-toast-filter-diagnostics.ps1
+[2026-05-06 16:04:06] DONE  phase-w23-toast-filter-diagnostics.ps1 exit=0 log=1076 bytes
+[2026-05-06 16:10:33] START phase-w24-cache-invalidation.ps1
+[2026-05-06 16:10:35] DONE  phase-w24-cache-invalidation.ps1 exit=0 log=944 bytes
+[2026-05-06 16:16:19] START phase-w25-cleanup-and-perf.ps1
+[2026-05-06 16:16:22] DONE  phase-w25-cleanup-and-perf.ps1 exit=0 log=776 bytes
+[2026-05-06 16:21:29] START phase-w26-logentry-perf.ps1
+[2026-05-06 16:21:31] DONE  phase-w26-logentry-perf.ps1 exit=0 log=780 bytes
+[2026-05-06 16:25:36] START phase-y1-inspect-fastertime.ps1
+[2026-05-06 16:25:36] DONE  phase-y1-inspect-fastertime.ps1 exit=0 log=4934 bytes
+[2026-05-06 16:27:33] START phase-y1b-inspect-setspeed.ps1
+[2026-05-06 16:27:33] DONE  phase-y1b-inspect-setspeed.ps1 exit=0 log=13762 bytes
+[2026-05-06 16:32:26] START phase-y1-build-fastertime.ps1
+[2026-05-06 16:32:36] DONE  phase-y1-build-fastertime.ps1 exit=0 log=2438 bytes
+[2026-05-06 16:38:37] START phase-y2-fastertime-enum-conversion.ps1
+[2026-05-06 16:38:41] DONE  phase-y2-fastertime-enum-conversion.ps1 exit=0 log=760 bytes
+[2026-05-06 16:51:44] START phase-y3-fastertime-deep-diag.ps1
+[2026-05-06 16:51:47] DONE  phase-y3-fastertime-deep-diag.ps1 exit=0 log=932 bytes
+[2026-05-06 16:54:52] START phase-y4-keyscan-diag.ps1
+[2026-05-06 16:54:54] DONE  phase-y4-keyscan-diag.ps1 exit=0 log=966 bytes
+[2026-05-06 16:59:48] START phase-y5-correct-input-key-mapping.ps1
+[2026-05-06 16:59:56] DONE  phase-y5-correct-input-key-mapping.ps1 exit=0 log=1966 bytes
+[2026-05-06 17:02:37] START phase-y2a-inspect-xorberax.ps1
+[2026-05-06 17:02:37] DONE  phase-y2a-inspect-xorberax.ps1 exit=0 log=42870 bytes
+[2026-05-06 17:05:14] START phase-y2b-inspect-cutthrough-il.ps1
+[2026-05-06 17:05:14] DONE  phase-y2b-inspect-cutthrough-il.ps1 exit=0 log=26280 bytes
+[2026-05-06 17:10:02] START phase-y2-build-cutthrough.ps1
+[2026-05-06 17:10:13] DONE  phase-y2-build-cutthrough.ps1 exit=0 log=2514 bytes
+[2026-05-06 17:17:11] START phase-y2c-grab-crash.ps1
+[2026-05-06 17:17:11] DONE  phase-y2c-grab-crash.ps1 exit=0 log=23274 bytes
+[2026-05-06 17:20:34] START phase-y2d-find-crash-anywhere.ps1
+[2026-05-06 17:20:40] DONE  phase-y2d-find-crash-anywhere.ps1 exit=0 log=730 bytes
+[2026-05-06 17:41:49] START phase-y2h-tail-and-map.ps1
+[2026-05-06 17:41:49] DONE  phase-y2h-tail-and-map.ps1 exit=0 log=12900 bytes
+[2026-05-06 17:44:40] START phase-y2i-real-bisect.ps1
+[2026-05-06 17:44:40] DONE  phase-y2i-real-bisect.ps1 exit=0 log=1666 bytes
+[2026-05-06 17:44:48] START phase-y2i-verify.ps1
+[2026-05-06 17:44:49] DONE  phase-y2i-verify.ps1 exit=0 log=22182 bytes
+[2026-05-06 17:48:07] START phase-y2j-disable-crest.ps1
+[2026-05-06 17:48:08] DONE  phase-y2j-disable-crest.ps1 exit=0 log=1252 bytes
+[2026-05-06 17:48:12] START phase-y2j-reenable-crest.ps1
+[2026-05-06 17:48:12] DONE  phase-y2j-reenable-crest.ps1 exit=0 log=204 bytes
+[2026-05-06 17:51:02] START phase-y2k-bisect-harmony.ps1
+[2026-05-06 17:51:03] DONE  phase-y2k-bisect-harmony.ps1 exit=0 log=1320 bytes
+[2026-05-06 17:51:05] START phase-y2k-restore.ps1
+[2026-05-06 17:51:05] DONE  phase-y2k-restore.ps1 exit=0 log=164 bytes
+[2026-05-06 17:53:17] START phase-y2l-disable-big-patches.ps1
+[2026-05-06 17:53:18] DONE  phase-y2l-disable-big-patches.ps1 exit=0 log=1004 bytes
+[2026-05-06 17:54:42] START phase-y2m-isolate-logfilter.ps1
+[2026-05-06 17:54:42] DONE  phase-y2m-isolate-logfilter.ps1 exit=0 log=646 bytes
+[2026-05-06 17:56:51] START phase-y2n-isolate-cutthrough.ps1
+[2026-05-06 17:56:51] DONE  phase-y2n-isolate-cutthrough.ps1 exit=0 log=390 bytes
+[2026-05-06 17:58:37] START phase-y2o-confirm-combo.ps1
+[2026-05-06 17:58:38] DONE  phase-y2o-confirm-combo.ps1 exit=0 log=702 bytes
+[2026-05-06 18:05:27] START phase-y2p-inspect-reaperkeeper.ps1
+[2026-05-06 18:05:28] DONE  phase-y2p-inspect-reaperkeeper.ps1 exit=0 log=39940 bytes
+[2026-05-06 18:08:43] START phase-y2q-disable-reaperkeeper-restore-crest.ps1
+[2026-05-06 18:08:43] DONE  phase-y2q-disable-reaperkeeper-restore-crest.ps1 exit=0 log=1060 bytes
+[2026-05-06 18:11:44] START phase-y3a-inspect-companionhotswap.ps1
+[2026-05-06 18:11:44] DONE  phase-y3a-inspect-companionhotswap.ps1 exit=0 log=4484 bytes
+[2026-05-06 18:23:17] START phase-y3b-decompile-companionhotswap.ps1
+[2026-05-06 18:23:22] DONE  phase-y3b-decompile-companionhotswap.ps1 exit=0 log=1608 bytes
+[2026-05-06 18:29:06] START phase-y3c-build-deploy.ps1
+[2026-05-06 18:29:08] DONE  phase-y3c-build-deploy.ps1 exit=1 log=32564 bytes
+[2026-05-06 18:31:19] START phase-y3d-rebuild-with-env.ps1
+[2026-05-06 18:31:21] DONE  phase-y3d-rebuild-with-env.ps1 exit=1 log=26548 bytes
+[2026-05-06 18:32:29] START phase-y3e-rebuild.ps1
+[2026-05-06 18:32:31] DONE  phase-y3e-rebuild.ps1 exit=1 log=29808 bytes
+[2026-05-06 18:33:39] START phase-y3f-rebuild-fixed-path.ps1
+[2026-05-06 18:33:41] DONE  phase-y3f-rebuild-fixed-path.ps1 exit=1 log=23546 bytes
+[2026-05-06 18:34:35] START phase-y3g-rebuild.ps1
+[2026-05-06 18:34:37] DONE  phase-y3g-rebuild.ps1 exit=1 log=16260 bytes
+[2026-05-06 18:35:47] START phase-y3h-find-namespace.ps1
+[2026-05-06 18:35:47] DONE  phase-y3h-find-namespace.ps1 exit=0 log=1406 bytes
+[2026-05-06 18:36:13] START phase-y3i-cecil-find.ps1
+[2026-05-06 18:36:13] DONE  phase-y3i-cecil-find.ps1 exit=0 log=456 bytes
+[2026-05-06 18:36:42] START phase-y3j-cecil-deep.ps1
+[2026-05-06 18:36:43] DONE  phase-y3j-cecil-deep.ps1 exit=0 log=1164 bytes
+[2026-05-06 18:38:48] START phase-y3k-rebuild.ps1
+[2026-05-06 18:38:49] DONE  phase-y3k-rebuild.ps1 exit=1 log=11322 bytes
+[2026-05-06 18:40:02] START phase-y3l-rebuild.ps1
+[2026-05-06 18:40:04] DONE  phase-y3l-rebuild.ps1 exit=1 log=5898 bytes
+[2026-05-06 18:40:46] START phase-y3m-find-controller.ps1
+[2026-05-06 18:40:46] DONE  phase-y3m-find-controller.ps1 exit=0 log=5032 bytes
+[2026-05-06 18:41:26] START phase-y3n-rebuild.ps1
+[2026-05-06 18:41:29] DONE  phase-y3n-rebuild.ps1 exit=0 log=256 bytes
+[2026-05-06 18:42:57] START phase-y3o-deploy-gui.ps1
+[2026-05-06 18:42:57] DONE  phase-y3o-deploy-gui.ps1 exit=0 log=1676 bytes
+[2026-05-06 18:49:39] START phase-y3p-verify.ps1
+[2026-05-06 18:49:39] DONE  phase-y3p-verify.ps1 exit=0 log=23422 bytes
+[2026-05-06 18:50:29] START phase-y3q-fix-crestjson.ps1
+[2026-05-06 18:50:30] DONE  phase-y3q-fix-crestjson.ps1 exit=0 log=1472 bytes
+[2026-05-06 18:53:16] START phase-y3r-runtime-tail.ps1
+[2026-05-06 18:53:16] DONE  phase-y3r-runtime-tail.ps1 exit=0 log=21724 bytes
+[2026-05-06 18:54:17] START phase-y3s-direct-edit.ps1
+[2026-05-06 18:54:17] DONE  phase-y3s-direct-edit.ps1 exit=0 log=2914 bytes
+[2026-05-06 18:56:35] START phase-y3t-after-launch.ps1
+[2026-05-06 18:56:36] DONE  phase-y3t-after-launch.ps1 exit=0 log=11726 bytes
+[2026-05-06 18:58:36] START phase-y3u-rebuild-default-true.ps1
+[2026-05-06 18:58:40] DONE  phase-y3u-rebuild-default-true.ps1 exit=0 log=546 bytes
+[2026-05-06 19:01:59] START phase-y3v-diag-deperror.ps1
+[2026-05-06 19:02:02] DONE  phase-y3v-diag-deperror.ps1 exit=0 log=19776 bytes
+[2026-05-06 19:05:35] START phase-y3w-deeper-diag.ps1
+[2026-05-06 19:05:40] DONE  phase-y3w-deeper-diag.ps1 exit=0 log=9340 bytes
+[2026-05-06 19:08:22] START phase-y3x-rebuild-no-view-ref.ps1
+[2026-05-06 19:08:25] DONE  phase-y3x-rebuild-no-view-ref.ps1 exit=0 log=344 bytes
+[2026-05-06 19:14:50] START phase-y3y-build-mcm-and-harmony.ps1
+[2026-05-06 19:14:59] DONE  phase-y3y-build-mcm-and-harmony.ps1 exit=0 log=906 bytes
+[2026-05-06 19:16:16] START phase-y5a-decompile-rk.ps1
+[2026-05-06 19:16:17] DONE  phase-y5a-decompile-rk.ps1 exit=0 log=5662 bytes
+[2026-05-06 19:20:04] START phase-y5b-build.ps1
+[2026-05-06 19:20:09] DONE  phase-y5b-build.ps1 exit=0 log=384 bytes
+[2026-05-06 19:20:23] START phase-y7a-find-tier-cap.ps1
+[2026-05-06 19:20:24] DONE  phase-y7a-find-tier-cap.ps1 exit=0 log=23566 bytes
+[2026-05-06 19:22:49] START phase-y7b-build.ps1
+[2026-05-06 19:22:54] DONE  phase-y7b-build.ps1 exit=0 log=314 bytes
+[2026-05-06 19:25:38] START phase-y10b-build.ps1
+[2026-05-06 19:25:41] DONE  phase-y10b-build.ps1 exit=0 log=312 bytes
+[2026-05-06 19:29:22] START phase-y-final-verify.ps1
+[2026-05-06 19:29:22] DONE  phase-y-final-verify.ps1 exit=0 log=1306 bytes
+[2026-05-06 19:39:01] START phase-y10c-verify-embedded.ps1
+[2026-05-06 19:39:01] DONE  phase-y10c-verify-embedded.ps1 exit=0 log=470 bytes
+[2026-05-06 19:48:35] START phase-y5b-build-final.ps1
+[2026-05-06 19:48:44] DONE  phase-y5b-build-final.ps1 exit=0 log=390 bytes
+[2026-05-06 19:51:41] START phase-y5b-check-refs.ps1
+[2026-05-06 19:51:41] DONE  phase-y5b-check-refs.ps1 exit=0 log=3830 bytes
+[2026-05-06 19:52:57] START phase-y5b-deep-check.ps1
+[2026-05-06 19:52:58] DONE  phase-y5b-deep-check.ps1 exit=0 log=13574 bytes
+[2026-05-06 19:54:10] START phase-y5b-clean-rebuild.ps1
+[2026-05-06 19:54:18] DONE  phase-y5b-clean-rebuild.ps1 exit=0 log=1358 bytes
+[2026-05-06 19:56:41] START phase-y5b-harmony-only.ps1
+[2026-05-06 19:56:43] DONE  phase-y5b-harmony-only.ps1 exit=0 log=288 bytes
+[2026-05-06 20:02:38] START phase-y3p2-build.ps1
+[2026-05-06 20:02:40] DONE  phase-y3p2-build.ps1 exit=0 log=256 bytes
+[2026-05-06 20:10:46] START phase-y13a-decompile-bth.ps1
+[2026-05-06 20:10:47] DONE  phase-y13a-decompile-bth.ps1 exit=0 log=3264 bytes
+[2026-05-06 20:13:18] START phase-y3p2-fix-rebuild.ps1
+[2026-05-06 20:13:25] DONE  phase-y3p2-fix-rebuild.ps1 exit=1 log=5936 bytes
+[2026-05-06 20:14:33] START phase-y3p2-find-numpadstar.ps1
+[2026-05-06 20:14:33] DONE  phase-y3p2-find-numpadstar.ps1 exit=0 log=3276 bytes
+[2026-05-06 20:15:09] START phase-y3p2-find-numpadstar2.ps1
+[2026-05-06 20:15:10] DONE  phase-y3p2-find-numpadstar2.ps1 exit=0 log=2288 bytes
+[2026-05-06 20:15:46] START phase-y3p2-fix2-rebuild.ps1
+[2026-05-06 20:15:48] DONE  phase-y3p2-fix2-rebuild.ps1 exit=0 log=324 bytes
+[2026-05-06 20:23:44] START phase-z-cleanup-and-rebuild.ps1
+[2026-05-06 20:23:46] DONE  phase-z-cleanup-and-rebuild.ps1 exit=0 log=748 bytes
+[2026-05-06 20:32:26] START phase-y16-rebuild-rename.ps1
+[2026-05-06 20:32:31] DONE  phase-y16-rebuild-rename.ps1 exit=0 log=2056 bytes
+[2026-05-06 20:39:11] START phase-y5-diag-smithing.ps1
+[2026-05-06 20:39:11] DONE  phase-y5-diag-smithing.ps1 exit=0 log=4808 bytes
+[2026-05-06 20:41:11] START phase-y19a-decompile-lll.ps1
+[2026-05-06 20:41:12] DONE  phase-y19a-decompile-lll.ps1 exit=0 log=1346 bytes
+[2026-05-06 20:44:05] START phase-y19-y20-build.ps1
+[2026-05-06 20:44:12] DONE  phase-y19-y20-build.ps1 exit=0 log=342 bytes
+[2026-05-06 20:52:34] START phase-y20-find-achievement-block.ps1
+[2026-05-06 20:52:34] DONE  phase-y20-find-achievement-block.ps1 exit=0 log=32728 bytes
+[2026-05-06 20:53:29] START phase-y20-fix-rebuild.ps1
+[2026-05-06 20:53:31] DONE  phase-y20-fix-rebuild.ps1 exit=0 log=270 bytes
+[2026-05-06 20:57:02] START phase-y20b-find-unofficial-block.ps1
+[2026-05-06 20:57:03] DONE  phase-y20b-find-unofficial-block.ps1 exit=0 log=19442 bytes
+[2026-05-06 21:00:57] START phase-y20-achievements-official.ps1
+[2026-05-06 21:00:59] DONE  phase-y20-achievements-official.ps1 exit=1 log=2312 bytes
+[2026-05-06 21:06:21] START phase-y20-find-achievements-gate.ps1
+[2026-05-06 21:06:23] DONE  phase-y20-find-achievements-gate.ps1 exit=0 log=12146 bytes
+[2026-05-06 21:07:05] START phase-y20-find-disable-message.ps1
+[2026-05-06 21:07:10] DONE  phase-y20-find-disable-message.ps1 exit=0 log=4854 bytes
+[2026-05-06 21:08:06] START phase-y20-find-campaign-achievement.ps1
+[2026-05-06 21:08:08] DONE  phase-y20-find-campaign-achievement.ps1 exit=0 log=12624 bytes
+[2026-05-06 21:08:48] START phase-y20-find-message-source.ps1
+[2026-05-06 21:11:08] DONE  phase-y20-find-message-source.ps1 exit=0 log=6432 bytes
+[2026-05-06 21:11:10] START phase-y20-decompile-unblocker.ps1
+[2026-05-06 21:11:11] DONE  phase-y20-decompile-unblocker.ps1 exit=0 log=830 bytes
+[2026-05-06 21:12:31] START phase-y20-deob-unblocker.ps1
+[2026-05-06 21:12:31] DONE  phase-y20-deob-unblocker.ps1 exit=0 log=3952 bytes
+[2026-05-06 21:13:40] START phase-y20b-build-storymode-patch.ps1
+[2026-05-06 21:13:42] DONE  phase-y20b-build-storymode-patch.ps1 exit=0 log=460 bytes
+[2026-05-06 21:15:49] START phase-y20c-diag-deps.ps1
+[2026-05-06 21:15:49] DONE  phase-y20c-diag-deps.ps1 exit=0 log=10072 bytes
+[2026-05-06 21:17:42] START phase-y20d-find-real-error.ps1
+[2026-05-06 21:17:43] DONE  phase-y20d-find-real-error.ps1 exit=0 log=30868 bytes
+[2026-05-06 21:20:07] START phase-y20e-clean-rebuild-verify.ps1
+[2026-05-06 21:20:12] DONE  phase-y20e-clean-rebuild-verify.ps1 exit=0 log=5272 bytes
+[2026-05-06 21:21:30] START phase-y20f-deploy-net6-explicit.ps1
+[2026-05-06 21:21:31] DONE  phase-y20f-deploy-net6-explicit.ps1 exit=0 log=1036 bytes
+[2026-05-06 21:23:49] START phase-y20g-tail-logs.ps1
+[2026-05-06 21:23:50] DONE  phase-y20g-tail-logs.ps1 exit=0 log=92924 bytes
+[2026-05-06 21:27:57] START phase-y20h-rollback-and-find-crash.ps1
+[2026-05-06 21:27:57] DONE  phase-y20h-rollback-and-find-crash.ps1 exit=0 log=11464 bytes
+[2026-05-06 21:29:19] START phase-y20i-rollback-deploy.ps1
+[2026-05-06 21:29:22] DONE  phase-y20i-rollback-deploy.ps1 exit=0 log=588 bytes
+[2026-05-06 21:31:11] START phase-y20j-fresh-crash-trace.ps1
+[2026-05-06 21:31:11] DONE  phase-y20j-fresh-crash-trace.ps1 exit=0 log=47428 bytes
+[2026-05-06 21:33:34] START phase-y20k-deploy-net472.ps1
+[2026-05-06 21:33:34] DONE  phase-y20k-deploy-net472.ps1 exit=0 log=1560 bytes
+[2026-05-06 21:39:01] START phase-y20-retry-canonical-build.ps1
+[2026-05-06 21:39:04] DONE  phase-y20-retry-canonical-build.ps1 exit=0 log=1038 bytes
+[2026-05-06 21:53:37] START phase-y11-find-battle-size-api.ps1
+[2026-05-06 21:53:43] DONE  phase-y11-find-battle-size-api.ps1 exit=0 log=8374 bytes
+[2026-05-06 21:55:19] START phase-y11-decompile-bsr.ps1
+[2026-05-06 21:55:23] DONE  phase-y11-decompile-bsr.ps1 exit=0 log=479304 bytes
+[2026-05-06 21:58:34] START phase-y11-build.ps1
+[2026-05-06 21:58:47] DONE  phase-y11-build.ps1 exit=0 log=1904 bytes
+[2026-05-06 22:05:17] START phase-y11-diag-binding.ps1
+[2026-05-06 22:05:20] DONE  phase-y11-diag-binding.ps1 exit=0 log=10190 bytes
+[2026-05-06 22:07:48] START phase-y11-build-v2.ps1
+[2026-05-06 22:07:54] DONE  phase-y11-build-v2.ps1 exit=0 log=2340 bytes
+[2026-05-06 22:11:37] START phase-y11-diag-v2.ps1
+[2026-05-06 22:11:38] DONE  phase-y11-diag-v2.ps1 exit=0 log=10648 bytes
+[2026-05-06 22:14:33] START phase-y11-build-v3.ps1
+[2026-05-06 22:14:35] DONE  phase-y11-build-v3.ps1 exit=0 log=1038 bytes
+[2026-05-06 22:17:33] START phase-y11-diag-v3.ps1
+[2026-05-06 22:17:34] DONE  phase-y11-diag-v3.ps1 exit=0 log=19498 bytes
+[2026-05-06 22:18:48] START phase-y11-init-il.ps1
+[2026-05-06 22:18:48] DONE  phase-y11-init-il.ps1 exit=1 log=3924 bytes
+[2026-05-06 22:19:21] START phase-y11-init-il-2.ps1
+[2026-05-06 22:19:21] DONE  phase-y11-init-il-2.ps1 exit=0 log=1056 bytes
+[2026-05-06 22:20:23] START phase-y11-ctor-il.ps1
+[2026-05-06 22:20:23] DONE  phase-y11-ctor-il.ps1 exit=0 log=12770 bytes
+[2026-05-06 22:22:10] START phase-y11-build-v4.ps1
+[2026-05-06 22:22:12] DONE  phase-y11-build-v4.ps1 exit=0 log=1038 bytes
+[2026-05-06 22:25:09] START phase-y11-find-crash.ps1
+[2026-05-06 22:25:09] DONE  phase-y11-find-crash.ps1 exit=0 log=15670 bytes
+[2026-05-06 22:26:27] START phase-y11-build-v5.ps1
+[2026-05-06 22:26:30] DONE  phase-y11-build-v5.ps1 exit=0 log=1038 bytes
+[2026-05-06 22:30:07] START phase-y11-check-ctor-bind.ps1
+[2026-05-06 22:30:08] DONE  phase-y11-check-ctor-bind.ps1 exit=0 log=4868 bytes
+[2026-05-06 22:31:08] START phase-y11-bsr-detail.ps1
+[2026-05-06 22:31:09] DONE  phase-y11-bsr-detail.ps1 exit=0 log=82350 bytes
+[2026-05-06 22:33:01] START phase-y11-build-v6.ps1
+[2026-05-06 22:33:03] DONE  phase-y11-build-v6.ps1 exit=0 log=1038 bytes
+[2026-05-06 22:35:56] START phase-y11-build-v7.ps1
+[2026-05-06 22:35:58] DONE  phase-y11-build-v7.ps1 exit=0 log=1038 bytes
+[2026-05-06 22:37:52] START phase-y11-runtime-diag.ps1
+[2026-05-06 22:37:53] DONE  phase-y11-runtime-diag.ps1 exit=0 log=24474 bytes
+[2026-05-06 22:38:55] START phase-y11-maxtroops-il.ps1
+[2026-05-06 22:38:55] DONE  phase-y11-maxtroops-il.ps1 exit=0 log=834 bytes
+[2026-05-06 22:39:32] START phase-y11-maxagents-il.ps1
+[2026-05-06 22:39:32] DONE  phase-y11-maxagents-il.ps1 exit=0 log=4190 bytes
+[2026-05-06 22:41:36] START phase-y11-build-v8.ps1
+[2026-05-06 22:41:38] DONE  phase-y11-build-v8.ps1 exit=0 log=1038 bytes
+[2026-05-06 22:44:59] START phase-y11-build-v9.ps1
+[2026-05-06 22:45:01] DONE  phase-y11-build-v9.ps1 exit=0 log=1038 bytes
+[2026-05-06 22:48:06] START phase-y11-bsr-full.ps1
+[2026-05-06 22:48:06] DONE  phase-y11-bsr-full.ps1 exit=0 log=6718 bytes
+[2026-05-06 22:49:15] START phase-y11-initprefix-full.ps1
+[2026-05-06 22:49:16] DONE  phase-y11-initprefix-full.ps1 exit=0 log=127616 bytes
+[2026-05-06 22:52:00] START phase-y11-build-v10.ps1
+[2026-05-06 22:52:02] DONE  phase-y11-build-v10.ps1 exit=0 log=1038 bytes
+[2026-05-06 22:58:16] START phase-y11-build-final.ps1
+[2026-05-06 22:58:24] DONE  phase-y11-build-final.ps1 exit=0 log=1242 bytes
+[2026-05-06 23:00:52] START phase-y11b-supplier-api.ps1
+[2026-05-06 23:00:53] DONE  phase-y11b-supplier-api.ps1 exit=0 log=11860 bytes
+[2026-05-06 23:06:14] START phase-y11b-build.ps1
+[2026-05-06 23:06:16] DONE  phase-y11b-build.ps1 exit=0 log=1038 bytes
+[2026-05-06 23:10:21] START phase-y11b-diag.ps1
+[2026-05-06 23:10:21] DONE  phase-y11b-diag.ps1 exit=0 log=15138 bytes
+[2026-05-06 23:13:36] START phase-y11b-build-v2.ps1
+[2026-05-06 23:13:38] DONE  phase-y11b-build-v2.ps1 exit=1 log=9784 bytes
+[2026-05-06 23:15:02] START phase-y11b-build-v3.ps1
+[2026-05-06 23:15:05] DONE  phase-y11b-build-v3.ps1 exit=1 log=1568 bytes
+[2026-05-06 23:15:54] START phase-y11b-build-verbose.ps1
+[2026-05-06 23:15:55] DONE  phase-y11b-build-verbose.ps1 exit=0 log=9978 bytes
+[2026-05-06 23:16:39] START phase-y11b-build-v4.ps1
+[2026-05-06 23:16:42] DONE  phase-y11b-build-v4.ps1 exit=0 log=1038 bytes
+[2026-05-06 23:20:31] START phase-y11b-runtime-tail.ps1
+[2026-05-06 23:20:32] DONE  phase-y11b-runtime-tail.ps1 exit=0 log=14564 bytes
+[2026-05-06 23:24:49] START phase-y11b-build-v5.ps1
+[2026-05-06 23:24:51] DONE  phase-y11b-build-v5.ps1 exit=0 log=1038 bytes
+[2026-05-06 23:38:34] START phase-y11b-final-build.ps1
+[2026-05-06 23:38:43] DONE  phase-y11b-final-build.ps1 exit=0 log=1214 bytes
+[2026-05-06 23:41:34] START phase-y11b-7stop.ps1
+[2026-05-06 23:41:36] DONE  phase-y11b-7stop.ps1 exit=0 log=1038 bytes
+[2026-05-06 23:42:34] START phase-y11b-managed-options-il.ps1
+[2026-05-06 23:42:35] DONE  phase-y11b-managed-options-il.ps1 exit=0 log=21542 bytes
+[2026-05-06 23:45:21] START phase-y11c-find-options-vm.ps1
+[2026-05-06 23:45:28] DONE  phase-y11c-find-options-vm.ps1 exit=0 log=5204 bytes
+[2026-05-06 23:50:24] START phase-y11c-find-options-vm-2.ps1
+[2026-05-06 23:50:25] DONE  phase-y11c-find-options-vm-2.ps1 exit=0 log=20918 bytes
+[2026-05-06 23:51:29] START phase-y11c-find-construct.ps1
+[2026-05-06 23:51:34] DONE  phase-y11c-find-construct.ps1 exit=0 log=6110 bytes
+[2026-05-06 23:54:26] START phase-y21-find-wanderer-behavior.ps1
+[2026-05-06 23:54:31] DONE  phase-y21-find-wanderer-behavior.ps1 exit=0 log=7696 bytes
+[2026-05-06 23:55:03] START phase-y21-tryspawn-il.ps1
+[2026-05-06 23:55:03] DONE  phase-y21-tryspawn-il.ps1 exit=0 log=18738 bytes
+[2026-05-06 23:57:20] START phase-y21-build.ps1
+[2026-05-06 23:57:29] DONE  phase-y21-build.ps1 exit=0 log=1214 bytes
+[2026-05-06 23:59:21] START phase-y5c-find-apis.ps1
+[2026-05-06 23:59:21] DONE  phase-y5c-find-apis.ps1 exit=1 log=4862 bytes
+[2026-05-07 00:00:05] START phase-y5c-find-apis-2.ps1
+[2026-05-07 00:00:06] DONE  phase-y5c-find-apis-2.ps1 exit=0 log=17104 bytes
+[2026-05-07 00:01:44] START phase-y5c-find-prisoner-il.ps1
+[2026-05-07 00:01:45] DONE  phase-y5c-find-prisoner-il.ps1 exit=0 log=7964 bytes
+[2026-05-07 00:03:11] START phase-y5c-build.ps1
+[2026-05-07 00:03:13] DONE  phase-y5c-build.ps1 exit=1 log=7736 bytes
+[2026-05-07 00:03:57] START phase-y5c-build-2.ps1
+[2026-05-07 00:03:59] DONE  phase-y5c-build-2.ps1 exit=0 log=1038 bytes
+[2026-05-07 00:17:49] START phase-y22-build.ps1
+[2026-05-07 00:17:54] DONE  phase-y22-build.ps1 exit=0 log=178 bytes
+[2026-05-07 00:42:07] START phase-y22-build-vp.ps1
+[2026-05-07 00:42:13] DONE  phase-y22-build-vp.ps1 exit=0 log=672 bytes
+[2026-05-07 00:51:09] START phase-y22b-build.ps1
+[2026-05-07 00:51:12] DONE  phase-y22b-build.ps1 exit=0 log=672 bytes
+[2026-05-07 00:58:46] START phase-y22c-build.ps1
+[2026-05-07 00:58:54] DONE  phase-y22c-build.ps1 exit=0 log=1458 bytes
+[2026-05-07 01:00:28] START phase-y22c-deploy-harmony.ps1
+[2026-05-07 01:00:29] DONE  phase-y22c-deploy-harmony.ps1 exit=0 log=1104 bytes
+[2026-05-07 01:04:32] START phase-y22d-build.ps1
+[2026-05-07 01:04:35] DONE  phase-y22d-build.ps1 exit=0 log=828 bytes
+[2026-05-07 01:11:41] START phase-y23-research-naval.ps1
+[2026-05-07 01:11:46] DONE  phase-y23-research-naval.ps1 exit=0 log=1118 bytes
+[2026-05-07 01:12:04] START phase-y23-research-naval2.ps1
+[2026-05-07 01:12:31] DONE  phase-y23-research-naval2.ps1 exit=0 log=7772 bytes
+[2026-05-07 01:12:33] START phase-y23-research-naval3.ps1
+[2026-05-07 01:12:36] DONE  phase-y23-research-naval3.ps1 exit=0 log=5408 bytes
+[2026-05-07 01:13:08] START phase-y23-research-naval4.ps1
+[2026-05-07 01:13:09] DONE  phase-y23-research-naval4.ps1 exit=0 log=4532 bytes
+[2026-05-07 01:16:29] START phase-y23-build.ps1
+[2026-05-07 01:16:36] DONE  phase-y23-build.ps1 exit=0 log=1536 bytes
+[2026-05-07 01:27:04] START phase-z4-build.ps1
+[2026-05-07 01:27:07] DONE  phase-z4-build.ps1 exit=0 log=774 bytes
+[2026-05-07 01:30:52] START phase-z4-diag.ps1
+[2026-05-07 01:30:52] DONE  phase-z4-diag.ps1 exit=0 log=18126 bytes
+[2026-05-07 01:31:28] START phase-z4-redeploy.ps1
+[2026-05-07 01:31:28] DONE  phase-z4-redeploy.ps1 exit=0 log=336 bytes
+[2026-05-07 01:31:59] START phase-z4-verify.ps1
+[2026-05-07 01:31:59] DONE  phase-z4-verify.ps1 exit=0 log=908 bytes
+[2026-05-07 01:32:46] START phase-z4-redeploy-mcmui.ps1
+[2026-05-07 01:32:46] DONE  phase-z4-redeploy-mcmui.ps1 exit=0 log=1076 bytes
+[2026-05-07 01:33:08] START phase-z4-final-fix.ps1
+[2026-05-07 01:33:08] DONE  phase-z4-final-fix.ps1 exit=0 log=2032 bytes
+[2026-05-07 01:39:24] START phase-y20-inspect.ps1
+[2026-05-07 01:39:24] DONE  phase-y20-inspect.ps1 exit=1 log=1810 bytes
+[2026-05-07 01:39:38] START phase-y20-inspect2.ps1
+[2026-05-07 01:39:38] DONE  phase-y20-inspect2.ps1 exit=1 log=34 bytes
+[2026-05-07 01:39:58] START phase-y20-inspect3.ps1
+[2026-05-07 01:39:59] DONE  phase-y20-inspect3.ps1 exit=0 log=6552 bytes
+[2026-05-07 01:41:55] START phase-y20-fix2-build.ps1
+[2026-05-07 01:41:57] DONE  phase-y20-fix2-build.ps1 exit=0 log=280 bytes
+[2026-05-07 01:47:19] START phase-tfm-and-hotswap.ps1
+[2026-05-07 01:47:19] DONE  phase-tfm-and-hotswap.ps1 exit=0 log=9998 bytes
+[2026-05-07 01:56:45] START phase-y21-fix-build.ps1
+[2026-05-07 01:56:52] DONE  phase-y21-fix-build.ps1 exit=0 log=1460 bytes
+[2026-05-07 01:57:32] START phase-y21-verify.ps1
+[2026-05-07 01:57:33] DONE  phase-y21-verify.ps1 exit=0 log=1320 bytes
+[2026-05-07 02:04:39] START phase-y20-rewrite-discovery.ps1
+[2026-05-07 02:04:40] DONE  phase-y20-rewrite-discovery.ps1 exit=0 log=105050 bytes
+[2026-05-07 02:05:38] START phase-y20-rewrite-disc2.ps1
+[2026-05-07 02:05:38] DONE  phase-y20-rewrite-disc2.ps1 exit=0 log=71590 bytes
+[2026-05-07 02:06:47] START phase-y20-rewrite-disc3.ps1
+[2026-05-07 02:06:47] DONE  phase-y20-rewrite-disc3.ps1 exit=0 log=9060 bytes
+[2026-05-07 02:08:31] START phase-y20-rewrite-build.ps1
+[2026-05-07 02:08:35] DONE  phase-y20-rewrite-build.ps1 exit=0 log=192 bytes
+[2026-05-07 02:09:02] START phase-y20-verify.ps1
+[2026-05-07 02:09:02] DONE  phase-y20-verify.ps1 exit=0 log=802 bytes
+[2026-05-07 02:10:00] START phase-y20-bytecheck.ps1
+[2026-05-07 02:10:03] DONE  phase-y20-bytecheck.ps1 exit=0 log=1074 bytes
+[2026-05-07 02:23:30] START phase-y9-bld1.ps1
+[2026-05-07 02:23:33] DONE  phase-y9-bld1.ps1 exit=0 log=192 bytes
+[2026-05-07 02:26:46] START phase-y9-smoketest.ps1
+[2026-05-07 02:26:48] DONE  phase-y9-smoketest.ps1 exit=0 log=2426 bytes
+[2026-05-07 02:29:28] START phase-z4-p1-bld.ps1
+[2026-05-07 02:29:31] DONE  phase-z4-p1-bld.ps1 exit=0 log=192 bytes
+[2026-05-07 02:30:11] START phase-y12-disc.ps1
+[2026-05-07 02:30:11] DONE  phase-y12-disc.ps1 exit=0 log=12894 bytes
+[2026-05-07 02:33:46] START phase-y12-bld.ps1
+[2026-05-07 02:33:52] DONE  phase-y12-bld.ps1 exit=0 log=512 bytes
+[2026-05-07 02:34:14] START phase-y12-status.ps1
+[2026-05-07 02:34:17] DONE  phase-y12-status.ps1 exit=0 log=1508 bytes
+[2026-05-07 02:35:26] START phase-y11c-bld.ps1
+[2026-05-07 02:35:28] DONE  phase-y11c-bld.ps1 exit=0 log=240 bytes
+[2026-05-07 02:37:54] START phase-final-verify.ps1
+[2026-05-07 02:37:59] DONE  phase-final-verify.ps1 exit=0 log=3640 bytes
+[2026-05-07 02:38:47] START phase-final-verify2.ps1
+[2026-05-07 02:38:48] DONE  phase-final-verify2.ps1 exit=0 log=782 bytes
+[2026-05-07 02:39:17] START phase-y12-mcm-rebuild.ps1
+[2026-05-07 02:39:21] DONE  phase-y12-mcm-rebuild.ps1 exit=1 log=21382 bytes
+[2026-05-07 02:40:11] START phase-y12-mcm-rebuild2.ps1
+[2026-05-07 02:40:18] DONE  phase-y12-mcm-rebuild2.ps1 exit=0 log=596 bytes
+[2026-05-07 02:41:04] START phase-y12-clean-rebuild.ps1
+[2026-05-07 02:41:10] DONE  phase-y12-clean-rebuild.ps1 exit=0 log=708 bytes
+[2026-05-07 02:41:42] START phase-y12-deep-check.ps1
+[2026-05-07 02:41:43] DONE  phase-y12-deep-check.ps1 exit=0 log=3022 bytes
+[2026-05-07 02:42:29] START phase-y12-attr-check.ps1
+[2026-05-07 02:42:29] DONE  phase-y12-attr-check.ps1 exit=0 log=2136 bytes
+[2026-05-07 03:14:53] START phase-y12b-disc.ps1
+[2026-05-07 03:14:54] DONE  phase-y12b-disc.ps1 exit=0 log=5406 bytes
+[2026-05-07 03:15:22] START phase-y12b-checkjoin.ps1
+[2026-05-07 03:15:22] DONE  phase-y12b-checkjoin.ps1 exit=0 log=25540 bytes
+[2026-05-07 03:16:04] START phase-y12b-disc2.ps1
+[2026-05-07 03:16:05] DONE  phase-y12b-disc2.ps1 exit=0 log=4250 bytes
+[2026-05-07 03:19:26] START phase-y12b-bld.ps1
+[2026-05-07 03:19:34] DONE  phase-y12b-bld.ps1 exit=0 log=548 bytes
+[2026-05-07 03:19:46] START phase-y12b-verify.ps1
+[2026-05-07 03:19:46] DONE  phase-y12b-verify.ps1 exit=0 log=976 bytes
+[2026-05-07 03:20:17] START phase-y4-disc.ps1
+[2026-05-07 03:20:17] DONE  phase-y4-disc.ps1 exit=0 log=17978 bytes
+[2026-05-07 03:21:50] START phase-y4a-bld.ps1
+[2026-05-07 03:21:54] DONE  phase-y4a-bld.ps1 exit=0 log=152 bytes
+[2026-05-07 03:24:25] START phase-final-state.ps1
+[2026-05-07 03:24:25] DONE  phase-final-state.ps1 exit=0 log=2638 bytes
+[2026-05-07 04:08:46] START phase-y6-bld.ps1
+[2026-05-07 04:08:55] DONE  phase-y6-bld.ps1 exit=0 log=548 bytes
+[2026-05-07 04:12:44] START phase-y6-verify.ps1
+[2026-05-07 04:12:44] DONE  phase-y6-verify.ps1 exit=0 log=1796 bytes
+[2026-05-07 04:15:03] START phase-size-check.ps1
+[2026-05-07 04:15:06] DONE  phase-size-check.ps1 exit=0 log=3278 bytes
+[2026-05-08 21:18:20] WATCHER UP
+[2026-05-08 21:20:55] CREST-DEV UP
+[2026-05-08 21:20:55] CREST-DEV ALIVE
+[2026-05-08 21:21:56] CREST-DEV ALIVE
+[2026-05-08 21:22:56] CREST-DEV ALIVE
+[2026-05-08 21:23:56] CREST-DEV ALIVE
+[2026-05-08 21:24:56] CREST-DEV ALIVE
+[2026-05-08 21:25:57] CREST-DEV ALIVE
+[2026-05-08 21:26:57] CREST-DEV ALIVE
+[2026-05-08 21:27:57] CREST-DEV ALIVE
+[2026-05-08 21:28:57] CREST-DEV ALIVE
+[2026-05-08 21:29:58] CREST-DEV ALIVE
+[2026-05-08 21:30:28] START y36c-defer-attach-and-weight
+[2026-05-08 21:30:32] DONE  y36c-defer-attach-and-weight exit= duration=4.1s
+[2026-05-08 21:30:58] CREST-DEV ALIVE
+[2026-05-08 21:31:58] CREST-DEV ALIVE
+[2026-05-08 21:32:59] CREST-DEV ALIVE
+[2026-05-08 21:33:59] CREST-DEV ALIVE
+[2026-05-08 21:34:59] CREST-DEV ALIVE
+[2026-05-08 21:35:59] CREST-DEV ALIVE
+[2026-05-08 21:36:59] CREST-DEV ALIVE
+[2026-05-08 21:38:00] CREST-DEV ALIVE
+[2026-05-08 21:39:00] CREST-DEV ALIVE
+[2026-05-08 21:39:29] START y41-mercs-autobalance-paritysign
+[2026-05-08 21:39:32] DONE  y41-mercs-autobalance-paritysign exit= duration=2.1s
+[2026-05-08 21:40:00] CREST-DEV ALIVE
+[2026-05-08 21:41:01] CREST-DEV ALIVE
+[2026-05-08 21:42:01] CREST-DEV ALIVE
+[2026-05-08 21:43:01] CREST-DEV ALIVE
+[2026-05-08 21:44:02] CREST-DEV ALIVE
+[2026-05-08 21:45:02] CREST-DEV ALIVE
+[2026-05-08 21:46:02] CREST-DEV ALIVE
+[2026-05-08 21:47:02] CREST-DEV ALIVE
+[2026-05-08 21:48:03] CREST-DEV ALIVE
+[2026-05-08 21:49:03] CREST-DEV ALIVE
+[2026-05-08 21:50:03] CREST-DEV ALIVE
+[2026-05-08 21:51:04] CREST-DEV ALIVE
+[2026-05-08 21:51:15] START y42-tactics-diag
+[2026-05-08 21:51:17] DONE  y42-tactics-diag exit= duration=2.4s
+[2026-05-08 21:52:04] CREST-DEV ALIVE
+[2026-05-08 21:53:04] START y42b-tactics-diag-reflective
+[2026-05-08 21:53:06] DONE  y42b-tactics-diag-reflective exit= duration=2.2s
+[2026-05-08 21:53:06] CREST-DEV ALIVE
+[2026-05-08 21:54:06] CREST-DEV ALIVE
+[2026-05-08 21:55:06] CREST-DEV ALIVE
+[2026-05-08 21:56:07] CREST-DEV ALIVE
+[2026-05-08 21:57:07] CREST-DEV ALIVE
+[2026-05-08 21:58:07] CREST-DEV ALIVE
+[2026-05-08 21:59:07] CREST-DEV ALIVE
+[2026-05-08 22:00:08] CREST-DEV ALIVE
+[2026-05-08 22:01:08] CREST-DEV ALIVE
+[2026-05-08 22:02:08] CREST-DEV ALIVE
+[2026-05-08 22:03:08] CREST-DEV ALIVE
+[2026-05-08 22:04:09] CREST-DEV ALIVE
+[2026-05-08 22:05:09] CREST-DEV ALIVE
+[2026-05-08 22:05:14] CREST-DEV UP
+[2026-05-08 22:05:14] CREST-DEV ALIVE
+[2026-05-08 22:13:50] CREST-DEV UP
+[2026-05-08 22:13:50] CREST-DEV ALIVE
+[2026-05-08 22:14:51] CREST-DEV ALIVE
+[2026-05-08 22:15:51] CREST-DEV ALIVE
+[2026-05-08 22:16:51] CREST-DEV ALIVE
+[2026-05-08 22:17:51] CREST-DEV ALIVE
+[2026-05-08 22:18:52] CREST-DEV ALIVE
+[2026-05-08 22:19:52] CREST-DEV ALIVE
+[2026-05-08 22:20:52] CREST-DEV ALIVE
+[2026-05-08 22:21:52] CREST-DEV ALIVE
+[2026-05-08 22:22:52] CREST-DEV ALIVE
+[2026-05-08 22:23:52] CREST-DEV ALIVE
+[2026-05-08 22:24:52] CREST-DEV ALIVE
+[2026-05-08 22:25:53] CREST-DEV ALIVE
+[2026-05-08 22:26:53] CREST-DEV ALIVE
+[2026-05-08 22:27:53] CREST-DEV ALIVE
+[2026-05-08 22:28:53] CREST-DEV ALIVE
+[2026-05-08 22:29:37] START y42c-diag-fixes-and-enemy-behaviors
+[2026-05-08 22:29:42] DONE  y42c-diag-fixes-and-enemy-behaviors exit= duration=4.8s
+[2026-05-08 22:29:54] CREST-DEV ALIVE
+[2026-05-08 22:30:54] CREST-DEV ALIVE
+[2026-05-08 22:31:54] CREST-DEV ALIVE
+[2026-05-08 22:32:54] CREST-DEV ALIVE
+[2026-05-08 22:33:55] CREST-DEV ALIVE
+[2026-05-08 22:34:55] CREST-DEV ALIVE
+[2026-05-08 22:35:55] CREST-DEV ALIVE
+[2026-05-08 22:36:56] CREST-DEV ALIVE
+[2026-05-08 22:37:56] CREST-DEV ALIVE
+[2026-05-08 22:38:56] CREST-DEV ALIVE
+[2026-05-08 22:39:56] CREST-DEV ALIVE
+[2026-05-08 22:40:56] CREST-DEV ALIVE
+[2026-05-08 22:41:57] CREST-DEV ALIVE
+[2026-05-08 22:42:57] CREST-DEV ALIVE
+[2026-05-08 22:43:54] START y44-brush-race-finalizer
+[2026-05-08 22:43:57] DONE  y44-brush-race-finalizer exit= duration=3.1s
+[2026-05-08 22:43:57] CREST-DEV ALIVE
+[2026-05-08 22:44:58] CREST-DEV ALIVE
+[2026-05-08 22:45:58] CREST-DEV ALIVE
+[2026-05-08 22:46:58] CREST-DEV ALIVE
+[2026-05-08 22:47:58] CREST-DEV ALIVE
+[2026-05-08 22:48:59] CREST-DEV ALIVE
+[2026-05-08 22:49:59] CREST-DEV ALIVE
+[2026-05-08 22:50:59] CREST-DEV ALIVE
+[2026-05-08 22:51:59] CREST-DEV ALIVE
+[2026-05-08 22:52:59] CREST-DEV ALIVE
+[2026-05-08 22:53:59] CREST-DEV ALIVE
+[2026-05-08 22:55:00] CREST-DEV ALIVE
+[2026-05-08 22:56:00] CREST-DEV ALIVE
+[2026-05-08 22:57:00] CREST-DEV ALIVE
+[2026-05-08 22:58:01] CREST-DEV ALIVE
+[2026-05-08 22:59:01] CREST-DEV ALIVE
+[2026-05-08 23:00:01] CREST-DEV ALIVE
+[2026-05-08 23:01:01] CREST-DEV ALIVE
+[2026-05-08 23:02:02] CREST-DEV ALIVE
+[2026-05-08 23:03:02] CREST-DEV ALIVE
+[2026-05-08 23:04:02] CREST-DEV ALIVE
+[2026-05-08 23:05:02] CREST-DEV ALIVE
+[2026-05-08 23:06:03] CREST-DEV ALIVE
+[2026-05-08 23:07:03] CREST-DEV ALIVE
+[2026-05-08 23:08:03] CREST-DEV ALIVE
+[2026-05-08 23:09:04] CREST-DEV ALIVE
+[2026-05-08 23:10:04] CREST-DEV ALIVE
+[2026-05-08 23:11:04] CREST-DEV ALIVE
+[2026-05-08 23:12:04] CREST-DEV ALIVE
+[2026-05-08 23:13:05] CREST-DEV ALIVE
+[2026-05-08 23:14:05] CREST-DEV ALIVE
+[2026-05-08 23:15:05] CREST-DEV ALIVE
+[2026-05-08 23:16:05] CREST-DEV ALIVE
+[2026-05-08 23:17:06] CREST-DEV ALIVE
+[2026-05-08 23:18:06] CREST-DEV ALIVE
+[2026-05-08 23:19:07] CREST-DEV ALIVE
+[2026-05-08 23:20:07] CREST-DEV ALIVE
+[2026-05-08 23:21:07] CREST-DEV ALIVE
+[2026-05-08 23:22:07] CREST-DEV ALIVE
+[2026-05-08 23:23:08] CREST-DEV ALIVE
+[2026-05-08 23:24:08] CREST-DEV ALIVE
+[2026-05-08 23:25:08] CREST-DEV ALIVE
+[2026-05-08 23:26:08] CREST-DEV ALIVE
+[2026-05-08 23:27:09] CREST-DEV ALIVE
+[2026-05-08 23:28:09] CREST-DEV ALIVE
+[2026-05-08 23:29:09] CREST-DEV ALIVE
+[2026-05-08 23:30:10] CREST-DEV ALIVE
+[2026-05-08 23:31:10] CREST-DEV ALIVE
+[2026-05-08 23:32:10] CREST-DEV ALIVE
+[2026-05-08 23:33:10] CREST-DEV ALIVE
+[2026-05-08 23:34:11] CREST-DEV ALIVE
+[2026-05-08 23:35:11] CREST-DEV ALIVE
+[2026-05-08 23:36:11] CREST-DEV ALIVE
+[2026-05-08 23:37:12] CREST-DEV ALIVE
+[2026-05-08 23:38:12] CREST-DEV ALIVE
+[2026-05-08 23:39:12] START y48-telemetry-weights-captain-tactic
+[2026-05-08 23:39:16] DONE  y48-telemetry-weights-captain-tactic exit= duration=4.6s
+[2026-05-08 23:39:16] CREST-DEV ALIVE
+[2026-05-08 23:40:17] CREST-DEV ALIVE
+[2026-05-08 23:41:17] CREST-DEV ALIVE
+[2026-05-08 23:42:17] CREST-DEV ALIVE
+[2026-05-08 23:43:18] CREST-DEV ALIVE
+[2026-05-08 23:44:18] CREST-DEV ALIVE
+[2026-05-08 23:45:18] CREST-DEV ALIVE
+[2026-05-08 23:46:18] CREST-DEV ALIVE
+[2026-05-08 23:47:18] CREST-DEV ALIVE
+[2026-05-08 23:48:18] CREST-DEV ALIVE
+[2026-05-08 23:49:19] CREST-DEV ALIVE
+[2026-05-08 23:50:19] CREST-DEV ALIVE
+[2026-05-08 23:51:19] CREST-DEV ALIVE
+[2026-05-08 23:52:20] CREST-DEV ALIVE
+[2026-05-08 23:53:20] CREST-DEV ALIVE
+[2026-05-08 23:54:20] CREST-DEV ALIVE
+[2026-05-08 23:55:21] CREST-DEV ALIVE
+[2026-05-08 23:56:21] CREST-DEV ALIVE
+[2026-05-08 23:57:22] CREST-DEV ALIVE
+[2026-05-08 23:58:22] CREST-DEV ALIVE
+[2026-05-08 23:59:22] CREST-DEV ALIVE
+[2026-05-09 00:00:23] CREST-DEV ALIVE
+[2026-05-09 00:01:23] CREST-DEV ALIVE
+[2026-05-09 00:02:23] CREST-DEV ALIVE
+[2026-05-09 00:03:24] CREST-DEV ALIVE
+[2026-05-09 00:04:24] CREST-DEV ALIVE
+[2026-05-09 00:05:24] CREST-DEV ALIVE
+[2026-05-09 00:06:25] CREST-DEV ALIVE
+[2026-05-09 00:11:52] CREST-DEV UP
+[2026-05-09 00:11:52] CREST-DEV ALIVE
+[2026-05-09 00:11:52] START y50-redo-y44-brushrace
+[2026-05-09 00:11:56] DONE  y50-redo-y44-brushrace exit= duration=4.4s
+[2026-05-09 00:12:52] CREST-DEV ALIVE
+[2026-05-09 00:13:10] START y50b-rebuild-after-stub
+[2026-05-09 00:13:14] DONE  y50b-rebuild-after-stub exit= duration=3.4s
+[2026-05-09 00:13:52] CREST-DEV ALIVE
+[2026-05-09 00:14:53] CREST-DEV ALIVE
+[2026-05-09 00:15:53] CREST-DEV ALIVE
+[2026-05-09 00:16:53] CREST-DEV ALIVE
+[2026-05-09 00:17:53] CREST-DEV ALIVE
+[2026-05-09 00:18:53] CREST-DEV ALIVE
+[2026-05-09 02:16:03] CREST-DEV UP
+[2026-05-09 02:16:03] CREST-DEV ALIVE
+[2026-05-09 02:16:03] START y52-position-and-movementorder-reflection
+[2026-05-09 02:16:05] DONE  y52-position-and-movementorder-reflection exit= duration=1.7s
+[2026-05-09 02:16:05] START y52b-position-and-weights-fixes
+[2026-05-09 02:16:06] DONE  y52b-position-and-weights-fixes exit= duration=1.7s
+[2026-05-09 02:16:06] START y52c-weight-recompute-and-discovery
+[2026-05-09 02:16:08] DONE  y52c-weight-recompute-and-discovery exit= duration=1.6s
+[2026-05-09 02:16:08] START y52d-typed-move-and-teamai-discovery
+[2026-05-09 02:16:10] DONE  y52d-typed-move-and-teamai-discovery exit= duration=1.7s
+[2026-05-09 02:16:10] START y52e-getaiweight
+[2026-05-09 02:16:11] DONE  y52e-getaiweight exit= duration=1.7s
+[2026-05-09 02:16:11] START y53-reelect-captain
+[2026-05-09 02:16:13] DONE  y53-reelect-captain exit= duration=1.7s
+[2026-05-09 02:16:13] START y54-formation-overrides
+[2026-05-09 02:16:15] DONE  y54-formation-overrides exit= duration=1.8s
+[2026-05-09 02:16:15] START y55-mirror-bew-to-runtime-log
+[2026-05-09 02:16:18] DONE  y55-mirror-bew-to-runtime-log exit= duration=3s
+[2026-05-09 02:16:18] START y56-sticky-overrides
+[2026-05-09 02:16:19] DONE  y56-sticky-overrides exit= duration=1.7s
+[2026-05-09 02:16:19] START y57-rules-refactor-and-sim
+[2026-05-09 02:16:21] DONE  y57-rules-refactor-and-sim exit= duration=1.7s
+[2026-05-09 02:16:21] START agent-smoketest
+[2026-05-09 02:16:21] DONE  agent-smoketest exit= duration=0.3s
+[2026-05-09 02:16:44] START agent-run-sim
+[2026-05-09 02:16:45] DONE  agent-run-sim exit= duration=1.2s
+[2026-05-09 02:17:03] CREST-DEV ALIVE
+[2026-05-09 02:18:03] CREST-DEV ALIVE
+[2026-05-09 02:19:04] CREST-DEV ALIVE
+[2026-05-09 02:20:04] CREST-DEV ALIVE
+[2026-05-09 02:21:04] CREST-DEV ALIVE
+[2026-05-09 02:22:04] CREST-DEV ALIVE
+[2026-05-09 02:23:04] START agent-diag-snapshot
+[2026-05-09 02:23:06] DONE  agent-diag-snapshot exit= duration=1.3s
+[2026-05-09 02:23:06] CREST-DEV ALIVE
+[2026-05-09 02:24:06] CREST-DEV ALIVE
+[2026-05-09 02:25:06] CREST-DEV ALIVE
+[2026-05-09 02:25:09] START agent-sim-y58
+[2026-05-09 02:25:11] DONE  agent-sim-y58 exit= duration=1.9s
+[2026-05-09 02:25:29] START y58-wander-threshold-50
+[2026-05-09 02:25:32] DONE  y58-wander-threshold-50 exit= duration=3s
+[2026-05-09 02:26:07] CREST-DEV ALIVE
+[2026-05-09 02:27:07] CREST-DEV ALIVE
+[2026-05-09 02:28:07] CREST-DEV ALIVE
+[2026-05-09 02:29:07] CREST-DEV ALIVE
+[2026-05-09 02:30:01] START agent-diag-snapshot-2
+[2026-05-09 02:30:02] DONE  agent-diag-snapshot-2 exit= duration=1.2s
+[2026-05-09 02:30:07] CREST-DEV ALIVE
+[2026-05-09 02:31:08] CREST-DEV ALIVE
+[2026-05-09 02:31:47] START agent-fetch-crash
+[2026-05-09 02:31:47] DONE  agent-fetch-crash exit= duration=0.2s
+[2026-05-09 02:32:08] CREST-DEV ALIVE
+[2026-05-09 02:43:40] CREST-DEV UP
+[2026-05-09 02:43:40] CREST-DEV ALIVE
+[2026-05-09 02:43:40] START agent-runtime-tail
+[2026-05-09 02:43:41] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmp46D4.tmp' because it is being used by another process."
+[2026-05-09 02:43:42] START agent-runtime-tail
+[2026-05-09 02:43:43] DONE  agent-runtime-tail exit= duration=0.7s
+[2026-05-09 02:43:43] START agent-find-crash
+[2026-05-09 02:43:44] DONE  agent-find-crash exit= duration=1.2s
+[2026-05-09 02:43:44] START agent-getcrash-v2
+[2026-05-09 02:43:44] DONE  agent-getcrash-v2 exit= duration=0.3s
+[2026-05-09 02:44:41] CREST-DEV ALIVE
+[2026-05-09 02:45:41] CREST-DEV ALIVE
+[2026-05-09 02:46:41] CREST-DEV ALIVE
+[2026-05-09 02:47:41] CREST-DEV ALIVE
+[2026-05-09 02:48:42] CREST-DEV ALIVE
+[2026-05-09 02:49:42] CREST-DEV ALIVE
+[2026-05-09 02:50:42] CREST-DEV ALIVE
+[2026-05-09 02:51:43] CREST-DEV ALIVE
+[2026-05-09 02:52:43] CREST-DEV ALIVE
+[2026-05-09 02:53:43] CREST-DEV ALIVE
+[2026-05-09 02:54:43] CREST-DEV ALIVE
+[2026-05-09 02:55:43] CREST-DEV ALIVE
+[2026-05-09 02:56:44] CREST-DEV ALIVE
+[2026-05-09 02:57:44] CREST-DEV ALIVE
+[2026-05-09 02:58:44] CREST-DEV ALIVE
+[2026-05-09 02:59:44] CREST-DEV ALIVE
+[2026-05-09 03:00:45] CREST-DEV ALIVE
+[2026-05-09 03:01:45] CREST-DEV ALIVE
+[2026-05-09 03:02:45] CREST-DEV ALIVE
+[2026-05-09 03:03:45] CREST-DEV ALIVE
+[2026-05-09 03:04:46] CREST-DEV ALIVE
+[2026-05-09 03:05:46] CREST-DEV ALIVE
+[2026-05-09 03:06:46] CREST-DEV ALIVE
+[2026-05-09 03:06:50] START y59a-terrain-scan
+[2026-05-09 03:06:53] DONE  y59a-terrain-scan exit= duration=2.7s
+[2026-05-09 03:07:20] START y59a-rebuild
+[2026-05-09 03:07:23] DONE  y59a-rebuild exit= duration=3.4s
+[2026-05-09 03:07:47] CREST-DEV ALIVE
+[2026-05-09 03:08:47] CREST-DEV ALIVE
+[2026-05-09 03:09:47] CREST-DEV ALIVE
+[2026-05-09 03:10:47] CREST-DEV ALIVE
+[2026-05-09 03:11:47] CREST-DEV ALIVE
+[2026-05-09 03:12:47] CREST-DEV ALIVE
+[2026-05-09 03:13:48] CREST-DEV ALIVE
+[2026-05-09 03:13:56] START agent-diag-y59
+[2026-05-09 03:13:58] DONE  agent-diag-y59 exit= duration=1.3s
+[2026-05-09 03:14:48] CREST-DEV ALIVE
+[2026-05-09 03:15:48] CREST-DEV ALIVE
+[2026-05-09 03:16:48] CREST-DEV ALIVE
+[2026-05-09 03:17:48] CREST-DEV ALIVE
+[2026-05-09 03:18:49] CREST-DEV ALIVE
+[2026-05-09 03:18:55] START y59b-polish
+[2026-05-09 03:18:57] DONE  y59b-polish exit= duration=1.7s
+[2026-05-09 03:19:39] START y59b-rebuild
+[2026-05-09 03:19:42] DONE  y59b-rebuild exit= duration=2.7s
+[2026-05-09 03:19:49] CREST-DEV ALIVE
+[2026-05-09 03:20:49] CREST-DEV ALIVE
+[2026-05-09 03:21:49] CREST-DEV ALIVE
+[2026-05-09 03:22:50] CREST-DEV ALIVE
+[2026-05-09 03:23:50] CREST-DEV ALIVE
+[2026-05-09 03:24:50] CREST-DEV ALIVE
+[2026-05-09 03:25:38] START y60a-spot-formations
+[2026-05-09 03:25:41] DONE  y60a-spot-formations exit= duration=2.6s
+[2026-05-09 03:25:51] CREST-DEV ALIVE
+[2026-05-09 03:26:51] CREST-DEV ALIVE
+[2026-05-09 03:27:51] CREST-DEV ALIVE
+[2026-05-09 03:28:51] CREST-DEV ALIVE
+[2026-05-09 03:29:13] START agent-diag-y60a
+[2026-05-09 03:29:15] DONE  agent-diag-y60a exit= duration=1.4s
+[2026-05-09 03:29:51] CREST-DEV ALIVE
+[2026-05-09 03:30:51] CREST-DEV ALIVE
+[2026-05-09 03:31:49] START y60b-spawn-routing
+[2026-05-09 03:31:53] DONE  y60b-spawn-routing exit= duration=3.2s
+[2026-05-09 03:31:53] CREST-DEV ALIVE
+[2026-05-09 03:32:53] CREST-DEV ALIVE
+[2026-05-09 03:33:53] CREST-DEV ALIVE
+[2026-05-09 03:34:53] CREST-DEV ALIVE
+[2026-05-09 03:35:54] CREST-DEV ALIVE
+[2026-05-09 03:36:54] CREST-DEV ALIVE
+[2026-05-09 03:37:50] START agent-postmortem-test
+[2026-05-09 03:37:51] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmpDC0A.tmp' because it is being used by another process."
+[2026-05-09 03:37:52] START agent-postmortem-test
+[2026-05-09 03:37:54] DONE  agent-postmortem-test exit= duration=1.6s
+[2026-05-09 03:37:54] CREST-DEV ALIVE
+[2026-05-09 03:38:55] CREST-DEV ALIVE
+[2026-05-09 03:39:55] CREST-DEV ALIVE
+[2026-05-09 03:40:55] CREST-DEV ALIVE
+[2026-05-09 03:41:55] CREST-DEV ALIVE
+[2026-05-09 03:42:37] START agent-postmortem-y60b
+[2026-05-09 03:42:38] DONE  agent-postmortem-y60b exit= duration=1.3s
+[2026-05-09 03:42:56] CREST-DEV ALIVE
+[2026-05-09 03:43:56] CREST-DEV ALIVE
+[2026-05-09 03:44:57] CREST-DEV ALIVE
+[2026-05-09 03:45:57] CREST-DEV ALIVE
+[2026-05-09 03:46:57] CREST-DEV ALIVE
+[2026-05-09 03:47:30] START y60c-spot-diag
+[2026-05-09 03:47:34] DONE  y60c-spot-diag exit= duration=4.8s
+[2026-05-09 03:47:58] CREST-DEV ALIVE
+[2026-05-09 03:48:58] CREST-DEV ALIVE
+[2026-05-09 03:49:58] CREST-DEV ALIVE
+[2026-05-09 03:50:58] CREST-DEV ALIVE
+[2026-05-09 03:51:58] CREST-DEV ALIVE
+[2026-05-09 03:52:58] CREST-DEV ALIVE
+[2026-05-09 03:53:52] START agent-postmortem-y60c
+[2026-05-09 03:53:54] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmp8C91.tmp' because it is being used by another process."
+[2026-05-09 03:53:55] START agent-postmortem-y60c
+[2026-05-09 03:53:56] DONE  agent-postmortem-y60c exit= duration=1.5s
+[2026-05-09 03:53:59] CREST-DEV ALIVE
+[2026-05-09 03:54:59] CREST-DEV ALIVE
+[2026-05-09 03:55:59] CREST-DEV ALIVE
+[2026-05-09 03:57:00] CREST-DEV ALIVE
+[2026-05-09 03:57:01] START agent-postmortem-crash
+[2026-05-09 03:57:02] DONE  agent-postmortem-crash exit= duration=1.5s
+[2026-05-09 03:58:00] CREST-DEV ALIVE
+[2026-05-09 03:59:00] CREST-DEV ALIVE
+[2026-05-09 04:00:01] CREST-DEV ALIVE
+[2026-05-09 04:00:33] START y60d-spot-tier-variant
+[2026-05-09 04:00:36] DONE  y60d-spot-tier-variant exit= duration=3.7s
+[2026-05-09 04:01:01] CREST-DEV ALIVE
+[2026-05-09 04:01:07] START y60d-rebuild
+[2026-05-09 04:01:09] DONE  y60d-rebuild exit= duration=2.2s
+[2026-05-09 04:02:01] CREST-DEV ALIVE
+[2026-05-09 04:03:01] CREST-DEV ALIVE
+[2026-05-09 04:04:01] CREST-DEV ALIVE
+[2026-05-09 04:05:01] CREST-DEV ALIVE
+[2026-05-09 04:06:02] CREST-DEV ALIVE
+[2026-05-09 04:06:05] START agent-postmortem-y60d
+[2026-05-09 04:06:07] DONE  agent-postmortem-y60d exit= duration=2.1s
+[2026-05-09 04:07:02] CREST-DEV ALIVE
+[2026-05-09 04:08:02] CREST-DEV ALIVE
+[2026-05-09 04:08:32] START y68-wander-threshold-250
+[2026-05-09 04:08:37] DONE  y68-wander-threshold-250 exit= duration=4.1s
+[2026-05-09 04:09:03] CREST-DEV ALIVE
+[2026-05-09 04:09:14] START y68-rebuild
+[2026-05-09 04:09:17] DONE  y68-rebuild exit= duration=3.1s
+[2026-05-09 04:10:03] CREST-DEV ALIVE
+[2026-05-09 04:11:03] CREST-DEV ALIVE
+[2026-05-09 04:12:04] CREST-DEV ALIVE
+[2026-05-09 04:13:04] CREST-DEV ALIVE
+[2026-05-09 04:13:18] START agent-postmortem-y68
+[2026-05-09 04:13:20] DONE  agent-postmortem-y68 exit= duration=2s
+[2026-05-09 04:14:05] CREST-DEV ALIVE
+[2026-05-09 04:15:04] START y69-role-driven-movement
+[2026-05-09 04:15:07] DONE  y69-role-driven-movement exit= duration=3s
+[2026-05-09 04:15:07] CREST-DEV ALIVE
+[2026-05-09 04:16:08] CREST-DEV ALIVE
+[2026-05-09 04:17:08] CREST-DEV ALIVE
+[2026-05-09 04:18:08] CREST-DEV ALIVE
+[2026-05-09 04:19:09] CREST-DEV ALIVE
+[2026-05-09 04:20:09] CREST-DEV ALIVE
+[2026-05-09 04:21:09] CREST-DEV ALIVE
+[2026-05-09 04:22:10] CREST-DEV ALIVE
+[2026-05-09 04:23:10] CREST-DEV ALIVE
+[2026-05-09 04:24:10] CREST-DEV ALIVE
+[2026-05-09 04:24:59] START agent-tooling-test
+[2026-05-09 04:25:01] DONE  agent-tooling-test exit= duration=2.1s
+[2026-05-09 04:25:11] CREST-DEV ALIVE
+[2026-05-09 04:26:11] CREST-DEV ALIVE
+[2026-05-09 04:27:11] CREST-DEV ALIVE
+[2026-05-09 04:28:11] CREST-DEV ALIVE
+[2026-05-09 04:29:11] CREST-DEV ALIVE
+[2026-05-09 04:30:11] CREST-DEV ALIVE
+[2026-05-09 04:30:32] START y70-bundle-houses-los-ambush
+[2026-05-09 04:30:41] DONE  y70-bundle-houses-los-ambush exit= duration=9.4s
+[2026-05-09 04:31:11] CREST-DEV ALIVE
+[2026-05-09 04:32:12] CREST-DEV ALIVE
+[2026-05-09 04:33:12] CREST-DEV ALIVE
+[2026-05-09 04:34:12] CREST-DEV ALIVE
+[2026-05-09 04:35:13] CREST-DEV ALIVE
+[2026-05-09 04:36:13] CREST-DEV ALIVE
+[2026-05-09 04:37:13] CREST-DEV ALIVE
+[2026-05-09 04:38:14] CREST-DEV ALIVE
+[2026-05-09 04:39:14] CREST-DEV ALIVE
+[2026-05-09 04:40:14] CREST-DEV ALIVE
+[2026-05-09 04:41:14] CREST-DEV ALIVE
+[2026-05-09 04:42:15] CREST-DEV ALIVE
+[2026-05-09 04:43:15] CREST-DEV ALIVE
+[2026-05-09 04:44:15] CREST-DEV ALIVE
+[2026-05-09 04:45:15] CREST-DEV ALIVE
+[2026-05-09 04:46:16] CREST-DEV ALIVE
+[2026-05-09 04:47:16] CREST-DEV ALIVE
+[2026-05-09 04:47:40] START agent-tooling-smoketest
+[2026-05-09 04:47:42] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmpCDBB.tmp' because it is being used by another process."
+[2026-05-09 04:47:43] START agent-tooling-smoketest
+[2026-05-09 04:47:45] DONE  agent-tooling-smoketest exit= duration=1.5s
+[2026-05-09 04:48:16] CREST-DEV ALIVE
+[2026-05-09 04:49:17] CREST-DEV ALIVE
+[2026-05-09 04:50:17] CREST-DEV ALIVE
+[2026-05-09 04:51:17] CREST-DEV ALIVE
+[2026-05-09 04:52:17] CREST-DEV ALIVE
+[2026-05-09 04:53:18] CREST-DEV ALIVE
+[2026-05-09 04:54:18] CREST-DEV ALIVE
+[2026-05-09 04:55:12] START agent-newmod-smoketest
+[2026-05-09 04:55:12] DONE  agent-newmod-smoketest exit= duration=0.4s
+[2026-05-09 04:55:18] CREST-DEV ALIVE
+[2026-05-09 04:56:19] CREST-DEV ALIVE
+[2026-05-09 04:57:19] CREST-DEV ALIVE
+[2026-05-09 04:58:19] CREST-DEV ALIVE
+[2026-05-09 04:58:23] START agent-loop-smoketest
+[2026-05-09 04:58:26] DONE  agent-loop-smoketest exit= duration=2.4s
+[2026-05-09 04:59:20] CREST-DEV ALIVE
+[2026-05-09 05:00:20] CREST-DEV ALIVE
+[2026-05-09 05:01:20] CREST-DEV ALIVE
+[2026-05-09 05:02:21] CREST-DEV ALIVE
+[2026-05-09 05:03:21] CREST-DEV ALIVE
+[2026-05-09 05:04:21] CREST-DEV ALIVE
+[2026-05-09 05:05:01] START agent-verbose-replay-smoketest
+[2026-05-09 05:05:08] DONE  agent-verbose-replay-smoketest exit= duration=6.8s
+[2026-05-09 05:05:22] CREST-DEV ALIVE
+[2026-05-09 05:06:22] CREST-DEV ALIVE
+[2026-05-09 05:07:22] CREST-DEV ALIVE
+[2026-05-09 05:08:23] CREST-DEV ALIVE
+[2026-05-09 05:09:23] CREST-DEV ALIVE
+[2026-05-09 05:10:23] CREST-DEV ALIVE
+[2026-05-09 05:11:23] CREST-DEV ALIVE
+[2026-05-09 05:12:23] CREST-DEV ALIVE
+[2026-05-09 05:13:24] CREST-DEV ALIVE
+[2026-05-09 05:13:58] START agent-postmortem-20260509-done
+[2026-05-09 05:14:03] DONE  agent-postmortem-20260509-done exit= duration=5.1s
+[2026-05-09 05:14:24] CREST-DEV ALIVE
+[2026-05-09 05:15:25] CREST-DEV ALIVE
+[2026-05-09 05:22:10] CREST-DEV UP
+[2026-05-09 05:22:10] CREST-DEV ALIVE
+[2026-05-09 05:22:10] START agent-postmortem-20260509-done
+[2026-05-09 05:22:12] DONE  agent-postmortem-20260509-done exit= duration=1.7s
+[2026-05-09 05:23:10] CREST-DEV ALIVE
+[2026-05-09 05:24:05] START agent-postmortem-y70-step75
+[2026-05-09 05:24:07] DONE  agent-postmortem-y70-step75 exit= duration=1.8s
+[2026-05-09 05:24:10] CREST-DEV ALIVE
+[2026-05-09 05:25:11] CREST-DEV ALIVE
+[2026-05-09 05:26:11] CREST-DEV ALIVE
+[2026-05-09 05:27:11] CREST-DEV ALIVE
+[2026-05-09 05:28:11] CREST-DEV ALIVE
+[2026-05-09 05:29:12] CREST-DEV ALIVE
+[2026-05-09 05:30:12] CREST-DEV ALIVE
+[2026-05-09 05:30:37] START agent-ready-20260509-103037
+[2026-05-09 05:30:37] DONE  agent-ready-20260509-103037 exit= duration=0.2s
+[2026-05-09 05:31:12] CREST-DEV ALIVE
+[2026-05-09 05:32:12] CREST-DEV ALIVE
+[2026-05-09 05:33:13] CREST-DEV ALIVE
+[2026-05-09 05:34:13] CREST-DEV ALIVE
+[2026-05-09 05:34:54] START agent-postmortem-20260509-103454
+[2026-05-09 05:34:56] DONE  agent-postmortem-20260509-103454 exit= duration=2s
+[2026-05-09 05:35:13] CREST-DEV ALIVE
+[2026-05-09 05:36:13] CREST-DEV ALIVE
+[2026-05-09 05:37:13] CREST-DEV ALIVE
+[2026-05-09 05:38:14] CREST-DEV ALIVE
+[2026-05-09 05:38:55] START agent-buildverify-20260509-103855
+[2026-05-09 05:38:58] DONE  agent-buildverify-20260509-103855 exit= duration=3s
+[2026-05-09 05:39:14] CREST-DEV ALIVE
+[2026-05-09 05:40:14] CREST-DEV ALIVE
+[2026-05-09 05:40:29] START agent-buildverify-20260509-104029
+[2026-05-09 05:40:32] DONE  agent-buildverify-20260509-104029 exit= duration=3.1s
+[2026-05-09 05:41:15] CREST-DEV ALIVE
+[2026-05-09 05:41:21] START agent-deploy-20260509-104120
+[2026-05-09 05:41:21] DONE  agent-deploy-20260509-104120 exit= duration=0.3s
+[2026-05-09 05:41:22] START agent-ready-20260509-104121
+[2026-05-09 05:41:22] DONE  agent-ready-20260509-104121 exit= duration=0.2s
+[2026-05-09 05:50:52] CREST-DEV UP
+[2026-05-09 05:50:52] CREST-DEV ALIVE
+[2026-05-09 05:50:52] START agent-cleanup-stopdev
+[2026-05-09 05:50:52] DONE  agent-cleanup-stopdev exit= duration=0.2s
+[2026-05-09 05:50:52] START agent-ready-20260509-104335
+[2026-05-09 05:50:53] DONE  agent-ready-20260509-104335 exit= duration=0.2s
+[2026-05-09 05:50:53] START agent-ready-20260509-104612
+[2026-05-09 05:50:53] DONE  agent-ready-20260509-104612 exit= duration=0.2s
+[2026-05-09 05:50:53] START agent-ready-20260509-105027
+[2026-05-09 05:50:53] DONE  agent-ready-20260509-105027 exit= duration=0.2s
+[2026-05-09 05:51:52] CREST-DEV ALIVE
+[2026-05-09 05:52:53] CREST-DEV ALIVE
+[2026-05-09 05:52:58] START agent-ready-20260509-105258
+[2026-05-09 05:52:58] DONE  agent-ready-20260509-105258 exit= duration=0.5s
+[2026-05-09 05:53:53] CREST-DEV ALIVE
+[2026-05-09 05:54:53] CREST-DEV ALIVE
+[2026-05-09 05:55:53] CREST-DEV ALIVE
+[2026-05-09 05:56:54] CREST-DEV ALIVE
+[2026-05-09 05:57:01] START agent-ready-20260509-105701
+[2026-05-09 05:57:02] DONE  agent-ready-20260509-105701 exit= duration=0.4s
+[2026-05-09 05:57:54] CREST-DEV ALIVE
+[2026-05-09 05:58:55] CREST-DEV ALIVE
+[2026-05-09 05:59:55] CREST-DEV ALIVE
+[2026-05-09 06:00:11] BATTLE-END auto-postmortem queued
+[2026-05-09 06:00:11] START agent-fix-deploy-20260509-110011
+[2026-05-09 06:00:15] DONE  agent-fix-deploy-20260509-110011 exit= duration=4.1s
+[2026-05-09 06:00:15] START agent-postmortem-auto-20260509-060011
+[2026-05-09 06:00:17] DONE  agent-postmortem-auto-20260509-060011 exit= duration=1.8s
+[2026-05-09 06:00:55] CREST-DEV ALIVE
+[2026-05-09 06:01:16] START agent-ready-20260509-110115
+[2026-05-09 06:01:16] DONE  agent-ready-20260509-110115 exit= duration=0.4s
+[2026-05-09 06:01:56] CREST-DEV ALIVE
+[2026-05-09 06:02:56] CREST-DEV ALIVE
+[2026-05-09 06:03:56] CREST-DEV ALIVE
+[2026-05-09 06:04:56] CREST-DEV ALIVE
+[2026-05-09 06:05:57] CREST-DEV ALIVE
+[2026-05-09 06:06:57] CREST-DEV ALIVE
+[2026-05-09 06:07:57] CREST-DEV ALIVE
+[2026-05-09 06:08:58] CREST-DEV ALIVE
+[2026-05-09 06:09:58] CREST-DEV ALIVE
+[2026-05-09 06:10:58] CREST-DEV ALIVE
+[2026-05-09 06:11:58] CREST-DEV ALIVE
+[2026-05-09 06:12:59] CREST-DEV ALIVE
+[2026-05-09 06:13:59] CREST-DEV ALIVE
+[2026-05-09 06:14:59] CREST-DEV ALIVE
+[2026-05-09 06:16:00] CREST-DEV ALIVE
+[2026-05-09 06:17:00] CREST-DEV ALIVE
+[2026-05-09 06:18:00] CREST-DEV ALIVE
+[2026-05-09 06:19:00] CREST-DEV ALIVE
+[2026-05-09 06:20:01] CREST-DEV ALIVE
+[2026-05-09 06:21:01] CREST-DEV ALIVE
+[2026-05-09 06:22:01] CREST-DEV ALIVE
+[2026-05-09 06:23:01] CREST-DEV ALIVE
+[2026-05-09 06:24:02] CREST-DEV ALIVE
+[2026-05-09 06:25:02] CREST-DEV ALIVE
+[2026-05-09 06:26:02] CREST-DEV ALIVE
+[2026-05-09 06:27:03] CREST-DEV ALIVE
+[2026-05-09 06:28:03] CREST-DEV ALIVE
+[2026-05-09 06:29:03] CREST-DEV ALIVE
+[2026-05-09 06:30:03] CREST-DEV ALIVE
+[2026-05-09 06:31:04] CREST-DEV ALIVE
+[2026-05-09 06:32:04] CREST-DEV ALIVE
+[2026-05-09 06:33:04] CREST-DEV ALIVE
+[2026-05-09 06:34:05] CREST-DEV ALIVE
+[2026-05-09 06:35:05] CREST-DEV ALIVE
+[2026-05-09 06:36:05] CREST-DEV ALIVE
+[2026-05-09 06:37:05] CREST-DEV ALIVE
+[2026-05-09 06:38:06] CREST-DEV ALIVE
+[2026-05-09 06:39:06] CREST-DEV ALIVE
+[2026-05-09 06:40:06] CREST-DEV ALIVE
+[2026-05-09 06:41:07] CREST-DEV ALIVE
+[2026-05-09 06:42:07] CREST-DEV ALIVE
+[2026-05-09 06:43:07] CREST-DEV ALIVE
+[2026-05-09 06:44:08] CREST-DEV ALIVE
+[2026-05-09 06:45:08] CREST-DEV ALIVE
+[2026-05-09 06:46:08] CREST-DEV ALIVE
+[2026-05-09 06:47:08] CREST-DEV ALIVE
+[2026-05-09 06:48:09] CREST-DEV ALIVE
+[2026-05-09 06:49:09] CREST-DEV ALIVE
+[2026-05-09 06:50:09] CREST-DEV ALIVE
+[2026-05-09 06:51:10] CREST-DEV ALIVE
+[2026-05-09 06:52:10] CREST-DEV ALIVE
+[2026-05-09 06:53:10] CREST-DEV ALIVE
+[2026-05-09 06:54:10] CREST-DEV ALIVE
+[2026-05-09 06:55:11] CREST-DEV ALIVE
+[2026-05-09 06:56:11] CREST-DEV ALIVE
+[2026-05-09 06:57:11] CREST-DEV ALIVE
+[2026-05-09 06:58:12] CREST-DEV ALIVE
+[2026-05-09 06:59:12] CREST-DEV ALIVE
+[2026-05-09 07:00:12] CREST-DEV ALIVE
+[2026-05-09 07:01:12] CREST-DEV ALIVE
+[2026-05-09 07:02:13] CREST-DEV ALIVE
+[2026-05-09 07:03:13] CREST-DEV ALIVE
+[2026-05-09 07:04:13] CREST-DEV ALIVE
+[2026-05-09 07:05:13] CREST-DEV ALIVE
+[2026-05-09 07:06:14] CREST-DEV ALIVE
+[2026-05-09 07:07:14] CREST-DEV ALIVE
+[2026-05-09 07:08:14] CREST-DEV ALIVE
+[2026-05-09 07:09:15] CREST-DEV ALIVE
+[2026-05-09 07:10:15] CREST-DEV ALIVE
+[2026-05-09 07:11:15] CREST-DEV ALIVE
+[2026-05-09 07:12:15] CREST-DEV ALIVE
+[2026-05-09 07:13:16] CREST-DEV ALIVE
+[2026-05-09 07:14:16] CREST-DEV ALIVE
+[2026-05-09 07:15:16] CREST-DEV ALIVE
+[2026-05-09 07:16:17] CREST-DEV ALIVE
+[2026-05-09 07:17:17] CREST-DEV ALIVE
+[2026-05-09 07:18:17] CREST-DEV ALIVE
+[2026-05-09 07:19:17] CREST-DEV ALIVE
+[2026-05-09 07:20:18] CREST-DEV ALIVE
+[2026-05-09 07:21:18] CREST-DEV ALIVE
+[2026-05-09 07:22:18] CREST-DEV ALIVE
+[2026-05-09 07:23:19] CREST-DEV ALIVE
+[2026-05-09 07:24:19] CREST-DEV ALIVE
+[2026-05-09 07:25:19] CREST-DEV ALIVE
+[2026-05-09 07:26:19] CREST-DEV ALIVE
+[2026-05-09 07:27:20] CREST-DEV ALIVE
+[2026-05-09 07:28:20] CREST-DEV ALIVE
+[2026-05-09 07:29:20] CREST-DEV ALIVE
+[2026-05-09 07:30:21] CREST-DEV ALIVE
+[2026-05-09 07:31:21] CREST-DEV ALIVE
+[2026-05-09 07:32:21] CREST-DEV ALIVE
+[2026-05-09 07:33:21] CREST-DEV ALIVE
+[2026-05-09 07:34:22] CREST-DEV ALIVE
+[2026-05-09 07:35:22] CREST-DEV ALIVE
+[2026-05-09 07:36:22] CREST-DEV ALIVE
+[2026-05-09 07:37:22] CREST-DEV ALIVE
+[2026-05-09 07:38:23] CREST-DEV ALIVE
+[2026-05-09 07:39:23] CREST-DEV ALIVE
+[2026-05-09 07:40:23] CREST-DEV ALIVE
+[2026-05-09 07:41:24] CREST-DEV ALIVE
+[2026-05-09 07:42:24] CREST-DEV ALIVE
+[2026-05-09 07:43:24] CREST-DEV ALIVE
+[2026-05-09 07:44:24] CREST-DEV ALIVE
+[2026-05-09 07:45:25] CREST-DEV ALIVE
+[2026-05-09 07:46:25] CREST-DEV ALIVE
+[2026-05-09 07:47:25] CREST-DEV ALIVE
+[2026-05-09 07:48:25] CREST-DEV ALIVE
+[2026-05-09 07:49:26] CREST-DEV ALIVE
+[2026-05-09 07:50:26] CREST-DEV ALIVE
+[2026-05-09 07:51:26] CREST-DEV ALIVE
+[2026-05-09 07:52:27] CREST-DEV ALIVE
+[2026-05-09 07:53:27] CREST-DEV ALIVE
+[2026-05-09 07:54:27] CREST-DEV ALIVE
+[2026-05-09 07:55:27] CREST-DEV ALIVE
+[2026-05-09 07:56:28] CREST-DEV ALIVE
+[2026-05-09 07:57:28] CREST-DEV ALIVE
+[2026-05-09 07:58:28] CREST-DEV ALIVE
+[2026-05-09 07:59:28] CREST-DEV ALIVE
+[2026-05-09 08:00:29] CREST-DEV ALIVE
+[2026-05-09 08:01:29] CREST-DEV ALIVE
+[2026-05-09 08:02:29] CREST-DEV ALIVE
+[2026-05-09 08:03:30] CREST-DEV ALIVE
+[2026-05-09 08:04:30] CREST-DEV ALIVE
+[2026-05-09 08:05:30] CREST-DEV ALIVE
+[2026-05-09 08:06:30] CREST-DEV ALIVE
+[2026-05-09 08:07:31] CREST-DEV ALIVE
+[2026-05-09 08:08:31] CREST-DEV ALIVE
+[2026-05-09 08:09:31] CREST-DEV ALIVE
+[2026-05-09 08:10:32] CREST-DEV ALIVE
+[2026-05-09 08:11:32] CREST-DEV ALIVE
+[2026-05-09 08:12:32] CREST-DEV ALIVE
+[2026-05-09 08:13:32] CREST-DEV ALIVE
+[2026-05-09 08:14:33] CREST-DEV ALIVE
+[2026-05-09 08:15:33] CREST-DEV ALIVE
+[2026-05-09 08:16:33] CREST-DEV ALIVE
+[2026-05-09 08:17:34] CREST-DEV ALIVE
+[2026-05-09 08:18:34] CREST-DEV ALIVE
+[2026-05-09 08:19:34] CREST-DEV ALIVE
+[2026-05-09 08:20:34] CREST-DEV ALIVE
+[2026-05-09 08:21:35] CREST-DEV ALIVE
+[2026-05-09 08:22:35] CREST-DEV ALIVE
+[2026-05-09 08:23:35] CREST-DEV ALIVE
+[2026-05-09 08:24:35] CREST-DEV ALIVE
+[2026-05-09 08:25:36] CREST-DEV ALIVE
+[2026-05-09 08:26:36] CREST-DEV ALIVE
+[2026-05-09 08:27:36] CREST-DEV ALIVE
+[2026-05-09 08:28:36] CREST-DEV ALIVE
+[2026-05-09 08:29:37] CREST-DEV ALIVE
+[2026-05-09 08:30:37] CREST-DEV ALIVE
+[2026-05-09 08:31:37] CREST-DEV ALIVE
+[2026-05-09 08:32:37] CREST-DEV ALIVE
+[2026-05-09 08:33:38] CREST-DEV ALIVE
+[2026-05-09 08:34:38] CREST-DEV ALIVE
+[2026-05-09 08:35:38] CREST-DEV ALIVE
+[2026-05-09 08:36:38] CREST-DEV ALIVE
+[2026-05-09 08:37:39] CREST-DEV ALIVE
+[2026-05-09 08:38:39] CREST-DEV ALIVE
+[2026-05-09 08:39:39] CREST-DEV ALIVE
+[2026-05-09 08:40:40] CREST-DEV ALIVE
+[2026-05-09 08:41:40] CREST-DEV ALIVE
+[2026-05-09 08:42:40] CREST-DEV ALIVE
+[2026-05-09 08:43:40] CREST-DEV ALIVE
+[2026-05-09 08:44:41] CREST-DEV ALIVE
+[2026-05-09 08:45:41] CREST-DEV ALIVE
+[2026-05-09 08:46:41] CREST-DEV ALIVE
+[2026-05-09 08:47:41] CREST-DEV ALIVE
+[2026-05-09 08:48:42] CREST-DEV ALIVE
+[2026-05-09 08:49:42] CREST-DEV ALIVE
+[2026-05-09 08:50:42] CREST-DEV ALIVE
+[2026-05-09 08:51:42] CREST-DEV ALIVE
+[2026-05-09 08:52:43] CREST-DEV ALIVE
+[2026-05-09 08:53:43] CREST-DEV ALIVE
+[2026-05-09 08:54:43] CREST-DEV ALIVE
+[2026-05-09 08:55:43] CREST-DEV ALIVE
+[2026-05-09 08:56:43] CREST-DEV ALIVE
+[2026-05-09 08:57:44] CREST-DEV ALIVE
+[2026-05-09 08:58:13] BATTLE-END auto-postmortem queued
+[2026-05-09 08:58:13] START agent-postmortem-auto-20260509-085813
+[2026-05-09 08:58:15] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmp2E0B.tmp' because it is being used by another process."
+[2026-05-09 08:58:16] START agent-postmortem-auto-20260509-085813
+[2026-05-09 08:58:18] DONE  agent-postmortem-auto-20260509-085813 exit= duration=2.1s
+[2026-05-09 08:58:44] CREST-DEV ALIVE
+[2026-05-09 08:59:44] CREST-DEV ALIVE
+[2026-05-09 08:59:46] START agent-ready-20260509-135946
+[2026-05-09 08:59:47] DONE  agent-ready-20260509-135946 exit= duration=0.8s
+[2026-05-09 09:00:44] CREST-DEV ALIVE
+[2026-05-09 09:01:45] CREST-DEV ALIVE
+[2026-05-09 09:02:45] CREST-DEV ALIVE
+[2026-05-09 09:03:23] START agent-y65-deploy-20260509-140323
+[2026-05-09 09:03:28] DONE  agent-y65-deploy-20260509-140323 exit= duration=4.9s
+[2026-05-09 09:03:45] CREST-DEV ALIVE
+[2026-05-09 09:03:52] START agent-ready-20260509-140351
+[2026-05-09 09:03:52] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmp5970.tmp' because it is being used by another process."
+[2026-05-09 09:03:53] START agent-ready-20260509-140351
+[2026-05-09 09:03:53] DONE  agent-ready-20260509-140351 exit= duration=0.3s
+[2026-05-09 09:04:45] CREST-DEV ALIVE
+[2026-05-09 09:05:46] CREST-DEV ALIVE
+[2026-05-09 09:06:46] CREST-DEV ALIVE
+[2026-05-09 09:07:34] BATTLE-END auto-postmortem queued
+[2026-05-09 09:07:34] START agent-postmortem-auto-20260509-090734
+[2026-05-09 09:07:36] DONE  agent-postmortem-auto-20260509-090734 exit= duration=2.2s
+[2026-05-09 09:07:46] CREST-DEV ALIVE
+[2026-05-09 09:08:46] CREST-DEV ALIVE
+[2026-05-09 09:09:47] CREST-DEV ALIVE
+[2026-05-09 09:10:47] CREST-DEV ALIVE
+[2026-05-09 09:11:15] START agent-y65v3-deploy-20260509-141114
+[2026-05-09 09:11:18] DONE  agent-y65v3-deploy-20260509-141114 exit= duration=3.2s
+[2026-05-09 09:11:44] START agent-ready-20260509-141143
+[2026-05-09 09:11:44] DONE  agent-ready-20260509-141143 exit= duration=0.3s
+[2026-05-09 09:11:47] CREST-DEV ALIVE
+[2026-05-09 09:12:47] CREST-DEV ALIVE
+[2026-05-09 09:13:45] START agent-ready-20260509-141344
+[2026-05-09 09:13:45] DONE  agent-ready-20260509-141344 exit= duration=0.3s
+[2026-05-09 09:13:47] CREST-DEV ALIVE
+[2026-05-09 09:14:48] CREST-DEV ALIVE
+[2026-05-09 09:15:48] CREST-DEV ALIVE
+[2026-05-09 09:16:48] CREST-DEV ALIVE
+[2026-05-09 09:17:49] CREST-DEV ALIVE
+[2026-05-09 09:18:49] CREST-DEV ALIVE
+[2026-05-09 09:19:49] CREST-DEV ALIVE
+[2026-05-09 09:20:49] START agent-tokenfit-verify-20260509-142049
+[2026-05-09 09:20:51] DONE  agent-tokenfit-verify-20260509-142049 exit= duration=1.9s
+[2026-05-09 09:20:51] CREST-DEV ALIVE
+[2026-05-09 09:21:51] CREST-DEV ALIVE
+[2026-05-09 09:22:51] CREST-DEV ALIVE
+[2026-05-09 09:23:32] BATTLE-END auto-postmortem queued
+[2026-05-09 09:23:32] START agent-postmortem-auto-20260509-092332
+[2026-05-09 09:23:35] DONE  agent-postmortem-auto-20260509-092332 exit= duration=2.2s
+[2026-05-09 09:23:51] CREST-DEV ALIVE
+[2026-05-09 09:23:58] START agent-postmortem-20260509-142358
+[2026-05-09 09:24:01] DONE  agent-postmortem-20260509-142358 exit= duration=3s
+[2026-05-09 09:24:52] CREST-DEV ALIVE
+[2026-05-09 09:25:52] CREST-DEV ALIVE
+[2026-05-09 09:26:52] CREST-DEV ALIVE
+[2026-05-09 09:27:52] CREST-DEV ALIVE
+[2026-05-09 09:28:53] CREST-DEV ALIVE
+[2026-05-09 09:29:48] START agent-y65v4-deploy-20260509-142948
+[2026-05-09 09:29:53] DONE  agent-y65v4-deploy-20260509-142948 exit= duration=4.9s
+[2026-05-09 09:29:53] CREST-DEV ALIVE
+[2026-05-09 09:30:53] CREST-DEV ALIVE
+[2026-05-09 09:31:53] CREST-DEV ALIVE
+[2026-05-09 09:32:54] CREST-DEV ALIVE
+[2026-05-09 09:33:31] BATTLE-END auto-postmortem queued
+[2026-05-09 09:33:31] START agent-postmortem-auto-20260509-093331
+[2026-05-09 09:33:34] DONE  agent-postmortem-auto-20260509-093331 exit= duration=2.3s
+[2026-05-09 09:33:54] CREST-DEV ALIVE
+[2026-05-09 09:34:54] CREST-DEV ALIVE
+[2026-05-09 09:35:54] CREST-DEV ALIVE
+[2026-05-09 09:36:55] CREST-DEV ALIVE
+[2026-05-09 09:37:55] CREST-DEV ALIVE
+[2026-05-09 09:38:55] CREST-DEV ALIVE
+[2026-05-09 09:39:56] CREST-DEV ALIVE
+[2026-05-09 09:40:56] CREST-DEV ALIVE
+[2026-05-09 09:41:56] CREST-DEV ALIVE
+[2026-05-09 09:42:26] BATTLE-END auto-postmortem queued
+[2026-05-09 09:42:26] START agent-postmortem-auto-20260509-094226
+[2026-05-09 09:42:28] DONE  agent-postmortem-auto-20260509-094226 exit= duration=2.3s
+[2026-05-09 09:42:57] CREST-DEV ALIVE
+[2026-05-09 09:43:57] CREST-DEV ALIVE
+[2026-05-09 09:44:57] CREST-DEV ALIVE
+[2026-05-09 09:47:34] CREST-DEV UP
+[2026-05-09 09:47:34] CREST-DEV ALIVE
+[2026-05-09 09:47:34] START agent-ping-20260509-144631
+[2026-05-09 09:47:34] DONE  agent-ping-20260509-144631 exit= duration=0.2s
+[2026-05-09 09:48:34] CREST-DEV ALIVE
+[2026-05-09 09:48:50] CREST-DEV UP
+[2026-05-09 09:48:50] CREST-DEV ALIVE
+[2026-05-09 09:49:51] CREST-DEV ALIVE
+[2026-05-09 09:50:51] CREST-DEV ALIVE
+[2026-05-09 09:51:51] CREST-DEV ALIVE
+[2026-05-09 09:52:20] BATTLE-END auto-postmortem queued
+[2026-05-09 09:52:20] START agent-postmortem-auto-20260509-095220
+[2026-05-09 09:52:23] DONE  agent-postmortem-auto-20260509-095220 exit= duration=2.3s
+[2026-05-09 09:52:51] CREST-DEV ALIVE
+[2026-05-09 09:53:52] CREST-DEV ALIVE
+[2026-05-09 09:54:52] CREST-DEV ALIVE
+[2026-05-09 09:55:52] CREST-DEV ALIVE
+[2026-05-09 09:56:53] CREST-DEV ALIVE
+[2026-05-09 09:57:16] START agent-y65-diag-20260509-145716
+[2026-05-09 09:57:17] DONE  agent-y65-diag-20260509-145716 exit= duration=0.9s
+[2026-05-09 09:57:53] CREST-DEV ALIVE
+[2026-05-09 09:58:20] START agent-y65v5-20260509-145820
+[2026-05-09 09:58:24] DONE  agent-y65v5-20260509-145820 exit= duration=4.1s
+[2026-05-09 09:58:53] CREST-DEV ALIVE
+[2026-05-09 09:59:53] CREST-DEV ALIVE
+[2026-05-09 10:00:54] CREST-DEV ALIVE
+[2026-05-09 10:01:54] CREST-DEV ALIVE
+[2026-05-09 10:02:54] CREST-DEV ALIVE
+[2026-05-09 10:03:54] CREST-DEV ALIVE
+[2026-05-09 10:04:55] CREST-DEV ALIVE
+[2026-05-09 10:05:55] CREST-DEV ALIVE
+[2026-05-09 10:06:56] CREST-DEV ALIVE
+[2026-05-09 10:07:56] CREST-DEV ALIVE
+[2026-05-09 10:13:05] CREST-DEV UP
+[2026-05-09 10:13:06] CREST-DEV ALIVE
+[2026-05-09 10:14:06] CREST-DEV ALIVE
+[2026-05-09 10:16:22] CREST-DEV UP
+[2026-05-09 10:16:22] CREST-DEV ALIVE
+[2026-05-09 10:16:22] START agent-cycle00-20260509-151516
+[2026-05-09 10:16:26] DONE  agent-cycle00-20260509-151516 exit= duration=3.7s
+[2026-05-09 10:16:26] START agent-ready-auto-20260509-101622
+[2026-05-09 10:16:26] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmpC8E9.tmp' because it is being used by another process."
+[2026-05-09 10:16:27] START agent-ready-auto-20260509-101622
+[2026-05-09 10:16:27] DONE  agent-ready-auto-20260509-101622 exit= duration=0.3s
+[2026-05-09 10:17:20] CREST-DEV UP
+[2026-05-09 10:17:20] CREST-DEV ALIVE
+[2026-05-09 10:18:20] CREST-DEV ALIVE
+[2026-05-09 10:19:21] CREST-DEV ALIVE
+[2026-05-09 10:19:43] CREST-DEV UP
+[2026-05-09 10:19:43] CREST-DEV ALIVE
+[2026-05-09 10:20:23] CREST-DEV UP
+[2026-05-09 10:20:23] CREST-DEV ALIVE
+[2026-05-09 10:21:23] CREST-DEV ALIVE
+[2026-05-09 10:22:23] CREST-DEV ALIVE
+[2026-05-09 10:22:55] BATTLE-END auto-postmortem queued
+[2026-05-09 10:22:55] START agent-postmortem-auto-20260509-102255
+[2026-05-09 10:22:58] DONE  agent-postmortem-auto-20260509-102255 exit= duration=2.5s
+[2026-05-09 10:22:58] START agent-ready-auto-20260509-102258
+[2026-05-09 10:22:58] DONE  agent-ready-auto-20260509-102258 exit= duration=0.5s
+[2026-05-09 10:23:23] CREST-DEV ALIVE
+[2026-05-09 10:24:24] CREST-DEV ALIVE
+[2026-05-09 10:25:24] CREST-DEV ALIVE
+[2026-05-09 10:26:24] CREST-DEV ALIVE
+[2026-05-09 10:27:25] CREST-DEV ALIVE
+[2026-05-09 10:28:25] CREST-DEV ALIVE
+[2026-05-09 10:29:25] CREST-DEV ALIVE
+[2026-05-09 10:30:26] CREST-DEV ALIVE
+[2026-05-09 10:31:26] CREST-DEV ALIVE
+[2026-05-09 10:32:26] CREST-DEV ALIVE
+[2026-05-09 10:33:26] CREST-DEV ALIVE
+[2026-05-09 10:34:27] CREST-DEV ALIVE
+[2026-05-09 10:35:27] CREST-DEV ALIVE
+[2026-05-09 10:36:28] CREST-DEV ALIVE
+[2026-05-09 10:37:28] CREST-DEV ALIVE
+[2026-05-09 10:38:28] CREST-DEV ALIVE
+[2026-05-09 10:39:29] CREST-DEV ALIVE
+[2026-05-09 10:40:29] CREST-DEV ALIVE
+[2026-05-09 10:41:29] CREST-DEV ALIVE
+[2026-05-09 10:42:30] CREST-DEV ALIVE
+[2026-05-09 10:43:30] CREST-DEV ALIVE
+[2026-05-09 10:44:30] CREST-DEV ALIVE
+[2026-05-09 10:45:31] CREST-DEV ALIVE
+[2026-05-09 10:46:31] CREST-DEV ALIVE
+[2026-05-09 10:47:31] CREST-DEV ALIVE
+[2026-05-09 10:48:32] CREST-DEV ALIVE
+[2026-05-09 10:49:32] CREST-DEV ALIVE
+[2026-05-09 10:50:32] CREST-DEV ALIVE
+[2026-05-09 10:51:33] CREST-DEV ALIVE
+[2026-05-09 10:52:33] CREST-DEV ALIVE
+[2026-05-09 10:53:33] CREST-DEV ALIVE
+[2026-05-09 10:54:33] CREST-DEV ALIVE
+[2026-05-09 10:55:34] CREST-DEV ALIVE
+[2026-05-09 10:56:34] CREST-DEV ALIVE
+[2026-05-09 10:57:35] CREST-DEV ALIVE
+[2026-05-09 10:58:35] CREST-DEV ALIVE
+[2026-05-09 10:59:35] CREST-DEV ALIVE
+[2026-05-09 11:00:36] CREST-DEV ALIVE
+[2026-05-09 11:01:36] CREST-DEV ALIVE
+[2026-05-09 11:02:36] CREST-DEV ALIVE
+[2026-05-09 11:03:36] CREST-DEV ALIVE
+[2026-05-09 11:04:37] CREST-DEV ALIVE
+[2026-05-09 11:05:37] CREST-DEV ALIVE
+[2026-05-09 11:06:37] CREST-DEV ALIVE
+[2026-05-09 11:07:37] CREST-DEV ALIVE
+[2026-05-09 11:08:37] CREST-DEV ALIVE
+[2026-05-09 11:09:18] CREST-DEV UP
+[2026-05-09 11:09:18] CREST-DEV ALIVE
+[2026-05-09 11:10:19] CREST-DEV ALIVE
+[2026-05-09 11:11:19] CREST-DEV ALIVE
+[2026-05-09 11:12:20] CREST-DEV ALIVE
+[2026-05-09 11:13:20] CREST-DEV ALIVE
+[2026-05-09 11:14:20] CREST-DEV ALIVE
+[2026-05-09 11:15:21] CREST-DEV ALIVE
+[2026-05-09 11:16:21] CREST-DEV ALIVE
+[2026-05-09 11:17:21] CREST-DEV ALIVE
+[2026-05-09 11:18:22] CREST-DEV ALIVE
+[2026-05-09 11:19:22] CREST-DEV ALIVE
+[2026-05-09 11:20:23] CREST-DEV ALIVE
+[2026-05-09 11:21:23] CREST-DEV ALIVE
+[2026-05-09 11:22:23] CREST-DEV ALIVE
+[2026-05-09 11:23:24] CREST-DEV ALIVE
+[2026-05-09 11:24:24] CREST-DEV ALIVE
+[2026-05-09 11:25:24] CREST-DEV ALIVE
+[2026-05-09 11:26:25] CREST-DEV ALIVE
+[2026-05-09 11:27:25] CREST-DEV ALIVE
+[2026-05-09 11:28:25] CREST-DEV ALIVE
+[2026-05-09 11:29:26] CREST-DEV ALIVE
+[2026-05-09 11:30:26] CREST-DEV ALIVE
+[2026-05-09 11:31:26] CREST-DEV ALIVE
+[2026-05-09 11:32:26] CREST-DEV ALIVE
+[2026-05-09 11:32:45] BATTLE-END auto-postmortem queued
+[2026-05-09 11:32:45] START agent-postmortem-auto-20260509-113245
+[2026-05-09 11:32:48] DONE  agent-postmortem-auto-20260509-113245 exit= duration=2.4s
+[2026-05-09 11:32:48] START agent-ready-auto-20260509-113248
+[2026-05-09 11:32:48] DONE  agent-ready-auto-20260509-113248 exit= duration=0.5s
+[2026-05-09 11:33:27] CREST-DEV ALIVE
+[2026-05-09 11:34:27] CREST-DEV ALIVE
+[2026-05-09 11:35:27] CREST-DEV ALIVE
+[2026-05-09 11:37:30] CREST-DEV UP
+[2026-05-09 11:37:30] CREST-DEV ALIVE
+[2026-05-09 11:38:30] CREST-DEV ALIVE
+[2026-05-09 11:56:15] CREST-DEV UP
+[2026-05-09 11:56:15] CREST-DEV ALIVE
+[2026-05-09 11:57:15] CREST-DEV ALIVE
+[2026-05-09 11:58:15] CREST-DEV ALIVE
+[2026-05-09 11:59:16] CREST-DEV ALIVE
+[2026-05-09 12:00:16] CREST-DEV ALIVE
+[2026-05-09 12:01:16] CREST-DEV ALIVE
+[2026-05-09 12:02:16] CREST-DEV ALIVE
+[2026-05-09 12:03:16] CREST-DEV ALIVE
+[2026-05-09 12:04:09] BATTLE-END auto-postmortem queued
+[2026-05-09 12:04:09] START agent-postmortem-auto-20260509-120409
+[2026-05-09 12:04:11] DONE  agent-postmortem-auto-20260509-120409 exit= duration=2.1s
+[2026-05-09 12:04:12] START agent-ready-auto-20260509-120412
+[2026-05-09 12:04:12] DONE  agent-ready-auto-20260509-120412 exit= duration=0.5s
+[2026-05-09 12:04:16] CREST-DEV ALIVE
+[2026-05-09 12:05:17] CREST-DEV ALIVE
+[2026-05-09 12:06:17] CREST-DEV ALIVE
+[2026-05-09 12:07:17] CREST-DEV ALIVE
+[2026-05-09 12:07:54] BATTLE-END auto-postmortem queued
+[2026-05-09 12:07:54] START agent-postmortem-auto-20260509-120754
+[2026-05-09 12:07:56] DONE  agent-postmortem-auto-20260509-120754 exit= duration=2.1s
+[2026-05-09 12:07:56] START agent-ready-auto-20260509-120756
+[2026-05-09 12:07:56] DONE  agent-ready-auto-20260509-120756 exit= duration=0.4s
+[2026-05-09 12:08:17] CREST-DEV ALIVE
+[2026-05-09 12:09:18] CREST-DEV ALIVE
+[2026-05-09 12:10:18] CREST-DEV ALIVE
+[2026-05-09 12:11:18] CREST-DEV ALIVE
+[2026-05-09 12:12:10] BATTLE-END auto-postmortem queued
+[2026-05-09 12:12:10] START agent-postmortem-auto-20260509-121210
+[2026-05-09 12:12:14] DONE  agent-postmortem-auto-20260509-121210 exit= duration=3.3s
+[2026-05-09 12:12:14] START agent-ready-auto-20260509-121214
+[2026-05-09 12:12:14] DONE  agent-ready-auto-20260509-121214 exit= duration=0.7s
+[2026-05-09 12:12:19] CREST-DEV ALIVE
+[2026-05-09 12:13:19] CREST-DEV ALIVE
+[2026-05-09 12:14:20] CREST-DEV ALIVE
+[2026-05-09 12:15:20] CREST-DEV ALIVE
+[2026-05-09 12:16:20] CREST-DEV ALIVE
+[2026-05-09 12:17:21] CREST-DEV ALIVE
+[2026-05-09 12:18:21] CREST-DEV ALIVE
+[2026-05-09 12:19:21] CREST-DEV ALIVE
+[2026-05-09 12:20:22] CREST-DEV ALIVE
+[2026-05-09 12:21:22] CREST-DEV ALIVE
+[2026-05-09 12:22:22] CREST-DEV ALIVE
+[2026-05-09 12:23:23] CREST-DEV ALIVE
+[2026-05-09 12:24:23] CREST-DEV ALIVE
+[2026-05-09 12:25:24] CREST-DEV ALIVE
+[2026-05-09 12:26:24] CREST-DEV ALIVE
+[2026-05-09 12:27:24] CREST-DEV ALIVE
+[2026-05-09 12:28:25] CREST-DEV ALIVE
+[2026-05-09 12:29:25] CREST-DEV ALIVE
+[2026-05-09 12:30:25] CREST-DEV ALIVE
+[2026-05-09 12:31:26] CREST-DEV ALIVE
+[2026-05-09 12:32:26] CREST-DEV ALIVE
+[2026-05-09 12:33:26] CREST-DEV ALIVE
+[2026-05-09 12:34:27] CREST-DEV ALIVE
+[2026-05-09 12:35:27] CREST-DEV ALIVE
+[2026-05-09 12:36:28] CREST-DEV ALIVE
+[2026-05-09 12:37:28] CREST-DEV ALIVE
+[2026-05-09 12:38:28] CREST-DEV ALIVE
+[2026-05-09 12:39:29] CREST-DEV ALIVE
+[2026-05-09 12:40:29] CREST-DEV ALIVE
+[2026-05-09 12:41:29] CREST-DEV ALIVE
+[2026-05-09 12:42:30] CREST-DEV ALIVE
+[2026-05-09 12:43:30] CREST-DEV ALIVE
+[2026-05-09 12:44:30] CREST-DEV ALIVE
+[2026-05-09 12:45:31] CREST-DEV ALIVE
+[2026-05-09 12:46:31] CREST-DEV ALIVE
+[2026-05-09 12:47:31] CREST-DEV ALIVE
+[2026-05-09 12:48:32] CREST-DEV ALIVE
+[2026-05-09 12:49:32] CREST-DEV ALIVE
+[2026-05-09 12:50:33] CREST-DEV ALIVE
+[2026-05-09 12:51:33] CREST-DEV ALIVE
+[2026-05-09 12:52:33] CREST-DEV ALIVE
+[2026-05-09 12:53:34] CREST-DEV ALIVE
+[2026-05-09 12:54:34] CREST-DEV ALIVE
+[2026-05-09 12:55:34] CREST-DEV ALIVE
+[2026-05-09 12:56:35] CREST-DEV ALIVE
+[2026-05-09 12:57:35] CREST-DEV ALIVE
+[2026-05-09 12:58:35] CREST-DEV ALIVE
+[2026-05-09 12:59:36] CREST-DEV ALIVE
+[2026-05-09 13:00:36] CREST-DEV ALIVE
+[2026-05-09 13:01:36] CREST-DEV ALIVE
+[2026-05-09 13:02:36] CREST-DEV ALIVE
+[2026-05-09 13:03:37] CREST-DEV ALIVE
+[2026-05-09 13:04:37] CREST-DEV ALIVE
+[2026-05-09 13:05:38] CREST-DEV ALIVE
+[2026-05-09 13:06:38] CREST-DEV ALIVE
+[2026-05-09 13:07:38] CREST-DEV ALIVE
+[2026-05-09 13:08:39] CREST-DEV ALIVE
+[2026-05-09 13:09:39] CREST-DEV ALIVE
+[2026-05-09 13:10:39] CREST-DEV ALIVE
+[2026-05-09 13:11:39] CREST-DEV ALIVE
+[2026-05-09 13:12:40] CREST-DEV ALIVE
+[2026-05-09 13:13:40] CREST-DEV ALIVE
+[2026-05-09 13:14:41] CREST-DEV ALIVE
+[2026-05-09 13:15:41] CREST-DEV ALIVE
+[2026-05-09 13:16:41] CREST-DEV ALIVE
+[2026-05-09 13:17:41] CREST-DEV ALIVE
+[2026-05-09 13:18:41] CREST-DEV ALIVE
+[2026-05-09 13:19:42] CREST-DEV ALIVE
+[2026-05-09 13:20:42] CREST-DEV ALIVE
+[2026-05-09 13:21:43] CREST-DEV ALIVE
+[2026-05-09 13:22:43] CREST-DEV ALIVE
+[2026-05-09 13:23:43] CREST-DEV ALIVE
+[2026-05-09 13:24:43] CREST-DEV ALIVE
+[2026-05-09 13:24:44] START agent-newmod-review-20260509-132444
+[2026-05-09 13:24:45] DONE  agent-newmod-review-20260509-132444 exit= duration=0.6s
+[2026-05-09 13:25:44] CREST-DEV ALIVE
+[2026-05-09 13:26:44] CREST-DEV ALIVE
+[2026-05-09 13:27:44] CREST-DEV ALIVE
+[2026-05-09 13:28:45] CREST-DEV ALIVE
+[2026-05-09 13:29:45] CREST-DEV ALIVE
+[2026-05-09 13:30:45] CREST-DEV ALIVE
+[2026-05-09 13:31:46] CREST-DEV ALIVE
+[2026-05-09 13:32:46] CREST-DEV ALIVE
+[2026-05-09 13:33:47] CREST-DEV ALIVE
+[2026-05-09 13:34:47] CREST-DEV ALIVE
+[2026-05-09 13:35:47] CREST-DEV ALIVE
+[2026-05-09 13:36:47] CREST-DEV ALIVE
+[2026-05-09 13:37:48] CREST-DEV ALIVE
+[2026-05-09 13:38:48] CREST-DEV ALIVE
+[2026-05-09 13:39:48] CREST-DEV ALIVE
+[2026-05-09 13:40:09] START agent-decompile-20260509-184008
+[2026-05-09 13:40:12] DONE  agent-decompile-20260509-184008 exit= duration=2.9s
+[2026-05-09 13:40:49] CREST-DEV ALIVE
+[2026-05-09 13:41:49] CREST-DEV ALIVE
+[2026-05-09 13:42:50] CREST-DEV ALIVE
+[2026-05-09 13:43:50] CREST-DEV ALIVE
+[2026-05-09 13:44:51] CREST-DEV ALIVE
+[2026-05-09 13:45:51] CREST-DEV ALIVE
+[2026-05-09 13:46:51] CREST-DEV ALIVE
+[2026-05-09 13:47:51] CREST-DEV ALIVE
+[2026-05-09 13:48:52] CREST-DEV ALIVE
+[2026-05-09 13:49:52] CREST-DEV ALIVE
+[2026-05-09 13:50:52] CREST-DEV ALIVE
+[2026-05-09 13:51:33] BATTLE-END auto-postmortem queued
+[2026-05-09 13:51:33] START agent-postmortem-auto-20260509-135133
+[2026-05-09 13:51:37] DONE  agent-postmortem-auto-20260509-135133 exit= duration=4.1s
+[2026-05-09 13:51:37] START agent-ready-auto-20260509-135137
+[2026-05-09 13:51:37] DONE  agent-ready-auto-20260509-135137 exit= duration=0.8s
+[2026-05-09 13:51:52] CREST-DEV ALIVE
+[2026-05-09 13:52:53] CREST-DEV ALIVE
+[2026-05-09 13:53:53] CREST-DEV ALIVE
+[2026-05-09 13:54:53] CREST-DEV ALIVE
+[2026-05-09 13:55:53] CREST-DEV ALIVE
+[2026-05-09 13:56:53] CREST-DEV ALIVE
+[2026-05-09 13:57:54] CREST-DEV ALIVE
+[2026-05-09 13:58:54] CREST-DEV ALIVE
+[2026-05-09 13:59:54] CREST-DEV ALIVE
+[2026-05-09 14:00:54] CREST-DEV ALIVE
+[2026-05-09 14:01:54] CREST-DEV ALIVE
+[2026-05-09 14:02:55] CREST-DEV ALIVE
+[2026-05-09 14:03:44] BATTLE-END auto-postmortem queued
+[2026-05-09 14:03:44] START agent-postmortem-auto-20260509-140344
+[2026-05-09 14:03:46] DONE  agent-postmortem-auto-20260509-140344 exit= duration=2.4s
+[2026-05-09 14:03:46] START agent-ready-auto-20260509-140346
+[2026-05-09 14:03:47] DONE  agent-ready-auto-20260509-140346 exit= duration=0.4s
+[2026-05-09 14:03:55] CREST-DEV ALIVE
+[2026-05-09 14:04:55] CREST-DEV ALIVE
+[2026-05-09 14:05:55] CREST-DEV ALIVE
+[2026-05-09 14:06:55] CREST-DEV ALIVE
+[2026-05-09 14:07:56] CREST-DEV ALIVE
+[2026-05-09 14:08:56] CREST-DEV ALIVE
+[2026-05-09 14:09:56] CREST-DEV ALIVE
+[2026-05-09 14:10:57] CREST-DEV ALIVE
+[2026-05-09 14:11:57] CREST-DEV ALIVE
+[2026-05-09 14:12:57] CREST-DEV ALIVE
+[2026-05-09 14:13:33] BATTLE-END auto-postmortem queued
+[2026-05-09 14:13:33] START agent-postmortem-auto-20260509-141333
+[2026-05-09 14:13:35] DONE  agent-postmortem-auto-20260509-141333 exit= duration=2.5s
+[2026-05-09 14:13:35] START agent-ready-auto-20260509-141335
+[2026-05-09 14:13:36] DONE  agent-ready-auto-20260509-141335 exit= duration=0.5s
+[2026-05-09 14:13:57] CREST-DEV ALIVE
+[2026-05-09 14:13:59] START agent-postmortem-20260509-191359
+[2026-05-09 14:14:01] DONE  agent-postmortem-20260509-191359 exit= duration=1.9s
+[2026-05-09 14:14:01] START agent-ready-auto-20260509-141401
+[2026-05-09 14:14:01] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmp4E82.tmp' because it is being used by another process."
+[2026-05-09 14:14:02] START agent-ready-auto-20260509-141401
+[2026-05-09 14:14:03] DONE  agent-ready-auto-20260509-141401 exit= duration=0.3s
+[2026-05-09 14:14:57] CREST-DEV ALIVE
+[2026-05-09 14:15:57] CREST-DEV ALIVE
+[2026-05-09 14:16:58] CREST-DEV ALIVE
+[2026-05-09 14:17:58] CREST-DEV ALIVE
+[2026-05-09 14:18:58] CREST-DEV ALIVE
+[2026-05-09 14:19:58] CREST-DEV ALIVE
+[2026-05-09 14:20:58] CREST-DEV ALIVE
+[2026-05-09 14:21:59] CREST-DEV ALIVE
+[2026-05-09 14:22:59] CREST-DEV ALIVE
+[2026-05-09 14:23:59] CREST-DEV ALIVE
+[2026-05-09 14:25:00] CREST-DEV ALIVE
+[2026-05-09 14:26:00] CREST-DEV ALIVE
+[2026-05-09 14:27:01] CREST-DEV ALIVE
+[2026-05-09 14:28:01] CREST-DEV ALIVE
+[2026-05-09 14:29:01] CREST-DEV ALIVE
+[2026-05-09 14:30:02] CREST-DEV ALIVE
+[2026-05-09 14:31:02] CREST-DEV ALIVE
+[2026-05-09 14:32:02] CREST-DEV ALIVE
+[2026-05-09 14:33:03] CREST-DEV ALIVE
+[2026-05-09 14:34:03] CREST-DEV ALIVE
+[2026-05-09 14:35:04] CREST-DEV ALIVE
+[2026-05-09 14:36:04] CREST-DEV ALIVE
+[2026-05-09 14:37:04] CREST-DEV ALIVE
+[2026-05-09 14:38:05] CREST-DEV ALIVE
+[2026-05-09 14:38:46] CREST-DEV UP
+[2026-05-09 14:38:46] CREST-DEV ALIVE
+[2026-05-09 14:38:46] START agent-verify-auto-20260509-143846
+[2026-05-09 14:38:49] DONE  agent-verify-auto-20260509-143846 exit= duration=3.2s
+[2026-05-09 14:39:46] CREST-DEV ALIVE
+[2026-05-09 14:40:46] CREST-DEV ALIVE
+[2026-05-09 14:40:46] BATTLE-END auto-postmortem queued
+[2026-05-09 14:40:46] START agent-postmortem-auto-20260509-144046
+[2026-05-09 14:40:50] DONE  agent-postmortem-auto-20260509-144046 exit= duration=3.5s
+[2026-05-09 14:40:50] START agent-ready-auto-20260509-144050
+[2026-05-09 14:40:51] DONE  agent-ready-auto-20260509-144050 exit= duration=0.7s
+[2026-05-09 14:40:51] START agent-verify-auto-20260509-144051
+[2026-05-09 14:40:54] DONE  agent-verify-auto-20260509-144051 exit= duration=3.5s
+[2026-05-09 14:41:46] CREST-DEV ALIVE
+[2026-05-09 14:42:46] CREST-DEV ALIVE
+[2026-05-09 14:43:47] CREST-DEV ALIVE
+[2026-05-09 14:44:47] CREST-DEV ALIVE
+[2026-05-09 14:45:47] CREST-DEV ALIVE
+[2026-05-09 14:46:47] CREST-DEV ALIVE
+[2026-05-09 14:47:48] CREST-DEV ALIVE
+[2026-05-09 14:48:48] CREST-DEV ALIVE
+[2026-05-09 14:49:48] CREST-DEV ALIVE
+[2026-05-09 14:50:49] CREST-DEV ALIVE
+[2026-05-09 14:51:49] CREST-DEV ALIVE
+[2026-05-09 14:52:49] CREST-DEV ALIVE
+[2026-05-09 14:53:49] CREST-DEV ALIVE
+[2026-05-09 14:54:50] CREST-DEV ALIVE
+[2026-05-09 14:55:50] CREST-DEV ALIVE
+[2026-05-09 14:56:50] CREST-DEV ALIVE
+[2026-05-09 14:57:50] CREST-DEV ALIVE
+[2026-05-09 14:57:57] CREST-DEV UP
+[2026-05-09 14:57:57] CREST-DEV ALIVE
+[2026-05-09 14:58:57] CREST-DEV ALIVE
+[2026-05-09 14:59:58] CREST-DEV ALIVE
+[2026-05-09 15:00:43] BATTLE-END auto-postmortem queued
+[2026-05-09 15:00:43] START agent-postmortem-auto-20260509-150042
+[2026-05-09 15:00:47] DONE  agent-postmortem-auto-20260509-150042 exit= duration=4.2s
+[2026-05-09 15:00:47] START agent-ready-auto-20260509-150047
+[2026-05-09 15:00:48] DONE  agent-ready-auto-20260509-150047 exit= duration=0.8s
+[2026-05-09 15:00:48] START agent-verify-auto-20260509-150048
+[2026-05-09 15:00:52] DONE  agent-verify-auto-20260509-150048 exit= duration=4.2s
+[2026-05-09 15:00:58] CREST-DEV ALIVE
+[2026-05-09 15:01:58] CREST-DEV ALIVE
+[2026-05-09 15:02:58] CREST-DEV ALIVE
+[2026-05-09 15:03:59] CREST-DEV ALIVE
+[2026-05-09 15:04:59] CREST-DEV ALIVE
+[2026-05-09 15:05:59] CREST-DEV ALIVE
+[2026-05-09 15:06:59] CREST-DEV ALIVE
+[2026-05-09 15:08:00] CREST-DEV ALIVE
+[2026-05-09 15:09:00] CREST-DEV ALIVE
+[2026-05-09 15:10:00] CREST-DEV ALIVE
+[2026-05-09 15:11:01] CREST-DEV ALIVE
+[2026-05-09 15:12:01] CREST-DEV ALIVE
+[2026-05-09 15:13:01] CREST-DEV ALIVE
+[2026-05-09 15:14:02] CREST-DEV ALIVE
+[2026-05-09 15:15:02] CREST-DEV ALIVE
+[2026-05-09 15:16:02] CREST-DEV ALIVE
+[2026-05-09 15:17:02] CREST-DEV ALIVE
+[2026-05-09 15:18:02] CREST-DEV ALIVE
+[2026-05-09 15:19:03] CREST-DEV ALIVE
+[2026-05-09 15:20:03] CREST-DEV ALIVE
+[2026-05-09 15:21:03] CREST-DEV ALIVE
+[2026-05-09 15:22:03] CREST-DEV ALIVE
+[2026-05-09 15:23:03] CREST-DEV ALIVE
+[2026-05-09 15:24:03] CREST-DEV ALIVE
+[2026-05-09 15:25:04] CREST-DEV ALIVE
+[2026-05-09 15:26:04] CREST-DEV ALIVE
+[2026-05-09 15:27:04] CREST-DEV ALIVE
+[2026-05-09 15:28:04] CREST-DEV ALIVE
+[2026-05-09 15:29:04] CREST-DEV ALIVE
+[2026-05-09 15:30:04] CREST-DEV ALIVE
+[2026-05-09 15:31:04] CREST-DEV ALIVE
+[2026-05-09 15:32:04] CREST-DEV ALIVE
+[2026-05-09 15:33:36] CREST-DEV UP
+[2026-05-09 15:33:36] CREST-DEV ALIVE
+[2026-05-09 15:34:37] CREST-DEV ALIVE
+[2026-05-09 15:35:37] CREST-DEV ALIVE
+[2026-05-09 15:36:37] CREST-DEV ALIVE
+[2026-05-09 15:37:37] CREST-DEV ALIVE
+[2026-05-09 15:37:38] START agent-build-y72-y73
+[2026-05-09 15:37:41] DONE  agent-build-y72-y73 exit= duration=3.3s
+[2026-05-09 15:39:27] CREST-DEV UP
+[2026-05-09 15:39:27] CREST-DEV ALIVE
+[2026-05-09 15:39:43] CREST-DEV UP
+[2026-05-09 15:39:43] CREST-DEV ALIVE
+[2026-05-09 15:40:43] CREST-DEV ALIVE
+[2026-05-09 15:41:43] CREST-DEV ALIVE
+[2026-05-09 15:42:43] CREST-DEV ALIVE
+[2026-05-09 15:43:43] CREST-DEV ALIVE
+[2026-05-09 15:44:43] CREST-DEV ALIVE
+[2026-05-09 15:45:43] CREST-DEV ALIVE
+[2026-05-09 15:46:44] CREST-DEV ALIVE
+[2026-05-09 15:47:44] CREST-DEV ALIVE
+[2026-05-09 15:48:44] CREST-DEV ALIVE
+[2026-05-09 15:49:44] CREST-DEV ALIVE
+[2026-05-09 15:50:45] CREST-DEV ALIVE
+[2026-05-09 15:51:21] CREST-DEV UP
+[2026-05-09 15:51:21] CREST-DEV ALIVE
+[2026-05-09 15:52:21] CREST-DEV ALIVE
+[2026-05-09 15:53:22] CREST-DEV ALIVE
+[2026-05-09 15:54:22] CREST-DEV ALIVE
+[2026-05-09 15:55:22] CREST-DEV ALIVE
+[2026-05-09 15:56:22] CREST-DEV ALIVE
+[2026-05-09 15:57:23] CREST-DEV ALIVE
+[2026-05-09 15:57:44] START agent-build-y72-y73-retry
+[2026-05-09 15:57:47] DONE  agent-build-y72-y73-retry exit= duration=2.1s
+[2026-05-09 15:58:23] CREST-DEV ALIVE
+[2026-05-09 15:59:24] CREST-DEV ALIVE
+[2026-05-09 16:00:24] CREST-DEV ALIVE
+[2026-05-09 16:01:24] CREST-DEV ALIVE
+[2026-05-09 16:02:25] CREST-DEV ALIVE
+[2026-05-09 16:03:25] CREST-DEV ALIVE
+[2026-05-09 16:04:25] CREST-DEV ALIVE
+[2026-05-09 16:05:25] CREST-DEV ALIVE
+[2026-05-09 16:06:25] CREST-DEV ALIVE
+[2026-05-09 16:07:26] CREST-DEV ALIVE
+[2026-05-09 16:08:26] CREST-DEV ALIVE
+[2026-05-09 16:09:26] CREST-DEV ALIVE
+[2026-05-09 16:10:26] CREST-DEV ALIVE
+[2026-05-09 16:11:27] CREST-DEV ALIVE
+[2026-05-09 16:12:27] CREST-DEV ALIVE
+[2026-05-09 16:13:27] CREST-DEV ALIVE
+[2026-05-09 16:14:27] CREST-DEV ALIVE
+[2026-05-09 16:15:28] CREST-DEV ALIVE
+[2026-05-09 16:16:28] CREST-DEV ALIVE
+[2026-05-09 16:17:28] CREST-DEV ALIVE
+[2026-05-09 16:18:28] CREST-DEV ALIVE
+[2026-05-09 16:19:28] CREST-DEV ALIVE
+[2026-05-09 16:20:29] CREST-DEV ALIVE
+[2026-05-09 16:21:29] CREST-DEV ALIVE
+[2026-05-09 16:22:29] CREST-DEV ALIVE
+[2026-05-09 16:23:29] CREST-DEV ALIVE
+[2026-05-09 16:24:29] CREST-DEV ALIVE
+[2026-05-09 16:25:30] CREST-DEV ALIVE
+[2026-05-09 16:26:30] CREST-DEV ALIVE
+[2026-05-09 16:27:30] CREST-DEV ALIVE
+[2026-05-09 16:28:31] CREST-DEV ALIVE
+[2026-05-09 16:29:31] CREST-DEV ALIVE
+[2026-05-09 16:30:31] CREST-DEV ALIVE
+[2026-05-09 16:31:31] CREST-DEV ALIVE
+[2026-05-09 16:32:31] CREST-DEV ALIVE
+[2026-05-09 16:33:32] CREST-DEV ALIVE
+[2026-05-09 16:34:32] CREST-DEV ALIVE
+[2026-05-09 16:35:32] CREST-DEV ALIVE
+[2026-05-09 16:35:34] START agent-build-y72-y73-retry2
+[2026-05-09 16:35:36] DONE  agent-build-y72-y73-retry2 exit= duration=2.5s
+[2026-05-09 16:36:32] CREST-DEV ALIVE
+[2026-05-09 16:37:32] CREST-DEV ALIVE
+[2026-05-09 16:38:33] CREST-DEV ALIVE
+[2026-05-09 16:39:06] START agent-build-y72-y73-retry3
+[2026-05-09 16:39:10] DONE  agent-build-y72-y73-retry3 exit= duration=4.1s
+[2026-05-09 16:39:33] CREST-DEV ALIVE
+[2026-05-09 16:40:33] CREST-DEV ALIVE
+[2026-05-09 16:41:30] CREST-DEV UP
+[2026-05-09 16:41:30] CREST-DEV ALIVE
+[2026-05-09 16:42:31] CREST-DEV ALIVE
+[2026-05-09 16:43:31] CREST-DEV ALIVE
+[2026-05-09 16:44:31] CREST-DEV ALIVE
+[2026-05-09 16:45:04] START agent-build-y72-y73-retry4
+[2026-05-09 16:45:07] DONE  agent-build-y72-y73-retry4 exit= duration=3s
+[2026-05-09 16:45:31] CREST-DEV ALIVE
+[2026-05-09 16:45:49] CREST-DEV UP
+[2026-05-09 16:45:49] CREST-DEV ALIVE
+[2026-05-09 16:46:49] CREST-DEV ALIVE
+[2026-05-09 16:47:49] CREST-DEV ALIVE
+[2026-05-09 16:48:50] CREST-DEV ALIVE
+[2026-05-09 16:49:50] CREST-DEV ALIVE
+[2026-05-09 16:50:51] CREST-DEV ALIVE
+[2026-05-09 16:51:44] START agent-build-y72-y73-retry5
+[2026-05-09 16:51:47] DONE  agent-build-y72-y73-retry5 exit= duration=2.9s
+[2026-05-09 16:51:51] CREST-DEV ALIVE
+[2026-05-09 16:52:46] CREST-DEV UP
+[2026-05-09 16:52:46] CREST-DEV ALIVE
+[2026-05-09 16:53:47] CREST-DEV ALIVE
+[2026-05-09 16:54:47] CREST-DEV ALIVE
+[2026-05-09 16:55:47] CREST-DEV ALIVE
+[2026-05-09 16:56:04] START agent-build-y72-y73-retry6
+[2026-05-09 16:56:07] DONE  agent-build-y72-y73-retry6 exit= duration=2.3s
+[2026-05-09 16:56:48] CREST-DEV ALIVE
+[2026-05-09 16:57:48] CREST-DEV ALIVE
+[2026-05-09 16:58:48] CREST-DEV ALIVE
+[2026-05-09 16:58:50] START agent-build-y72-y73-retry7
+[2026-05-09 16:58:53] DONE  agent-build-y72-y73-retry7 exit= duration=2.5s
+[2026-05-09 16:59:48] CREST-DEV ALIVE
+[2026-05-09 17:00:48] CREST-DEV ALIVE
+[2026-05-09 17:01:49] CREST-DEV ALIVE
+[2026-05-09 17:02:49] CREST-DEV ALIVE
+[2026-05-09 17:03:49] CREST-DEV ALIVE
+[2026-05-09 17:58:59] CREST-DEV ALIVE
+[2026-05-09 17:59:59] CREST-DEV ALIVE
+[2026-05-09 18:00:37] BATTLE-END auto-postmortem queued
+[2026-05-09 18:00:37] START agent-postmortem-auto-20260509-180037
+[2026-05-09 18:00:38] DONE  agent-postmortem-auto-20260509-180037 exit=0 duration=1.2s
+[2026-05-09 18:00:39] AUTO-READY queued agent-ready-auto-20260509-180039.ps1
+[2026-05-09 18:00:39] START agent-ready-auto-20260509-180039
+[2026-05-09 18:00:39] DONE  agent-ready-auto-20260509-180039 exit=0 duration=0.3s
+[2026-05-09 18:00:59] CREST-DEV ALIVE
+[2026-05-09 18:01:59] CREST-DEV ALIVE
+[2026-05-09 18:02:59] CREST-DEV ALIVE
+[2026-05-09 18:03:59] CREST-DEV ALIVE
+[2026-05-09 18:04:59] CREST-DEV ALIVE
+[2026-05-09 18:05:38] START agent-postmortem-20260509-230538
+[2026-05-09 18:05:40] DONE  agent-postmortem-20260509-230538 exit=0 duration=1.1s
+[2026-05-09 18:05:44] AUTO-READY queued agent-ready-auto-20260509-180544.ps1
+[2026-05-09 18:05:44] START agent-ready-auto-20260509-180544
+[2026-05-09 18:05:45] DONE  agent-ready-auto-20260509-180544 exit=0 duration=0.3s
+[2026-05-09 18:05:59] CREST-DEV ALIVE
+[2026-05-09 18:06:59] CREST-DEV ALIVE
+[2026-05-09 18:07:59] CREST-DEV ALIVE
+[2026-05-09 18:08:59] CREST-DEV ALIVE
+[2026-05-09 18:09:59] CREST-DEV ALIVE
+[2026-05-09 18:10:59] CREST-DEV ALIVE
+[2026-05-09 18:11:59] CREST-DEV ALIVE
+[2026-05-09 18:12:59] CREST-DEV ALIVE
+[2026-05-09 18:13:03] CREST-DEV UP
+[2026-05-09 18:13:03] CREST-DEV ALIVE
+[2026-05-09 18:13:03] START agent-ready-auto-20260509-181303
+[2026-05-09 18:13:03] DONE  agent-ready-auto-20260509-181303 exit= duration=0.3s
+[2026-05-09 18:13:29] START agent-ready-20260509-231329
+[2026-05-09 18:13:29] DONE  agent-ready-20260509-231329 exit= duration=0.5s
+[2026-05-09 18:14:03] CREST-DEV ALIVE
+[2026-05-09 18:14:43] CREST-DEV UP
+[2026-05-09 18:14:43] CREST-DEV ALIVE
+[2026-05-09 18:15:44] CREST-DEV ALIVE
+[2026-05-09 18:16:44] CREST-DEV ALIVE
+[2026-05-09 18:17:44] CREST-DEV ALIVE
+[2026-05-09 18:18:44] CREST-DEV ALIVE
+[2026-05-09 18:19:44] CREST-DEV ALIVE
+[2026-05-09 18:20:45] CREST-DEV ALIVE
+[2026-05-09 18:21:45] CREST-DEV ALIVE
+[2026-05-09 18:22:45] CREST-DEV ALIVE
+[2026-05-09 18:23:45] CREST-DEV ALIVE
+[2026-05-09 18:24:46] CREST-DEV ALIVE
+[2026-05-09 18:25:46] CREST-DEV ALIVE
+[2026-05-09 18:26:46] CREST-DEV ALIVE
+[2026-05-09 18:27:46] CREST-DEV ALIVE
+[2026-05-09 18:28:46] CREST-DEV ALIVE
+[2026-05-09 18:29:46] CREST-DEV ALIVE
+[2026-05-09 18:30:46] CREST-DEV ALIVE
+[2026-05-09 18:31:46] CREST-DEV ALIVE
+[2026-05-09 18:32:46] CREST-DEV ALIVE
+[2026-05-09 18:33:00] START agent-y74-build-20260509-233300
+[2026-05-09 18:33:03] DONE  agent-y74-build-20260509-233300 exit= duration=3.1s
+[2026-05-09 18:33:46] CREST-DEV ALIVE
+[2026-05-09 18:34:46] CREST-DEV ALIVE
+[2026-05-09 18:35:47] CREST-DEV ALIVE
+[2026-05-09 18:36:06] START agent-y74-build-20260509-233606
+[2026-05-09 18:36:08] DONE  agent-y74-build-20260509-233606 exit= duration=2s
+[2026-05-09 18:36:47] CREST-DEV ALIVE
+[2026-05-09 18:37:31] START agent-y74-build-20260509-233731
+[2026-05-09 18:37:33] DONE  agent-y74-build-20260509-233731 exit= duration=2s
+[2026-05-09 18:37:47] CREST-DEV ALIVE
+[2026-05-09 18:38:11] START agent-y74-build-20260509-233811
+[2026-05-09 18:38:13] DONE  agent-y74-build-20260509-233811 exit= duration=2.5s
+[2026-05-09 18:38:47] CREST-DEV ALIVE
+[2026-05-09 18:39:48] CREST-DEV ALIVE
+[2026-05-09 18:40:43] START agent-y74-build-20260509-234043
+[2026-05-09 18:40:45] DONE  agent-y74-build-20260509-234043 exit= duration=2s
+[2026-05-09 18:40:48] CREST-DEV ALIVE
+[2026-05-09 18:41:30] START agent-y74-build-20260509-234130
+[2026-05-09 18:41:32] DONE  agent-y74-build-20260509-234130 exit= duration=1.9s
+[2026-05-09 18:41:46] START agent-y74-build-20260509-234146
+[2026-05-09 18:41:48] DONE  agent-y74-build-20260509-234146 exit= duration=2.1s
+[2026-05-09 18:41:48] CREST-DEV ALIVE
+[2026-05-09 18:42:21] START agent-y74-build-20260509-234221
+[2026-05-09 18:42:24] DONE  agent-y74-build-20260509-234221 exit= duration=2.7s
+[2026-05-09 18:42:49] CREST-DEV ALIVE
+[2026-05-09 18:43:49] CREST-DEV ALIVE
+[2026-05-09 18:44:49] CREST-DEV ALIVE
+[2026-05-09 18:45:49] CREST-DEV ALIVE
+[2026-05-09 18:46:50] CREST-DEV ALIVE
+[2026-05-09 18:47:50] CREST-DEV ALIVE
+[2026-05-09 18:48:50] CREST-DEV ALIVE
+[2026-05-09 18:49:50] CREST-DEV ALIVE
+[2026-05-09 18:50:50] CREST-DEV ALIVE
+[2026-05-09 18:51:50] CREST-DEV ALIVE
+[2026-05-09 18:52:50] CREST-DEV ALIVE
+[2026-05-09 18:53:50] CREST-DEV ALIVE
+[2026-05-09 18:54:50] CREST-DEV ALIVE
+[2026-05-09 18:55:50] CREST-DEV ALIVE
+[2026-05-09 18:56:51] CREST-DEV ALIVE
+[2026-05-09 18:57:51] CREST-DEV ALIVE
+[2026-05-09 18:58:51] CREST-DEV ALIVE
+[2026-05-09 18:59:51] CREST-DEV ALIVE
+[2026-05-09 19:00:51] CREST-DEV ALIVE
+[2026-05-09 19:01:51] CREST-DEV ALIVE
+[2026-05-09 19:02:51] CREST-DEV ALIVE
+[2026-05-09 19:03:51] CREST-DEV ALIVE
+[2026-05-09 19:04:52] CREST-DEV ALIVE
+[2026-05-09 19:05:52] CREST-DEV ALIVE
+[2026-05-09 19:06:52] CREST-DEV ALIVE
+[2026-05-09 19:07:52] CREST-DEV ALIVE
+[2026-05-09 19:08:52] CREST-DEV ALIVE
+[2026-05-09 19:09:52] CREST-DEV ALIVE
+[2026-05-09 19:10:52] CREST-DEV ALIVE
+[2026-05-09 19:11:53] CREST-DEV ALIVE
+[2026-05-09 19:12:53] CREST-DEV ALIVE
+[2026-05-09 19:13:53] CREST-DEV ALIVE
+[2026-05-09 19:14:53] CREST-DEV ALIVE
+[2026-05-09 19:15:53] CREST-DEV ALIVE
+[2026-05-09 19:16:53] CREST-DEV ALIVE
+[2026-05-09 19:17:54] CREST-DEV ALIVE
+[2026-05-09 19:18:54] CREST-DEV ALIVE
+[2026-05-09 19:19:54] CREST-DEV ALIVE
+[2026-05-09 19:20:54] CREST-DEV ALIVE
+[2026-05-09 19:21:54] CREST-DEV ALIVE
+[2026-05-09 19:22:54] CREST-DEV ALIVE
+[2026-05-09 19:23:55] CREST-DEV ALIVE
+[2026-05-09 19:24:55] CREST-DEV ALIVE
+[2026-05-09 19:25:55] CREST-DEV ALIVE
+[2026-05-09 19:26:55] CREST-DEV ALIVE
+[2026-05-09 19:27:55] CREST-DEV ALIVE
+[2026-05-09 19:28:55] CREST-DEV ALIVE
+[2026-05-09 19:29:55] CREST-DEV ALIVE
+[2026-05-09 19:30:55] CREST-DEV ALIVE
+[2026-05-09 19:31:55] CREST-DEV ALIVE
+[2026-05-09 19:32:56] CREST-DEV ALIVE
+[2026-05-09 19:33:56] CREST-DEV ALIVE
+[2026-05-09 19:34:56] CREST-DEV ALIVE
+[2026-05-09 19:35:56] CREST-DEV ALIVE
+[2026-05-09 19:36:56] CREST-DEV ALIVE
+[2026-05-09 19:37:56] CREST-DEV ALIVE
+[2026-05-09 19:38:56] CREST-DEV ALIVE
+[2026-05-09 19:39:56] CREST-DEV ALIVE
+[2026-05-09 19:40:57] CREST-DEV ALIVE
+[2026-05-09 19:41:57] CREST-DEV ALIVE
+[2026-05-09 19:42:57] CREST-DEV ALIVE
+[2026-05-09 19:43:57] CREST-DEV ALIVE
+[2026-05-09 19:44:57] CREST-DEV ALIVE
+[2026-05-09 19:45:57] CREST-DEV ALIVE
+[2026-05-09 19:46:58] CREST-DEV ALIVE
+[2026-05-09 19:47:58] CREST-DEV ALIVE
+[2026-05-09 19:48:58] CREST-DEV ALIVE
+[2026-05-09 19:49:58] CREST-DEV ALIVE
+[2026-05-09 19:50:58] CREST-DEV ALIVE
+[2026-05-09 19:51:58] CREST-DEV ALIVE
+[2026-05-09 19:52:58] CREST-DEV ALIVE
+[2026-05-09 19:53:59] CREST-DEV ALIVE
+[2026-05-09 19:54:59] CREST-DEV ALIVE
+[2026-05-09 19:55:59] CREST-DEV ALIVE
+[2026-05-09 19:56:49] START agent-ready-20260510-005649
+[2026-05-09 19:56:50] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmp274D.tmp' because it is being used by another process."
+[2026-05-09 19:56:51] START agent-ready-20260510-005649
+[2026-05-09 19:56:51] DONE  agent-ready-20260510-005649 exit= duration=0.3s
+[2026-05-09 19:56:59] CREST-DEV ALIVE
+[2026-05-09 19:58:00] CREST-DEV ALIVE
+[2026-05-09 19:59:00] CREST-DEV ALIVE
+[2026-05-09 20:00:00] CREST-DEV ALIVE
+[2026-05-09 20:00:07] START agent-postmortem-20260510-010006
+[2026-05-09 20:00:08] DONE  agent-postmortem-20260510-010006 exit= duration=1.3s
+[2026-05-09 20:00:08] START agent-ready-auto-20260509-200008
+[2026-05-09 20:00:08] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmp2FC1.tmp' because it is being used by another process."
+[2026-05-09 20:00:09] START agent-ready-auto-20260509-200008
+[2026-05-09 20:00:10] DONE  agent-ready-auto-20260509-200008 exit= duration=0.3s
+[2026-05-09 20:01:01] CREST-DEV ALIVE
+[2026-05-09 20:02:01] CREST-DEV ALIVE
+[2026-05-09 20:03:02] CREST-DEV ALIVE
+[2026-05-09 20:03:07] START agent-y74b-build-20260510-010307
+[2026-05-09 20:03:12] DONE  agent-y74b-build-20260510-010307 exit= duration=5.3s
+[2026-05-09 20:04:02] CREST-DEV ALIVE
+[2026-05-09 20:05:02] CREST-DEV ALIVE
+[2026-05-09 20:05:22] START agent-ready-20260510-010522
+[2026-05-09 20:05:23] DONE  agent-ready-20260510-010522 exit= duration=0.4s
+[2026-05-09 20:06:02] CREST-DEV ALIVE
+[2026-05-09 20:07:03] CREST-DEV ALIVE
+[2026-05-09 20:08:03] CREST-DEV ALIVE
+[2026-05-09 20:09:03] CREST-DEV ALIVE
+[2026-05-09 20:09:54] START agent-rollback-bak-20260510-010954
+[2026-05-09 20:09:54] DONE  agent-rollback-bak-20260510-010954 exit= duration=0.3s
+[2026-05-09 20:10:03] CREST-DEV ALIVE
+[2026-05-09 20:11:04] CREST-DEV ALIVE
+[2026-05-09 20:12:04] CREST-DEV ALIVE
+[2026-05-09 20:13:04] CREST-DEV ALIVE
+[2026-05-09 20:14:05] CREST-DEV ALIVE
+[2026-05-09 20:15:05] CREST-DEV ALIVE
+[2026-05-09 20:16:05] CREST-DEV ALIVE
+[2026-05-09 20:17:06] CREST-DEV ALIVE
+[2026-05-09 20:18:06] CREST-DEV ALIVE
+[2026-05-09 20:19:06] CREST-DEV ALIVE
+[2026-05-09 20:19:53] START agent-postmortem-20260510-011952
+[2026-05-09 20:19:54] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmp4290.tmp' because it is being used by another process."
+[2026-05-09 20:19:55] START agent-postmortem-20260510-011952
+[2026-05-09 20:19:57] DONE  agent-postmortem-20260510-011952 exit= duration=1.8s
+[2026-05-09 20:19:57] START agent-ready-auto-20260509-201957
+[2026-05-09 20:19:58] DONE  agent-ready-auto-20260509-201957 exit= duration=0.5s
+[2026-05-09 20:20:06] CREST-DEV ALIVE
+[2026-05-09 20:21:06] CREST-DEV ALIVE
+[2026-05-09 20:22:07] CREST-DEV ALIVE
+[2026-05-09 20:23:07] CREST-DEV ALIVE
+[2026-05-09 20:24:07] CREST-DEV ALIVE
+[2026-05-09 20:25:08] CREST-DEV ALIVE
+[2026-05-09 20:25:19] START agent-doctor-cleanup-20260510-012519
+[2026-05-09 20:25:20] DONE  agent-doctor-cleanup-20260510-012519 exit= duration=0.8s
+[2026-05-09 20:26:08] CREST-DEV ALIVE
+[2026-05-09 20:27:08] CREST-DEV ALIVE
+[2026-05-09 20:28:08] CREST-DEV ALIVE
+[2026-05-09 20:29:09] CREST-DEV ALIVE
+[2026-05-09 20:30:09] CREST-DEV ALIVE
+[2026-05-09 20:31:09] CREST-DEV ALIVE
+[2026-05-09 20:32:09] CREST-DEV ALIVE
+[2026-05-09 20:32:09] START agent-ready-20260510-013209
+[2026-05-09 20:32:10] DONE  agent-ready-20260510-013209 exit= duration=0.5s
+[2026-05-09 20:33:10] CREST-DEV ALIVE
+[2026-05-09 20:34:10] CREST-DEV ALIVE
+[2026-05-09 20:35:10] CREST-DEV ALIVE
+[2026-05-09 20:36:10] CREST-DEV ALIVE
+[2026-05-09 20:37:11] CREST-DEV ALIVE
+[2026-05-09 20:38:11] CREST-DEV ALIVE
+[2026-05-09 20:39:05] START agent-postmortem-20260510-013905
+[2026-05-09 20:39:07] DONE  agent-postmortem-20260510-013905 exit= duration=2s
+[2026-05-09 20:39:07] START agent-ready-auto-20260509-203907
+[2026-05-09 20:39:08] DONE  agent-ready-auto-20260509-203907 exit= duration=0.5s
+[2026-05-09 20:39:11] CREST-DEV ALIVE
+[2026-05-09 20:40:12] CREST-DEV ALIVE
+[2026-05-09 20:41:12] CREST-DEV ALIVE
+[2026-05-09 20:42:12] CREST-DEV ALIVE
+[2026-05-09 20:43:13] CREST-DEV ALIVE
+[2026-05-09 20:44:13] CREST-DEV ALIVE
+[2026-05-09 20:45:13] CREST-DEV ALIVE
+[2026-05-09 20:46:13] CREST-DEV ALIVE
+[2026-05-09 20:47:13] CREST-DEV ALIVE
+[2026-05-09 20:48:14] CREST-DEV ALIVE
+[2026-05-09 20:49:05] START agent-y75-build-20260510-014904
+[2026-05-09 20:49:09] DONE  agent-y75-build-20260510-014904 exit= duration=3.9s
+[2026-05-09 20:49:14] CREST-DEV ALIVE
+[2026-05-09 20:49:58] START agent-y75-build-20260510-014958
+[2026-05-09 20:50:01] DONE  agent-y75-build-20260510-014958 exit= duration=3.4s
+[2026-05-09 20:50:14] CREST-DEV ALIVE
+[2026-05-09 20:50:51] START agent-ready-20260510-015050
+[2026-05-09 20:50:51] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmp9D3D.tmp' because it is being used by another process."
+[2026-05-09 20:50:52] START agent-ready-20260510-015050
+[2026-05-09 20:50:52] DONE  agent-ready-20260510-015050 exit= duration=0.4s
+[2026-05-09 20:51:14] CREST-DEV ALIVE
+[2026-05-09 20:52:15] CREST-DEV ALIVE
+[2026-05-09 20:53:15] CREST-DEV ALIVE
+[2026-05-09 20:54:15] CREST-DEV ALIVE
+[2026-05-09 20:54:59] START agent-postmortem-20260510-015459
+[2026-05-09 20:55:00] DONE  agent-postmortem-20260510-015459 exit= duration=1.2s
+[2026-05-09 20:55:00] START agent-rollback-bak2-20260510-015459
+[2026-05-09 20:55:00] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmp6BDF.tmp' because it is being used by another process."
+[2026-05-09 20:55:01] START agent-rollback-bak2-20260510-015459
+[2026-05-09 20:55:02] DONE  agent-rollback-bak2-20260510-015459 exit= duration=0.2s
+[2026-05-09 20:55:02] START agent-ready-auto-20260509-205500
+[2026-05-09 20:55:02] DONE  agent-ready-auto-20260509-205500 exit= duration=0.4s
+[2026-05-09 20:55:15] CREST-DEV ALIVE
+[2026-05-09 20:56:15] CREST-DEV ALIVE
+[2026-05-09 20:57:16] CREST-DEV ALIVE
+[2026-05-09 20:58:16] CREST-DEV ALIVE
+[2026-05-09 20:59:16] CREST-DEV ALIVE
+[2026-05-09 21:00:16] CREST-DEV ALIVE
+[2026-05-09 21:01:17] CREST-DEV ALIVE
+[2026-05-09 21:02:17] CREST-DEV ALIVE
+[2026-05-09 21:03:17] CREST-DEV ALIVE
+[2026-05-09 21:04:17] CREST-DEV ALIVE
+[2026-05-09 21:04:24] START agent-bisect-t1-build-20260510-020424
+[2026-05-09 21:04:27] DONE  agent-bisect-t1-build-20260510-020424 exit= duration=2.9s
+[2026-05-09 21:05:18] CREST-DEV ALIVE
+[2026-05-09 21:06:18] CREST-DEV ALIVE
+[2026-05-09 21:07:18] CREST-DEV ALIVE
+[2026-05-09 21:08:19] CREST-DEV ALIVE
+[2026-05-09 21:09:19] CREST-DEV ALIVE
+[2026-05-09 21:10:19] CREST-DEV ALIVE
+[2026-05-09 21:11:19] CREST-DEV ALIVE
+[2026-05-09 21:12:19] CREST-DEV ALIVE
+[2026-05-09 21:13:20] CREST-DEV ALIVE
+[2026-05-09 21:14:20] CREST-DEV ALIVE
+[2026-05-09 21:15:20] CREST-DEV ALIVE
+[2026-05-09 21:16:20] CREST-DEV ALIVE
+[2026-05-09 21:17:21] CREST-DEV ALIVE
+[2026-05-09 21:18:21] CREST-DEV ALIVE
+[2026-05-09 21:19:21] CREST-DEV ALIVE
+[2026-05-09 21:20:21] CREST-DEV ALIVE
+[2026-05-09 21:21:22] CREST-DEV ALIVE
+[2026-05-09 21:22:22] CREST-DEV ALIVE
+[2026-05-09 21:23:22] CREST-DEV ALIVE
+[2026-05-09 21:24:22] CREST-DEV ALIVE
+[2026-05-09 21:25:23] CREST-DEV ALIVE
+[2026-05-09 21:26:23] CREST-DEV ALIVE
+[2026-05-09 21:27:23] CREST-DEV ALIVE
+[2026-05-09 21:28:23] CREST-DEV ALIVE
+[2026-05-09 21:29:24] CREST-DEV ALIVE
+[2026-05-09 21:30:24] CREST-DEV ALIVE
+[2026-05-09 21:31:24] CREST-DEV ALIVE
+[2026-05-09 21:32:24] CREST-DEV ALIVE
+[2026-05-09 21:33:25] CREST-DEV ALIVE
+[2026-05-09 21:34:25] CREST-DEV ALIVE
+[2026-05-09 21:34:36] START agent-bisect-t2-disable-conv-20260510-023436
+[2026-05-09 21:34:36] DONE  agent-bisect-t2-disable-conv-20260510-023436 exit= duration=0.3s
+[2026-05-09 21:35:25] CREST-DEV ALIVE
+[2026-05-09 21:36:25] CREST-DEV ALIVE
+[2026-05-09 21:37:25] CREST-DEV ALIVE
+[2026-05-09 21:38:26] CREST-DEV ALIVE
+[2026-05-09 21:39:26] CREST-DEV ALIVE
+[2026-05-09 21:39:53] START agent-bisect-t3-build-20260510-023953
+[2026-05-09 21:40:01] DONE  agent-bisect-t3-build-20260510-023953 exit= duration=7.3s
+[2026-05-09 21:40:26] CREST-DEV ALIVE
+[2026-05-09 21:41:27] CREST-DEV ALIVE
+[2026-05-09 21:42:23] START agent-bisect-t4-build-20260510-024222
+[2026-05-09 21:42:25] DONE  agent-bisect-t4-build-20260510-024222 exit= duration=2.6s
+[2026-05-09 21:42:27] CREST-DEV ALIVE
+[2026-05-09 21:43:27] CREST-DEV ALIVE
+[2026-05-09 21:44:28] CREST-DEV ALIVE
+[2026-05-09 21:45:28] CREST-DEV ALIVE
+[2026-05-09 21:46:27] START agent-rollback-bak-after-bisect-20260510-024627
+[2026-05-09 21:46:28] DONE  agent-rollback-bak-after-bisect-20260510-024627 exit= duration=0.2s
+[2026-05-09 21:46:28] CREST-DEV ALIVE
+[2026-05-09 21:47:29] CREST-DEV ALIVE
+[2026-05-09 21:48:29] CREST-DEV ALIVE
+[2026-05-09 21:49:29] CREST-DEV ALIVE
+[2026-05-09 21:50:29] CREST-DEV ALIVE
+[2026-05-09 21:51:29] CREST-DEV ALIVE
+[2026-05-09 21:52:30] CREST-DEV ALIVE
+[2026-05-09 21:53:30] CREST-DEV ALIVE
+[2026-05-09 21:54:30] CREST-DEV ALIVE
+[2026-05-09 21:55:30] CREST-DEV ALIVE
+[2026-05-09 21:56:30] CREST-DEV ALIVE
+[2026-05-09 21:57:30] CREST-DEV ALIVE
+[2026-05-09 21:58:31] CREST-DEV ALIVE
+[2026-05-09 21:59:31] CREST-DEV ALIVE
+[2026-05-09 22:00:31] CREST-DEV ALIVE
+[2026-05-09 22:01:31] CREST-DEV ALIVE
+[2026-05-09 22:02:32] CREST-DEV ALIVE
+[2026-05-09 22:03:32] CREST-DEV ALIVE
+[2026-05-09 22:04:32] CREST-DEV ALIVE
+[2026-05-09 22:05:32] CREST-DEV ALIVE
+[2026-05-09 22:06:32] CREST-DEV ALIVE
+[2026-05-09 22:07:33] CREST-DEV ALIVE
+[2026-05-09 22:08:33] CREST-DEV ALIVE
+[2026-05-09 22:09:33] CREST-DEV ALIVE
+[2026-05-09 22:10:33] CREST-DEV ALIVE
+[2026-05-09 22:11:34] CREST-DEV ALIVE
+[2026-05-09 22:12:34] CREST-DEV ALIVE
+[2026-05-09 22:13:34] CREST-DEV ALIVE
+[2026-05-09 22:14:35] CREST-DEV ALIVE
+[2026-05-09 22:15:35] CREST-DEV ALIVE
+[2026-05-09 22:16:35] CREST-DEV ALIVE
+[2026-05-09 22:17:35] CREST-DEV ALIVE
+[2026-05-09 22:18:35] CREST-DEV ALIVE
+[2026-05-09 22:19:36] CREST-DEV ALIVE
+[2026-05-09 22:20:36] CREST-DEV ALIVE
+[2026-05-09 22:21:18] START agent-heraldmarshal-t1-20260510-032118
+[2026-05-09 22:21:19] DONE  agent-heraldmarshal-t1-20260510-032118 exit= duration=1s
+[2026-05-09 22:21:37] CREST-DEV ALIVE
+[2026-05-09 22:21:59] START agent-heraldmarshal-t1b-20260510-032158
+[2026-05-09 22:22:00] DONE  agent-heraldmarshal-t1b-20260510-032158 exit= duration=0.9s
+[2026-05-09 22:22:37] CREST-DEV ALIVE
+[2026-05-09 22:22:57] START agent-heraldmarshal-t1c-20260510-032257
+[2026-05-09 22:22:58] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmpF09F.tmp' because it is being used by another process."
+[2026-05-09 22:22:59] START agent-heraldmarshal-t1c-20260510-032257
+[2026-05-09 22:23:00] DONE  agent-heraldmarshal-t1c-20260510-032257 exit= duration=1s
+[2026-05-09 22:23:37] CREST-DEV ALIVE
+[2026-05-09 22:24:14] START agent-heraldmarshal-t1d-20260510-032414
+[2026-05-09 22:24:17] DONE  agent-heraldmarshal-t1d-20260510-032414 exit= duration=3.1s
+[2026-05-09 22:24:38] CREST-DEV ALIVE
+[2026-05-09 22:24:50] START agent-heraldmarshal-t1e-20260510-032450
+[2026-05-09 22:24:52] DONE  agent-heraldmarshal-t1e-20260510-032450 exit= duration=2.1s
+[2026-05-09 22:25:38] CREST-DEV ALIVE
+[2026-05-09 22:26:38] CREST-DEV ALIVE
+[2026-05-09 22:27:39] CREST-DEV ALIVE
+[2026-05-09 22:28:39] CREST-DEV ALIVE
+[2026-05-09 22:29:39] CREST-DEV ALIVE
+[2026-05-09 22:30:39] CREST-DEV ALIVE
+[2026-05-09 22:31:40] CREST-DEV ALIVE
+[2026-05-09 22:32:40] CREST-DEV ALIVE
+[2026-05-09 22:33:40] CREST-DEV ALIVE
+[2026-05-09 22:34:40] CREST-DEV ALIVE
+[2026-05-09 22:35:40] CREST-DEV ALIVE
+[2026-05-09 22:36:40] CREST-DEV ALIVE
+[2026-05-09 22:37:41] CREST-DEV ALIVE
+[2026-05-09 22:38:41] CREST-DEV ALIVE
+[2026-05-09 22:39:41] CREST-DEV ALIVE
+[2026-05-09 22:40:41] CREST-DEV ALIVE
+[2026-05-09 22:41:41] CREST-DEV ALIVE
+[2026-05-09 22:42:41] CREST-DEV ALIVE
+[2026-05-09 22:43:42] CREST-DEV ALIVE
+[2026-05-09 22:44:42] CREST-DEV ALIVE
+[2026-05-09 22:45:42] CREST-DEV ALIVE
+[2026-05-09 22:46:42] CREST-DEV ALIVE
+[2026-05-09 22:47:42] CREST-DEV ALIVE
+[2026-05-09 22:48:43] CREST-DEV ALIVE
+[2026-05-09 22:49:43] CREST-DEV ALIVE
+[2026-05-09 22:50:43] CREST-DEV ALIVE
+[2026-05-09 22:51:43] CREST-DEV ALIVE
+[2026-05-09 22:52:43] CREST-DEV ALIVE
+[2026-05-09 22:53:44] CREST-DEV ALIVE
+[2026-05-09 22:54:44] CREST-DEV ALIVE
+[2026-05-09 22:55:44] CREST-DEV ALIVE
+[2026-05-09 22:56:44] CREST-DEV ALIVE
+[2026-05-09 22:57:45] CREST-DEV ALIVE
+[2026-05-09 22:58:45] CREST-DEV ALIVE
+[2026-05-09 22:59:45] CREST-DEV ALIVE
+[2026-05-09 23:00:45] CREST-DEV ALIVE
+[2026-05-09 23:01:46] CREST-DEV ALIVE
+[2026-05-09 23:02:46] CREST-DEV ALIVE
+[2026-05-09 23:03:46] CREST-DEV ALIVE
+[2026-05-09 23:04:46] CREST-DEV ALIVE
+[2026-05-09 23:05:46] CREST-DEV ALIVE
+[2026-05-09 23:06:47] CREST-DEV ALIVE
+[2026-05-09 23:07:47] CREST-DEV ALIVE
+[2026-05-09 23:08:47] CREST-DEV ALIVE
+[2026-05-09 23:09:47] CREST-DEV ALIVE
+[2026-05-09 23:10:47] CREST-DEV ALIVE
+[2026-05-09 23:11:48] CREST-DEV ALIVE
+[2026-05-09 23:12:48] CREST-DEV ALIVE
+[2026-05-09 23:13:48] CREST-DEV ALIVE
+[2026-05-09 23:14:48] CREST-DEV ALIVE
+[2026-05-09 23:15:48] CREST-DEV ALIVE
+[2026-05-09 23:16:49] CREST-DEV ALIVE
+[2026-05-09 23:17:49] CREST-DEV ALIVE
+[2026-05-09 23:18:49] CREST-DEV ALIVE
+[2026-05-09 23:19:49] CREST-DEV ALIVE
+[2026-05-09 23:20:50] CREST-DEV ALIVE
+[2026-05-09 23:21:50] CREST-DEV ALIVE
+[2026-05-09 23:22:50] CREST-DEV ALIVE
+[2026-05-09 23:23:51] CREST-DEV ALIVE
+[2026-05-09 23:24:51] CREST-DEV ALIVE
+[2026-05-09 23:25:51] CREST-DEV ALIVE
+[2026-05-09 23:26:51] CREST-DEV ALIVE
+[2026-05-09 23:27:51] CREST-DEV ALIVE
+[2026-05-09 23:28:52] CREST-DEV ALIVE
+[2026-05-09 23:29:52] CREST-DEV ALIVE
+[2026-05-09 23:30:52] CREST-DEV ALIVE
+[2026-05-09 23:31:52] CREST-DEV ALIVE
+[2026-05-09 23:32:53] CREST-DEV ALIVE
+[2026-05-09 23:33:53] CREST-DEV ALIVE
+[2026-05-09 23:34:53] CREST-DEV ALIVE
+[2026-05-09 23:35:53] CREST-DEV ALIVE
+[2026-05-09 23:36:54] CREST-DEV ALIVE
+[2026-05-09 23:37:34] CREST-DEV UP
+[2026-05-09 23:37:34] CREST-DEV ALIVE
+[2026-05-09 23:38:34] CREST-DEV ALIVE
+[2026-05-09 23:39:35] CREST-DEV ALIVE
+[2026-05-09 23:40:35] CREST-DEV ALIVE
+[2026-05-09 23:41:35] CREST-DEV ALIVE
+[2026-05-09 23:42:36] CREST-DEV ALIVE
+[2026-05-09 23:43:36] CREST-DEV ALIVE
+[2026-05-09 23:43:48] START agent-recheck-crest-20260510-044348
+[2026-05-09 23:43:49] DONE  agent-recheck-crest-20260510-044348 exit= duration=0.4s
+[2026-05-09 23:44:36] CREST-DEV ALIVE
+[2026-05-09 23:44:45] START agent-checkdirs-20260510-044444
+[2026-05-09 23:44:45] DONE  agent-checkdirs-20260510-044444 exit= duration=0.5s
+[2026-05-09 23:45:37] CREST-DEV ALIVE
+[2026-05-09 23:46:37] CREST-DEV ALIVE
+[2026-05-09 23:47:37] CREST-DEV ALIVE
+[2026-05-09 23:48:37] CREST-DEV ALIVE
+[2026-05-09 23:49:19] START agent-heraldmarshal-redeploy-20260510-044918
+[2026-05-09 23:49:19] DONE  agent-heraldmarshal-redeploy-20260510-044918 exit= duration=0.5s
+[2026-05-09 23:49:38] CREST-DEV ALIVE
+[2026-05-09 23:50:38] CREST-DEV ALIVE
+[2026-05-09 23:51:38] CREST-DEV ALIVE
+[2026-05-09 23:51:59] START agent-blse-diagnose-20260510-045158
+[2026-05-09 23:51:59] DONE  agent-blse-diagnose-20260510-045158 exit= duration=0.7s
+[2026-05-09 23:52:37] START agent-heraldmarshal-redeploy-xml-20260510-045237
+[2026-05-09 23:52:38] DONE  agent-heraldmarshal-redeploy-xml-20260510-045237 exit= duration=0.7s
+[2026-05-09 23:52:39] CREST-DEV ALIVE
+[2026-05-09 23:53:39] CREST-DEV ALIVE
+[2026-05-09 23:54:39] CREST-DEV ALIVE
+[2026-05-09 23:55:39] CREST-DEV ALIVE
+[2026-05-09 23:56:40] CREST-DEV ALIVE
+[2026-05-09 23:57:40] CREST-DEV ALIVE
+[2026-05-09 23:58:40] CREST-DEV ALIVE
+[2026-05-09 23:59:40] CREST-DEV ALIVE
+[2026-05-10 00:00:41] CREST-DEV ALIVE
+[2026-05-10 00:01:41] CREST-DEV ALIVE
+[2026-05-10 00:02:22] START agent-heraldmarshal-t1.5-20260510-050222
+[2026-05-10 00:02:25] DONE  agent-heraldmarshal-t1.5-20260510-050222 exit= duration=3s
+[2026-05-10 00:02:41] CREST-DEV ALIVE
+[2026-05-10 00:03:42] CREST-DEV ALIVE
+[2026-05-10 00:04:42] CREST-DEV ALIVE
+[2026-05-10 00:05:42] CREST-DEV ALIVE
+[2026-05-10 00:06:42] CREST-DEV ALIVE
+[2026-05-10 00:07:41] START agent-hm-status-20260510-050741
+[2026-05-10 00:07:41] DONE  agent-hm-status-20260510-050741 exit= duration=0.3s
+[2026-05-10 00:07:43] CREST-DEV ALIVE
+[2026-05-10 00:08:43] CREST-DEV ALIVE
+[2026-05-10 00:09:43] CREST-DEV ALIVE
+[2026-05-10 00:10:43] CREST-DEV ALIVE
+[2026-05-10 00:11:43] CREST-DEV ALIVE
+[2026-05-10 00:12:44] CREST-DEV ALIVE
+[2026-05-10 00:13:44] CREST-DEV ALIVE
+[2026-05-10 00:14:44] CREST-DEV ALIVE
+[2026-05-10 00:15:02] START agent-crest-release-package-20260510-051502
+[2026-05-10 00:15:04] CYCLE-ERROR Exception calling "ReadAllText" with "1" argument(s): "The process cannot access the file 'C:\Users\Steve\AppData\Local\Temp\tmp8D1E.tmp' because it is being used by another process."
+[2026-05-10 00:15:05] START agent-crest-release-package-20260510-051502
+[2026-05-10 00:15:07] DONE  agent-crest-release-package-20260510-051502 exit= duration=1.8s
+[2026-05-10 00:15:36] START agent-crest-release-smoke-20260510-051536
+[2026-05-10 00:15:38] DONE  agent-crest-release-smoke-20260510-051536 exit= duration=1.4s
+[2026-05-10 00:15:44] CREST-DEV ALIVE
+[2026-05-10 00:16:44] CREST-DEV ALIVE
+[2026-05-10 00:17:45] CREST-DEV ALIVE
+[2026-05-10 00:18:45] CREST-DEV ALIVE
+[2026-05-10 00:19:45] CREST-DEV ALIVE
+[2026-05-10 00:20:46] CREST-DEV ALIVE
+[2026-05-10 00:21:46] CREST-DEV ALIVE
+[2026-05-10 00:22:46] CREST-DEV ALIVE
+[2026-05-10 00:23:46] CREST-DEV ALIVE
+[2026-05-10 00:24:47] CREST-DEV ALIVE
+[2026-05-10 00:25:47] CREST-DEV ALIVE
+[2026-05-10 00:26:47] CREST-DEV ALIVE
+[2026-05-10 00:27:48] CREST-DEV ALIVE
+[2026-05-10 00:28:48] CREST-DEV ALIVE
+[2026-05-10 00:29:48] CREST-DEV ALIVE
+[2026-05-10 00:30:04] START agent-crest-rezip-20260510-053003
+[2026-05-10 00:30:05] DONE  agent-crest-rezip-20260510-053003 exit= duration=1.7s
+[2026-05-10 00:30:49] CREST-DEV ALIVE
+[2026-05-10 00:31:49] CREST-DEV ALIVE
+[2026-05-10 00:32:49] CREST-DEV ALIVE
+[2026-05-10 00:33:49] CREST-DEV ALIVE
+[2026-05-10 00:34:50] CREST-DEV ALIVE
+[2026-05-10 00:35:50] CREST-DEV ALIVE
+[2026-05-10 00:36:50] CREST-DEV ALIVE
+[2026-05-10 00:37:50] CREST-DEV ALIVE
+[2026-05-10 00:38:50] CREST-DEV ALIVE
+[2026-05-10 00:39:50] CREST-DEV ALIVE
+[2026-05-10 00:40:50] CREST-DEV ALIVE
+[2026-05-10 00:41:51] CREST-DEV ALIVE
+[2026-05-10 00:42:51] CREST-DEV ALIVE
+[2026-05-10 00:43:51] CREST-DEV ALIVE
+[2026-05-10 00:44:52] CREST-DEV ALIVE
+[2026-05-10 00:44:54] START agent-crest-rezip-licenses-20260510-054454
+[2026-05-10 00:44:56] DONE  agent-crest-rezip-licenses-20260510-054454 exit= duration=1.5s
+[2026-05-10 00:45:52] CREST-DEV ALIVE
+[2026-05-10 00:46:52] CREST-DEV ALIVE
+[2026-05-10 00:47:53] CREST-DEV ALIVE
+[2026-05-10 00:48:24] START agent-crest-final-readycheck-20260510-054823
+[2026-05-10 00:48:25] DONE  agent-crest-final-readycheck-20260510-054823 exit= duration=1.1s
+[2026-05-10 00:48:53] CREST-DEV ALIVE
+[2026-05-10 00:48:56] START agent-crest-final-readycheck2-20260510-054855
+[2026-05-10 00:48:57] DONE  agent-crest-final-readycheck2-20260510-054855 exit= duration=1.5s
+[2026-05-10 00:49:53] CREST-DEV ALIVE
+[2026-05-10 00:50:54] CREST-DEV ALIVE
+[2026-05-10 00:51:54] CREST-DEV ALIVE
+[2026-05-10 00:52:55] CREST-DEV ALIVE
+[2026-05-10 00:53:55] CREST-DEV ALIVE
+[2026-05-10 00:54:55] CREST-DEV ALIVE
+[2026-05-10 00:55:55] CREST-DEV ALIVE
+[2026-05-10 00:56:55] CREST-DEV ALIVE
+[2026-05-10 00:57:56] CREST-DEV ALIVE
+[2026-05-10 00:58:56] CREST-DEV ALIVE
+[2026-05-10 00:59:47] START agent-crest-may8-swap-20260510-055947
+[2026-05-10 00:59:48] DONE  agent-crest-may8-swap-20260510-055947 exit= duration=0.7s
+[2026-05-10 00:59:56] CREST-DEV ALIVE
+[2026-05-10 01:00:33] START agent-crest-rezip-may8-20260510-060033
+[2026-05-10 01:00:35] DONE  agent-crest-rezip-may8-20260510-060033 exit= duration=1.9s
+[2026-05-10 01:00:56] CREST-DEV ALIVE
+[2026-05-10 01:01:56] CREST-DEV ALIVE
+[2026-05-10 01:02:56] CREST-DEV ALIVE
+[2026-05-10 01:03:57] CREST-DEV ALIVE
+[2026-05-10 01:04:57] CREST-DEV ALIVE
+[2026-05-10 01:05:57] CREST-DEV ALIVE
+[2026-05-10 01:06:57] CREST-DEV ALIVE
+[2026-05-10 01:07:57] CREST-DEV ALIVE
+[2026-05-10 01:08:58] CREST-DEV ALIVE
+[2026-05-10 01:09:58] CREST-DEV ALIVE
+[2026-05-10 01:10:58] CREST-DEV ALIVE
+[2026-05-10 01:11:58] CREST-DEV ALIVE
+[2026-05-10 01:12:58] CREST-DEV ALIVE
+[2026-05-10 01:13:58] CREST-DEV ALIVE
+[2026-05-10 01:14:58] CREST-DEV ALIVE
+[2026-05-10 01:15:58] CREST-DEV ALIVE
+[2026-05-10 01:16:59] CREST-DEV ALIVE
+[2026-05-10 01:17:59] CREST-DEV ALIVE
+[2026-05-10 01:18:59] CREST-DEV ALIVE
+[2026-05-10 01:21:08] CREST-DEV UP
+[2026-05-10 01:21:08] CREST-DEV ALIVE
+[2026-05-10 01:22:09] CREST-DEV ALIVE
+[2026-05-10 01:23:09] CREST-DEV ALIVE
+[2026-05-10 01:24:10] CREST-DEV ALIVE
+[2026-05-10 01:25:10] CREST-DEV ALIVE
+[2026-05-10 01:26:10] CREST-DEV ALIVE
+[2026-05-10 01:27:11] CREST-DEV ALIVE
+[2026-05-10 01:28:11] CREST-DEV ALIVE
+[2026-05-10 01:29:12] CREST-DEV ALIVE
+[2026-05-10 01:30:12] CREST-DEV ALIVE
+[2026-05-10 14:00:40] CREST-DEV UP
+[2026-05-10 14:00:40] CREST-DEV ALIVE
+[2026-05-10 14:01:40] CREST-DEV ALIVE
+[2026-05-10 14:02:40] CREST-DEV ALIVE
+[2026-05-10 14:02:48] CREST-DEV UP
+[2026-05-10 14:02:48] CREST-DEV ALIVE
+[2026-05-10 14:02:55] START agent-build-v091-public-beta-20260510-190254
+[2026-05-10 14:02:55] START agent-build-v091-public-beta-20260510-190254
+[2026-05-10 14:02:56] DONE  agent-build-v091-public-beta-20260510-190254 exit= duration=0.6s
+[2026-05-10 14:03:00] DONE  agent-build-v091-public-beta-20260510-190254 exit= duration=5.4s
+[2026-05-10 14:03:41] CREST-DEV ALIVE
+[2026-05-10 14:03:48] CREST-DEV ALIVE

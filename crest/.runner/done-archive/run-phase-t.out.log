@@ -1,0 +1,18 @@
+=== run started Wed 05/06/2026  4:56:20.10 === 
+WARNING: The names of some imported commands from the module 'Crest.Dev' include unapproved verbs that might make them 
+less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the Verbose 
+parameter. For a list of approved verbs, type Get-Verb.
+==> [1/4] Rebuilding Crest.Harmony with CrestCheats...
+  cleaning bin/obj...
+  [Main          ] dotnet build src/Crest.Harmony/Crest.Harmony.csproj -c Release
+                   FAILED (exit 1)
+                   C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\CrestMessageStyle.cs(52,23): error CS0234: The type or namespace name 'ThreadStaticAttribute' does not exist in the namespace 'System.Threading' (are you missing an assembly reference?) [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net472]
+                   C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\CrestMessageStyle.cs(52,23): error CS0234: The type or namespace name 'ThreadStatic' does not exist in the namespace 'System.Threading' (are you missing an assembly reference?) [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net472]
+                   C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\CrestMessageStyle.cs(52,23): error CS0234: The type or namespace name 'ThreadStaticAttribute' does not exist in the namespace 'System.Threading' (are you missing an assembly reference?) [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net6]
+                   C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\CrestMessageStyle.cs(52,23): error CS0234: The type or namespace name 'ThreadStatic' does not exist in the namespace 'System.Threading' (are you missing an assembly reference?) [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net6]
+                   Build FAILED.
+                   C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\CrestMessageStyle.cs(52,23): error CS0234: The type or namespace name 'ThreadStaticAttribute' does not exist in the namespace 'System.Threading' (are you missing an assembly reference?) [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net472]
+                   C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\CrestMessageStyle.cs(52,23): error CS0234: The type or namespace name 'ThreadStatic' does not exist in the namespace 'System.Threading' (are you missing an assembly reference?) [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net472]
+                   C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\CrestMessageStyle.cs(52,23): error CS0234: The type or namespace name 'ThreadStaticAttribute' does not exist in the namespace 'System.Threading' (are you missing an assembly reference?) [C:\dev\bannerlord\Bannerlord.Harmony\src\Crest.Harmony\Crest.Harmony.csproj::TargetFramework=net6]
+Crest.Harmony build failed
+=== run finished, exit code 1 === 

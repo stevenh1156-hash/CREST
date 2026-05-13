@@ -1,0 +1,22 @@
+=== run started Wed 05/06/2026  4:37:54.47 === 
+WARNING: The names of some imported commands from the module 'Crest.Dev' include unapproved verbs that might make them 
+less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the Verbose 
+parameter. For a list of approved verbs, type Get-Verb.
+==> [1/3] Phase R.2: rebuilding Crest.Harmony with CrestPatchSnapshot...
+  cleaning bin/obj...
+  [Main          ] dotnet build src/Crest.Harmony/Crest.Harmony.csproj -c Release
+                   Build succeeded.
+==> Hot-swapped Crest.Harmony.dll into deployed bundle
+==> Healed deployed SubModule.xml from CREST source template
+
+==> [2/3] Smoke-test Crest-Doctor -IncludePatchSnapshot (no snapshot expected)...
+  OK: doctor accepts -IncludePatchSnapshot and produces the new section.
+
+==> [3/3] Done.
+    To exercise the in-game inspector:
+      1. Launch the game; reach main menu.
+      2. Press Ctrl+Alt+P -- 'CREST patch snapshot saved to ...' chat message confirms.
+      3. Snapshot file lands at:
+         C:\Program Files (x86)\Steam\steamapps\common\Mount & Blade II Bannerlord\Modules\CREST\patches-snapshot-*.log
+      4. Re-run Crest-Doctor.ps1 -IncludePatchSnapshot to bundle it into the report.
+=== run finished, exit code 0 === 

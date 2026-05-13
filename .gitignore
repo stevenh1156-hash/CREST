@@ -1,0 +1,16 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+.runner/queue/
+.runner/loop/
+.runner/done/
+.runner/results/
+.runner/diag/
+.runner/sim-output/
+dist/release/*.zip
+dist/release/*.zip.sha256
+dist/staging/
+dist/diff-tmp/
+dist/full/

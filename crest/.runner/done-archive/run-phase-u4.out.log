@@ -1,0 +1,11 @@
+=== run started Wed 05/06/2026  6:10:10.72 === 
+WARNING: The names of some imported commands from the module 'Crest.Dev' include unapproved verbs that might make them 
+less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the Verbose 
+parameter. For a list of approved verbs, type Get-Verb.
+==> Rebuilding Crest.Harmony
+  cleaning bin/obj...
+  [Main          ] dotnet build src/Crest.Harmony/Crest.Harmony.csproj -c Release
+                   Build succeeded.
+==> Hot-swapped Crest.Harmony.dll (231936 bytes)
+==> Updated dist bundle copy too
+=== run finished, exit code 0 === 

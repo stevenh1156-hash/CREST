@@ -1,0 +1,10 @@
+﻿# Mod: crest
+# Created: 2026-05-09 13:24:44
+
+## Description (raw user input)
+
+continue working on the crest mod battle convergence portion, i want the tactics system working correctly, troops spawn in places they are not supposed to, and the do not follow the pathing they are suppossed to after spawning in. the eventual goal of the crest mod is to have all the tools needed to make an entire dlc the size of taleworlds war sails with just a prompt
+
+## Spec status
+
+PENDING_AGENT_REVIEW

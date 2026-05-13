@@ -1,0 +1,101 @@
+MCM class location audit - 17:37:19
+
+=== Crest.MCM.dll ===
+  AssemblyName: Crest.MCM v5.11.4.0
+  Candidate classes (any *SubModule* / *ModuleLoader* / *MCMUI*):
+    Crest.MCM.MCMSubModule : MBSubModuleBase
+    Crest.MCM.MCMSubModule/<>c : Object
+    Crest.MCM.Internal.MCMImplementationSubModule : MBSubModuleBase
+    Crest.MCM.Internal.MCMImplementationSubModule/<>O : Object
+    Crest.MCM.Internal.MCMImplementationSubModule/<>c : Object
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper : MBSubModuleBase
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnSubModuleLoadDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnSubModuleUnloadedDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnBeforeInitialModuleScreenSetAsRootDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnGameStartDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnApplicationTickDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/InitializeGameStarterDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/AfterRegisterSubModuleObjectsDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/AfterAsyncTickTickDelegate : MulticastDelegate
+    Bannerlord.ModuleManager.SubModuleInfoExtended : Object
+    Bannerlord.ModuleManager.SubModuleInfoExtended/<>c : Object
+    Bannerlord.ModuleManager.SubModuleTags : Enum
+
+=== Crest.MCM.UI.Adapter.MCMv5.dll ===
+  AssemblyName: Crest.MCM.UI.Adapter.MCMv5 v5.11.4.0
+  (no SubModule-like classes)
+
+=== CREST.v1.4.1.dll ===
+  AssemblyName: CREST.v1.4.1 v5.11.4.0
+  Candidate classes (any *SubModule* / *ModuleLoader* / *MCMUI*):
+    Crest.MCM.UI.MCMUIAdapterSubModule : MBSubModuleBase
+    Crest.MCM.UI.MCMUISubModule : MBSubModuleBase
+    Crest.MCM.UI.MCMUISubModule/<>c : Object
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper : MBSubModuleBase
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnSubModuleLoadDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnSubModuleUnloadedDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnBeforeInitialModuleScreenSetAsRootDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnGameStartDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnApplicationTickDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/InitializeGameStarterDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/AfterRegisterSubModuleObjectsDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/AfterAsyncTickTickDelegate : MulticastDelegate
+    Bannerlord.ModuleManager.SubModuleInfoExtended : Object
+    Bannerlord.ModuleManager.SubModuleInfoExtended/<>c : Object
+    Bannerlord.ModuleManager.SubModuleTags : Enum
+
+=== Bannerlord.ModuleLoader.CREST.dll ===
+  AssemblyName: CREST v1.0.1.50
+  Candidate classes (any *SubModule* / *ModuleLoader* / *MCMUI*):
+    Bannerlord.ModuleLoader.ImplementationFile : Object
+    Bannerlord.ModuleLoader.LoaderHelper : Object
+    Bannerlord.ModuleLoader.LoaderHelper/ConstructorDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.LoaderHelper/<>c : Object
+    Bannerlord.ModuleLoader.LoaderHelper/<>c__DisplayClass2_0 : Object
+    Bannerlord.ModuleLoader.LoaderHelper/<>c__DisplayClass6_0 : Object
+    Bannerlord.ModuleLoader.LoaderHelper/<LoadAllImplementations>d__2 : Object
+    Bannerlord.ModuleLoader.LoaderHelper/<LoadSubModules>d__4 : Object
+    Bannerlord.ModuleLoader.CREST : MBSubModuleBaseListWrapper
+    Bannerlord.ModuleLoader.CREST/<>c : Object
+    Bannerlord.ModuleLoader.CREST/<>c__DisplayClass9_0 : Object
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseListWrapper : MBSubModuleBase
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseListWrapper/<>c__DisplayClass10_0 : Object
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper : MBSubModuleBase
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnSubModuleLoadDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnSubModuleUnloadedDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnBeforeInitialModuleScreenSetAsRootDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnGameStartDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnApplicationTickDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/InitializeGameStarterDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnServiceRegistrationDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnConfigChangedDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnGameLoadedDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnNewGameCreatedDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/BeginGameStartDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnCampaignStartDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/RegisterSubModuleObjectsDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/AfterRegisterSubModuleObjectsDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnMultiplayerGameStartDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnGameInitializationFinishedDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnAfterGameInitializationFinishedDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/DoLoadingDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnGameEndDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnBeforeMissionBehaviourInitializeDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnMissionBehaviourInitializeDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/OnInitialStateDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.MBSubModuleBaseWrapper/AfterAsyncTickTickDelegate : MulticastDelegate
+    Bannerlord.ModuleLoader.SubModuleWrappers.Patches.MBSubModuleBasePatch : Object
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper : MBSubModuleBase
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnSubModuleLoadDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnSubModuleUnloadedDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnBeforeInitialModuleScreenSetAsRootDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnGameStartDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/OnApplicationTickDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/InitializeGameStarterDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/AfterRegisterSubModuleObjectsDelegate : MulticastDelegate
+    Bannerlord.BUTR.Shared.Utils.MBSubModuleBaseSimpleWrapper/AfterAsyncTickTickDelegate : MulticastDelegate
+    Bannerlord.ModuleManager.SubModuleInfoExtended : Object
+    Bannerlord.ModuleManager.SubModuleInfoExtended/<>c : Object
+    Bannerlord.ModuleManager.SubModuleTags : Enum
+
+=== Done ===
