@@ -1,0 +1,538 @@
+---------------------------------------------------------------------------------------------------
+Version: 5.11.4
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x,v1.4.x
+* Beta support
+---------------------------------------------------------------------------------------------------
+Version: 5.11.3
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x
+* Added support for v1.3.4, v1.3.5, v1.3.6
+---------------------------------------------------------------------------------------------------
+Version: 5.11.2
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.0
+* BETA RELEASE
+* Added support for v1.3.0
+* Fixed FileSystem API issues
+---------------------------------------------------------------------------------------------------
+Version: 5.11.1
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.0
+* BETA RELEASE
+* Added support for v1.3.0
+* Moved the UI Module back to the main module (v5.11.0)
+---------------------------------------------------------------------------------------------------
+Version: 5.11.0
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.0
+* BETA RELEASE
+* Added support for v1.3.0
+* Added UI as a separate module
+---------------------------------------------------------------------------------------------------
+Version: 5.10.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* Reverted Settings instance cache and cache invalidation
+---------------------------------------------------------------------------------------------------
+Version: 5.10.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* Added Settings instance cache and cache invalidation
+* Fixed campaign settings not using the campaign id
+* Fixed redundant folder creation in the root settings folder
+* Fixed Fluent Campaign settings stored in the root settings folder
+---------------------------------------------------------------------------------------------------
+Version: 5.9.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.7
+* Switched to .NET 6 for Xbox
+* Updated Chinese Simplified, Japanese, Spanish, German localization
+* Fixed Settings Pack creation
+---------------------------------------------------------------------------------------------------
+Version: 5.9.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1
+* Scrolling regression fix
+---------------------------------------------------------------------------------------------------
+Version: 5.9.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1
+* Added the ability to save Settings Packs
+---------------------------------------------------------------------------------------------------
+Version: 5.8.4
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1
+* Fixed potential Preset import error
+* Added a message if preset saving fails
+---------------------------------------------------------------------------------------------------
+Version: 5.8.3
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1
+* Fixed Close/Done buttons not working in the Options screen
+---------------------------------------------------------------------------------------------------
+Version: 5.8.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1
+* Added Preset Import/Export/Deleting
+---------------------------------------------------------------------------------------------------
+Version: 5.8.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1
+* Fixed missing Preset saving
+* Fixed unintentional crashes
+---------------------------------------------------------------------------------------------------
+Version: 5.8.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Added the ability to save custom Presets
+* Fluent Settings now capture correctly the 'Default' preset state when building the settings
+* Added Japanese support by Gedevan-Aleksizde
+---------------------------------------------------------------------------------------------------
+Version: 5.7.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Adapted UI to v1.2.0
+---------------------------------------------------------------------------------------------------
+Version: 5.7.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2
+* MCM was not correctly calculating the path for settings in the documents folder
+---------------------------------------------------------------------------------------------------
+Version: 5.7.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2
+* Switched back to Lib.Harmony
+---------------------------------------------------------------------------------------------------
+Version: 5.6.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Internal version fix
+---------------------------------------------------------------------------------------------------
+Version: 5.6.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Increasing minor version due small breaking API changes to fix the Xbox version
+* Since this is not used often, we believe that it's better than releasing MCMv6
+* Breaking API change for File System related interfaces like:
+  * IPathProvider was removed and replaced with IFileSystemProvider
+  * ISettingsFormat.Save
+  * ISettingsFormat.Load
+  * BaseSettingsContainer<TSettings>.RootFolder
+* Mods that used those interfaces need to recompile against v5.6.0 ASAP or the game will crash
+* If you haven't used directly the interfaces, you won't have any issues with v5.6.0.
+---------------------------------------------------------------------------------------------------
+Version: 5.5.5
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0
+* Adapted UI to v1.1.0
+* Added new languages
+---------------------------------------------------------------------------------------------------
+Version: 5.5.4
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Fixed Per Campaign settings not being loaded on new game
+* Better external options detection
+---------------------------------------------------------------------------------------------------
+Version: 5.5.3
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Fixed Per Campaign settings not being shown
+* Disabled External Settings discovery
+* Fixed Source having a public type
+---------------------------------------------------------------------------------------------------
+Version: 5.5.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Added TW/ButterLib word declension in ValueFormat
+---------------------------------------------------------------------------------------------------
+Version: 5.5.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* MCM Source Package NuGet fix
+---------------------------------------------------------------------------------------------------
+Version: 5.5.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Added MCM Source Package NuGet for easier integration
+---------------------------------------------------------------------------------------------------
+Version: 5.4.6
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Fixed scope issue with integrated MCM
+* Fixed attribute discovery with integrated MCM
+---------------------------------------------------------------------------------------------------
+Version: 5.4.5
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* v1.0.2 stealth update fix. We ship Newtonsoft.Json 13 for backwards compatibility
+---------------------------------------------------------------------------------------------------
+Version: 5.4.4
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Fixed comparison if the translated group name yields the same value
+---------------------------------------------------------------------------------------------------
+Version: 5.4.3
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Fixed settings load
+---------------------------------------------------------------------------------------------------
+Version: 5.4.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Setting could be not built instantly as expected, fixed
+---------------------------------------------------------------------------------------------------
+Version: 5.4.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Fixed LOADING_COMPLETE recursion. Now accessing settings Instance will give a null instead
+* Fixed and cleaned up localization
+---------------------------------------------------------------------------------------------------
+Version: 5.4.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Refactored a bit the UI
+* Removed Sandbox as an indirect UI dependency
+* MCM UI now only depends on Native
+* Added support for ILRepacked MCMv5.dll, fixed some soft dep issues
+* Added LOADING_COMPLETE event
+---------------------------------------------------------------------------------------------------
+Version: 5.3.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* Some possible null reference fixes in the UI
+---------------------------------------------------------------------------------------------------
+Version: 5.3.1
+Game Versions: v1.0.0,v1.0.1
+* Fluent PerSave settings were not loading/saving correctly
+---------------------------------------------------------------------------------------------------
+Version: 5.3.0
+Game Versions: v1.0.0,v1.0.1
+* UI performance improvements.
+* UI was not seeing external changes, fixed
+* Groups now handle missing groups in-between!
+---------------------------------------------------------------------------------------------------
+Version: 5.2.0
+Game Versions: v1.0.0,v1.0.1
+* UI fixes. Dropdowns are handled correct now in a lot of usage cases.
+* Huge thanks to bm001 for reporting those issues!
+---------------------------------------------------------------------------------------------------
+Version: 5.1.1
+Game Versions: v1.0.0,v1.0.1
+* Updated ButterLib
+---------------------------------------------------------------------------------------------------
+Version: 5.1.0
+Game Versions: v1.0.0,v1.0.1
+* Made the Mod Options dynamic, changing the language will change the localization correctly
+* Fixed ModSettings path
+* Might fix Linux infinite loading issue
+---------------------------------------------------------------------------------------------------
+Version: 5.0.4
+Game Versions: v1.0.0
+* Another potential CTD fix
+---------------------------------------------------------------------------------------------------
+Version: 5.0.3
+Game Versions: v1.0.0
+* CTD fix
+---------------------------------------------------------------------------------------------------
+Version: 5.0.2
+Game Versions: v1.0.0
+* Fixed path being incorrect
+---------------------------------------------------------------------------------------------------
+Version: 5.0.1
+Game Versions: v1.0.0
+* Language data fix
+* Fixed Preset change on Gameplay tag
+* Minor cleanup
+---------------------------------------------------------------------------------------------------
+Version: 5.0.0
+Game Versions: v1.0.0
+* API v5 release
+* One of the main new features - external presets, to be fully added soon
+---------------------------------------------------------------------------------------------------
+Version: 4.7.12
+Game Versions: e1.7.2,e1.8.0,e1.8.1,e1.9.0
+* Try/catch saving to filesystem
+---------------------------------------------------------------------------------------------------
+Version: 4.7.11
+Game Versions: e1.7.2,e1.8.0,e1.8.1,e1.9.0
+* When loading incorrect Json, reset with saving a correct default
+---------------------------------------------------------------------------------------------------
+Version: 4.7.10
+Game Versions: e1.7.2,e1.8.0,e1.8.1,e1.9.0
+* Adapted to e1.9.0
+---------------------------------------------------------------------------------------------------
+Version: 4.7.9
+Game Versions: e1.7.2,e1.8.0
+* Fixed localization loader
+---------------------------------------------------------------------------------------------------
+Version: 4.7.8
+Game Versions: e1.7.2,e1.8.0
+* Added support for ButterLib's settings declarations
+---------------------------------------------------------------------------------------------------
+Version: 4.7.7
+Game Versions: e1.7.2,e1.8.0
+* Third workaround for the language issue
+---------------------------------------------------------------------------------------------------
+Version: 4.7.6
+Game Versions: e1.7.2,e1.8.0
+* Second workaround for the language issue
+---------------------------------------------------------------------------------------------------
+Version: 4.7.5
+Game Versions: e1.7.2,e1.8.0
+* Workaround for the language issue
+---------------------------------------------------------------------------------------------------
+Version: 4.7.4
+Game Versions: e1.7.2,e1.8.0
+* Restored translation, fixed SubModule metadata!
+---------------------------------------------------------------------------------------------------
+Version: 4.7.3
+Game Versions: e1.7.2,e1.8.0
+* Fixed editing values via text box freeze - thanks to Tomwa for the investigation!
+---------------------------------------------------------------------------------------------------
+Version: 4.7.2
+Game Versions: e1.7.2,e1.8.0
+* Possible ModLib InformationManager crash fix
+* Fixed some Dropdown being empty
+---------------------------------------------------------------------------------------------------
+Version: 4.7.1
+Game Versions: e1.7.2,e1.8.0
+* Fixed Dropdown
+---------------------------------------------------------------------------------------------------
+Version: 4.7.0
+Game Versions: e1.7.2,e1.8.0
+* Adapted to e1.8.0
+* Removed support of MCMv3 API
+---------------------------------------------------------------------------------------------------
+Version: 4.6.1
+Game Versions: e1.7.2
+* Fixed Text property not being show
+* Fixed Dropdown not refreshing if changed programmatically
+* Fixed E and Q in search box
+---------------------------------------------------------------------------------------------------
+Version: 4.6.0
+Game Versions: e1.7.2
+* Fixed EditBox formatting not being shown
+* Added a Campaign and Mission Behaviors for accessing the settings in an OOP way
+---------------------------------------------------------------------------------------------------
+Version: 4.5.0
+Game Versions: e1.7.2
+* Dropped MBO (MCMv1) API
+---------------------------------------------------------------------------------------------------
+Version: 4.4.0
+Game Versions: e1.7.2
+* Code cleanup
+* Minimal version supported is now e1.7.2
+---------------------------------------------------------------------------------------------------
+Version: 4.3.23
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Sandbox settings creation
+---------------------------------------------------------------------------------------------------
+Version: 4.3.22
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Fixed e1.7.1 compatibility
+---------------------------------------------------------------------------------------------------
+Version: 4.3.21
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Fixed Buttons localization
+---------------------------------------------------------------------------------------------------
+Version: 4.3.20
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Fixed Buttons
+---------------------------------------------------------------------------------------------------
+Version: 4.3.19
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Fixed AccessTools2
+---------------------------------------------------------------------------------------------------
+Version: 4.3.18
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Added Button Setting Type
+---------------------------------------------------------------------------------------------------
+Version: 4.3.17
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0
+* Fixed Preset restoring
+---------------------------------------------------------------------------------------------------
+Version: 4.3.16
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0
+* Fixed resource loading
+---------------------------------------------------------------------------------------------------
+Version: 4.3.15
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0
+* Adapted to e1.7.0
+---------------------------------------------------------------------------------------------------
+Version: 4.3.14
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1
+* Adapted to e1.6.1
+---------------------------------------------------------------------------------------------------
+Version: 4.3.13
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0
+* Fixed compatibility with Bannerlord.CSharp.Scripting
+---------------------------------------------------------------------------------------------------
+Version: 4.3.12
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0
+* Fixed compatibility with Bannerlord.CSharp.Scripting
+---------------------------------------------------------------------------------------------------
+Version: 4.3.11
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0
+* Compatibility with e1.6.0
+---------------------------------------------------------------------------------------------------
+Version: 4.3.10
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10
+* Fixed crash at startup with Mod Settings entry in Main Menu enabled
+---------------------------------------------------------------------------------------------------
+Version: 4.3.9
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10
+* Fixed crash related to second call of OnBeforeInitialModuleScreenSetAsRoot
+* Added the ability to localize custom numeric formats
+---------------------------------------------------------------------------------------------------
+Version: 4.3.8
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10
+* Adapted to e1.5.10
+* Using new DI concept
+---------------------------------------------------------------------------------------------------
+Version: 4.3.7
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9
+* PerSave Settings were not initialized on new game
+---------------------------------------------------------------------------------------------------
+Version: 4.3.6
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9
+* Fixed PerSave Settings loading issue
+* Mod Options inside the Options screen are permanent now, main menu entry can be enabled/disabled
+---------------------------------------------------------------------------------------------------
+Version: 4.3.5
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9
+* Fixed buttons
+---------------------------------------------------------------------------------------------------
+Version: 4.3.4
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9
+* Fixed some reference isues
+* Removed the Beta postfix
+---------------------------------------------------------------------------------------------------
+Version: 4.3.3
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9
+* Adapted to e1.5.9
+---------------------------------------------------------------------------------------------------
+Version: 4.3.2
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8
+* Better ButterLib integration when available
+* Switched to UIExtenderEx v2 API
+---------------------------------------------------------------------------------------------------
+Version: 4.3.1
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8
+* Added explicit localization files;
+* Better internal Harmony usage
+---------------------------------------------------------------------------------------------------
+Version: 4.3.0
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8
+* Added explicit localization files;
+* Better internal Harmony usage
+---------------------------------------------------------------------------------------------------
+Version: 4.2.0
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8
+* Including now MCMv3 and ModLib, added MBO adapters all as a single module.
+* Better internal UI.
+---------------------------------------------------------------------------------------------------
+Version: 4.1.2.7
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8
+* Adapted to e1.5.8
+---------------------------------------------------------------------------------------------------
+Version: 4.1.2.6
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7
+* Fixed v3 dropdown issues
+---------------------------------------------------------------------------------------------------
+Version: 4.1.2.5
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7
+* Fixed v3 compatibility
+---------------------------------------------------------------------------------------------------
+Version: 4.1.2.4
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7
+* Fixed another Option screen crash
+---------------------------------------------------------------------------------------------------
+Version: 4.1.2.3
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7
+* Backported Mission screen crash fix
+* Fixed Option screen crash
+---------------------------------------------------------------------------------------------------
+Version: 4.1.2.2
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7
+* Updated v4.1.2 to work with e1.5.7.
+---------------------------------------------------------------------------------------------------
+Version: 4.1.2.1
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7
+* Updated v4.1.2 to work with e1.5.7.
+---------------------------------------------------------------------------------------------------
+Version: 4.1.2
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4
+* Fixed a crash caused by opening ModOptions menu 3 times.
+---------------------------------------------------------------------------------------------------
+Version: 4.1.1
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4
+* Fixed UI sliders.
+* Fixed Preset support for FluentBuilder.
+* Fixed Fluent support.
+* Added support for External settings
+---------------------------------------------------------------------------------------------------
+Version: 4.1.0
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4
+* Added Preset support for FluentBuilder.
+* Using as a Soft Dependency will provide the ability to load/save settings. A hybrid of the old Integrated solution.
+* Added PerSave settings that replace PerCampaign
+* General improvements
+---------------------------------------------------------------------------------------------------
+Version: 4.0.7
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2
+* Fixed missing ModOptions menu in Options screen
+---------------------------------------------------------------------------------------------------
+Version: 4.0.6
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Added ButterLib settings
+* Fixed OptionsVMMixin not triggering on Escape
+* Fixed SetSelectedIndexAction
+* Added json2 format that handles Dropdown as an integer
+---------------------------------------------------------------------------------------------------
+Version: 4.0.5
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Fixed ModLib Compatibility Layer issues
+---------------------------------------------------------------------------------------------------
+Version: 4.0.4
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Returned Implementation Loader
+* Better reflection in UI SubModule
+* Better reflection in Implementation SubModule
+---------------------------------------------------------------------------------------------------
+Version: 4.0.3
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Fixed MCMv3 and ModLib not returning setting instances in OnSubModuleLoad()
+---------------------------------------------------------------------------------------------------
+Version: 4.0.2
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Fixed SubModule names
+---------------------------------------------------------------------------------------------------
+Version: 4.0.1
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Explicit loading of Implementation and UI sub-modules
+---------------------------------------------------------------------------------------------------
+Version: 4.0.0
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Switched to v4 (API not finalized)
+* Added MCMv3 compatibility layer
+* Removed MBO compatibility layer
+* Added Harmony, ButterLib and UIExtender deps
+* Refactoring
+---------------------------------------------------------------------------------------------------
+Version: 3.1.11
+Game Versions: e1.4.0,e1.4.1,e1.4.2
+* Fixed GroupToggle in Fluent API
+* Better Prefab loading
+* Fixed Ctrl+V in Edit Box
+* Fixed 'random' crash in Edit Box
+* Fixed Preset and Dropdown translation
+---------------------------------------------------------------------------------------------------
+Version: 3.1.10
+Game Versions: e1.4.0,e1.4.1,e1.4.2
+* Non existing because of a release error
+---------------------------------------------------------------------------------------------------
+Version: 3.1.9
+Game Versions: e1.4.0,e1.4.1,e1.4.2
+* Fixed Group translation bug
+* Fixed Fluent API settings loading
+* Fixed XML settings reading
+---------------------------------------------------------------------------------------------------
+Version: 3.1.8
+Game Versions: e1.4.0,e1.4.1,e1.4.2
+* Fixed editing box in option screen
+* Fixed Preset reset issue
+* Fixed nested setting serialization
+* Made search box bigger
+---------------------------------------------------------------------------------------------------
+Version: 3.1.7
+Game Versions: e1.4.0,e1.4.1,e1.4.2
+* Fixed mission crash
+* Improved GroupName handling, localized strings will work now
+* Improved Search Box
+* Improved Hint visibility
+* Fluent API improvements
+* Better settings serializing
+---------------------------------------------------------------------------------------------------
+Version: 3.1.6
+Game Versions: e1.4.0,e1.4.1,e1.4.2
+* Fixed ModLib conflict
+* Fixed int/float slider value box font
+---------------------------------------------------------------------------------------------------
+Version: 3.1.5
+Game Versions: e1.4.2
+* Better UI spacing
+* Fixed Fluent API
+* Better UI injection
+* Setting names are translatable
+---------------------------------------------------------------------------------------------------
+Version: 3.1.4
+Game Versions: e1.4.0,e1.4.1
+* Fixed ModLib settings display issue
+---------------------------------------------------------------------------------------------------

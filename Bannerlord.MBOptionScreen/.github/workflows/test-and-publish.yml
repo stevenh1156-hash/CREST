@@ -1,0 +1,211 @@
+name: Test and Publish Module
+
+on:
+  repository_dispatch:
+    types: [game_version_update, game_version_update_patch]
+  push:
+    branches:
+      - master
+      - dev
+    paths:
+      - '.github/workflows/test-and-publish.yml'
+      - 'src/**'
+      - 'build/**'
+      - 'tests/**'
+  pull_request:
+    branches:
+      - dev
+    # will be triggereg when undrafting or requesting review
+    types: [review_requested, ready_for_review]
+    paths:
+      - '.github/workflows/test-and-publish.yml'
+      - 'src/**'
+      - 'build/**'
+      - 'tests/**'
+
+env:
+  # Disable the .NET logo in the console output.
+  DOTNET_NOLOGO: true
+  # Disable the .NET first time experience to skip caching NuGet packages and speed up the build.
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  # Disable sending .NET CLI telemetry to Microsoft.
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+  TEST_FILTERS: "+[MCMv*]* -[MCM*.*Tests]* -[MCMv*]MCM.LightInject* -[*]System.Diagnostics.CodeAnalysis* -[*]BUTR.DependencyInjection* -[*]Bannerlord.BUTR.Shared* -[*]HarmonyLib.BUTR*"
+
+jobs:
+  build-test:
+    name: Test Module
+    runs-on: windows-latest
+    steps:
+    - name: Tests Setup
+      uses: butr/actions-tests-setup@v1
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        steam-login: ${{secrets.STEAM_LOGIN}}
+        steam-password: ${{secrets.STEAM_PASSWORD}}
+        stable-version: ${{vars.GAME_VERSION_STABLE}}
+        beta-version: ${{vars.GAME_VERSION_BETA}}
+        stable-directory: 'bannerlord-stable'
+        beta-directory: 'bannerlord-beta'
+      
+      # ignore Stable_Release and treat it as Release
+    - name: Build MCM Full (Release)
+      if: >
+        github.ref == 'refs/heads/master' ||
+        (github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'master')
+      run: >-
+        mkdir bannerlord;
+        dotnet build src-ui/MCM.UI/MCM.UI.csproj --configuration Stable_Release -p:GameFolder="$PWD/bannerlord" -p:ExtendedBuild=true;
+      shell: pwsh
+      
+    - name: Build MCM Stable/Beta (Release)
+      if: >
+        !(github.ref == 'refs/heads/master' ||
+          (github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'master'))
+      run: >-
+        mkdir bannerlord;
+        dotnet build src-ui/MCM.UI/MCM.UI.csproj --configuration Beta_Release -p:GameFolder="$PWD/bannerlord" -p:ExtendedBuild=false;
+        dotnet build src-ui/MCM.UI/MCM.UI.csproj --configuration Stable_Release -p:GameFolder="$PWD/bannerlord" -p:ExtendedBuild=false;
+      shell: pwsh
+
+    - name: Build MCM Test
+      run: >-
+          $stable_version=$env:STABLE_VERSION;
+          $stable_version=$stable_version.substring(1);
+          $beta_version=$env:BETA_VERSION;
+          $beta_version=$beta_version.substring(1);
+
+          dotnet build "tests/MCM.UnitTests/MCM.UnitTests.csproj" --configuration Debug -p:GameVersion=$stable_version -p:GameFolder="$PWD/bannerlord-stable";
+          dotnet build "tests/MCM.UnitTests/MCM.UnitTests.csproj" --configuration Release -p:GameVersion=$stable_version -p:GameFolder="$PWD/bannerlord-stable";
+          dotnet build "tests/MCM.UnitTests/MCM.UnitTests.csproj" --configuration Debug -p:GameVersion=$beta_version -p:GameFolder="$PWD/bannerlord-beta";
+          dotnet build "tests/MCM.UnitTests/MCM.UnitTests.csproj" --configuration Release -p:GameVersion=$beta_version -p:GameFolder="$PWD/bannerlord-beta";
+      env:
+        STABLE_VERSION: ${{vars.GAME_VERSION_STABLE}}
+        BETA_VERSION: ${{vars.GAME_VERSION_BETA}}
+      shell: pwsh
+
+    - name: Test MCM with Coverage
+      run: >-
+          opencover/OpenCover.Console.exe -register -target:"dotnet.exe" -targetargs:"test tests/MCM.UnitTests/MCM.UnitTests.csproj --configuration Debug --no-build" -filter:"${{env.TEST_FILTERS}}" -excludebyattribute:"*.ExcludeFromCodeCoverage*" -output:coverage_mcm_stable_debug.xml -mergebyhash;
+          opencover/OpenCover.Console.exe -register -target:"dotnet.exe" -targetargs:"test tests/MCM.UnitTests/MCM.UnitTests.csproj --configuration Release --no-build" -filter:"${{env.TEST_FILTERS}}" -excludebyattribute:"*.ExcludeFromCodeCoverage*" -output:coverage_mcm_stable_release.xml -mergebyhash;
+          opencover/OpenCover.Console.exe -register -target:"dotnet.exe" -targetargs:"test tests/MCM.UnitTests/MCM.UnitTests.csproj --configuration Debug --no-build" -filter:"${{env.TEST_FILTERS}}" -excludebyattribute:"*.ExcludeFromCodeCoverage*" -output:coverage_mcm_beta_debug.xml -mergebyhash;
+          opencover/OpenCover.Console.exe -register -target:"dotnet.exe" -targetargs:"test tests/MCM.UnitTests/MCM.UnitTests.csproj --configuration Release --no-build" -filter:"${{env.TEST_FILTERS}}" -excludebyattribute:"*.ExcludeFromCodeCoverage*" -output:coverage_mcm_beta_release.xml -mergebyhash;
+      shell: pwsh
+
+    - name: ReportGenerator
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
+      with:
+        reports: 'coverage_mcm_stable_debug.xml;coverage_mcm_stable_release.xml;coverage_mcm_beta_debug.xml;coverage_mcm_beta_release.xml'
+        targetdir: 'coveragereport'
+        reporttypes: 'HtmlInline;Cobertura'
+        sourcedirs: './'
+        tag: '${{ github.run_number }}_${{ github.run_id }}' # Optional tag or build version.
+
+    - name: Upload ReportGenerator to GitHub
+      uses: actions/upload-artifact@v4
+      with:
+        name: coverage-report
+        path: coveragereport
+
+    - name: Upload ReportGenerator to CodeCov
+      uses: codecov/codecov-action@v3
+      with:
+        token: ${{secrets.CODECOV_TOKEN}}
+        file: coveragereport/Cobertura.xml
+        fail_ci_if_error: true
+
+    - name: Upload Bannerlord folder
+      if: ${{ github.ref == 'refs/heads/master' }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: bannerlord
+        path: ./bannerlord/
+
+  changelog-module:
+    if: ${{ github.ref == 'refs/heads/master' }}
+    name: Generate Module Changelog
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup
+      uses: butr/actions-common-setup@v2
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Install and Run ChangelogParser
+      id: changelog
+      run: |
+        dotnet tool install -g Bannerlord.ChangelogParser
+        vers="$(bannerlord_changelog_parser latestversion -f "$PWD/changelog.txt")"
+        echo "::set-output name=mod_version::$vers"
+        desc="$(bannerlord_changelog_parser fulldescription -f "$PWD/changelog.txt")"
+        desc="${desc//'%'/'%25'}"
+        desc="${desc//$'\n'/'%0A'}"
+        desc="${desc//$'\r'/'%0D'}"
+        echo "::set-output name=mod_description::$desc"
+
+###########################
+#        NUGET/GPR        #
+###########################
+  publish-on-nuget:
+    needs: ["build-test", "changelog-module"]
+    uses: BUTR/workflows/.github/workflows/release-nuget.yml@master
+    with:
+      project_path: src/MCM/MCM.csproj
+    secrets:
+      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+
+###########################
+#        NUGET/GPR        #
+###########################
+  publish-on-nuget-source:
+    needs: ["build-test", "changelog-module"]
+    uses: BUTR/workflows/.github/workflows/release-nuget.yml@master
+    with:
+      project_path: src/MCM.Source/MCM.Source.csproj
+    secrets:
+      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+
+###########################
+#        NEXUSMODS        #
+###########################
+  publish-on-nexusmods:
+    needs: ["build-test", "changelog-module"]
+    uses: BUTR/workflows/.github/workflows/release-nexusmods.yml@master
+    with:
+      nexusmods_game_id: mountandblade2bannerlord
+      nexusmods_mod_id: 612
+      nexusmods_file_group_id: 1731514
+      mod_filename: Mod Configuration Menu
+      mod_version: ${{ needs.changelog-module.outputs.mod_version }}
+      mod_description: ${{ needs.changelog-module.outputs.mod_description }}
+      artifact_name: bannerlord
+    secrets:
+      NEXUSMODS_APIKEY: ${{ secrets.NEXUSMODS_APIKEY }}
+
+###########################
+#          STEAM          #
+###########################
+  publish-on-steam:
+    needs: ["build-test", "changelog-module"]
+    uses: BUTR/workflows/.github/workflows/release-steam.yml@master
+    with:
+      workshop_id: 2859238197
+      mod_id: Bannerlord.MBOptionScreen
+      mod_description: ${{ needs.changelog-module.outputs.mod_description }}
+      artifact_name: bannerlord
+    secrets:
+      STEAM_LOGIN: ${{ secrets.STEAM_WORKSHOP_LOGIN }}
+      STEAM_PASSWORD: ${{ secrets.STEAM_WORKSHOP_PASSWORD }}
+      STEAM_AUTH_CODE: ${{ secrets.STEAM_WORKSHOP_AUTH_CODE }}
+
+###########################
+#         GITHUB          #
+###########################
+  publish-on-github:
+    needs: ["build-test", "changelog-module"]
+    uses: BUTR/workflows/.github/workflows/release-github.yml@master
+    with:
+      mod_id: Bannerlord.MBOptionScreen
+      mod_version: ${{ needs.changelog-module.outputs.mod_version }}
+      mod_description: ${{ needs.changelog-module.outputs.mod_description }}
+      artifact_name: bannerlord

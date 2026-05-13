@@ -1,0 +1,21 @@
+{
+  "name": "broken-retreat",
+  "description": "enemy.0.inf is breaking down. Starts at 60, takes casualties each tick. When units < 25 AND retreatWeight > 3.0, Y.54 should flip them to Retreat instead of holding StandYourGround. Replicates the exact pattern observed at battle 01:30 (Retreat:5.17 with 4 men).",
+  "ticks": [
+    { "at":  0, "formations": [
+      { "poolId": "enemy.0", "class": "inf", "units": 60, "pos": [247, 642], "anchorD": 2, "enemyD": 20, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": "Vlandian Recruit", "retreatWeight": 1.00, "expectAction": "none" }
+    ]},
+    { "at":  5, "formations": [
+      { "poolId": "enemy.0", "class": "inf", "units": 40, "pos": [248, 640], "anchorD": 4, "enemyD": 18, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": "Vlandian Recruit", "retreatWeight": 1.80, "expectAction": "none" }
+    ]},
+    { "at": 10, "formations": [
+      { "poolId": "enemy.0", "class": "inf", "units": 21, "pos": [250, 638], "anchorD": 6, "enemyD": 16, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": "Vlandian Recruit", "retreatWeight": 3.04, "expectAction": "broken-retreat" }
+    ]},
+    { "at": 15, "formations": [
+      { "poolId": "enemy.0", "class": "inf", "units":  8, "pos": [253, 636], "anchorD": 9, "enemyD": 14, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": "Vlandian Recruit", "retreatWeight": 4.59, "expectAction": "broken-retreat" }
+    ]},
+    { "at": 20, "formations": [
+      { "poolId": "enemy.0", "class": "inf", "units":  4, "pos": [275, 622], "anchorD": 35, "enemyD": 42, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": null, "retreatWeight": 5.17, "expectAction": "broken-retreat" }
+    ]}
+  ]
+}

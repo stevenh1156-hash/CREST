@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  CREST Harmony SubModule.xml
+  - Replaces the upstream BUTR template (which used $moduleid$ placeholders).
+  - Hardcoded names because the SDK substitution incorrectly produced
+    CREST.dll / CREST.SubModule for DLLName / SubModuleClassType — the actual
+    built DLL is Crest.Harmony.dll and the class lives at
+    Bannerlord.Harmony.SubModule (post-Phase-H namespace revert).
+  - Top-level Id / Name / Version are intentionally hardcoded (not templated)
+    to prevent the BUTRModule SDK auto-deploy step from corrupting the
+    deployed copy on -Clean rebuilds. See crest/AUDIT_v1.3.0.md for context.
+-->
+<Module xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/BUTR/Bannerlord.XmlSchemas/master/SubModule.xsd" >
+  <Id value="CREST" />
+  <Name value="CREST Harmony" />
+  <Version value="v2.4.2.0" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <ModuleType value ="Community" />
+  <Url value="https://www.nexusmods.com/mountandblade2bannerlord/mods/2006" />
+  <UpdateInfo value="NexusMods:2006" />
+  <DependedModules />
+  <ModulesToLoadAfterThis>
+    <Module Id="Native" />
+    <Module Id="SandBoxCore" />
+    <Module Id="Sandbox" />
+    <Module Id="StoryMode" />
+    <Module Id="CustomBattle" />
+  </ModulesToLoadAfterThis>
+  <!-- Community Dependency Metadata -->
+  <!-- https://github.com/BUTR/Bannerlord.BLSE#community-dependency-metadata -->
+  <DependedModuleMetadatas>
+    <DependedModuleMetadata id="Native" order="LoadAfterThis" version="v1.3.4.*" optional="true" />
+    <DependedModuleMetadata id="SandBoxCore" order="LoadAfterThis" version="v1.3.4.*" optional="true" />
+    <DependedModuleMetadata id="Sandbox" order="LoadAfterThis" version="v1.3.4.*" optional="true" />
+    <DependedModuleMetadata id="StoryMode" order="LoadAfterThis" version="v1.3.4.*" optional="true" />
+    <DependedModuleMetadata id="CustomBattle" order="LoadAfterThis" version="v1.3.4.*" optional="true" />
+  </DependedModuleMetadatas>
+  <!-- Community Dependency Metadata -->
+  <SubModules>
+    <SubModule>
+      <Name value="Harmony" />
+      <DLLName value="Crest.Harmony.dll" />
+      <SubModuleClassType value="Bannerlord.Harmony.SubModule" />
+      <Assemblies>
+        <Assembly value="0Harmony.dll" />
+        <Assembly value="Mono.Cecil.dll" />
+        <Assembly value="Mono.Cecil.Mdb.dll" />
+        <Assembly value="Mono.Cecil.Pdb.dll" />
+        <Assembly value="Mono.Cecil.Rocks.dll" />
+        <Assembly value="MonoMod.Core.dll" />
+        <Assembly value="MonoMod.Backports.dll" />
+        <Assembly value="MonoMod.Iced.dll" />
+        <Assembly value="MonoMod.ILHelpers.dll" />
+        <Assembly value="MonoMod.Utils.dll" />
+      </Assemblies>
+      <Tags/>
+    </SubModule>
+  </SubModules>
+</Module>

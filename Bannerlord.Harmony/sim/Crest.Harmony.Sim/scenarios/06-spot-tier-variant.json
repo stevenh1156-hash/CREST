@@ -1,0 +1,15 @@
+{
+  "name": "spot-tier-variant",
+  "description": "Y.60d: per-spot tier/variant logic. When a spot is outnumbered by >=100 vs nearest enemy, tier 2+ should ShieldWall; when outnumbered by >=200, tier 3+ should Circle; when outnumbering by >=50 on a flank role, cav should Charge. (Note: this scenario currently feeds the SAME Y.54+Y.56 rule logic the sim already covers; once Y.60d ships its own pure-method extraction, we'll add direct rule scenarios. For now, validates that broken-retreat fires when units<25 + retreatW>3 on shield-wall spots.)",
+  "ticks": [
+    { "at":  0, "formations": [
+      { "poolId": "ally.spot[1]", "class": "inf", "units":  20, "pos": [240, 460], "anchorD":   2, "enemyD":  18, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": "Asgotha", "retreatWeight": 1.50, "expectAction": "none" }
+    ]},
+    { "at":  5, "formations": [
+      { "poolId": "ally.spot[1]", "class": "inf", "units":  10, "pos": [240, 460], "anchorD":   2, "enemyD":  16, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": "Asgotha", "retreatWeight": 3.50, "expectAction": "broken-retreat" }
+    ]},
+    { "at": 10, "formations": [
+      { "poolId": "ally.spot[1]", "class": "inf", "units":   3, "pos": [242, 458], "anchorD":   3, "enemyD":  14, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": null, "retreatWeight": 5.20, "expectAction": "broken-retreat" }
+    ]}
+  ]
+}

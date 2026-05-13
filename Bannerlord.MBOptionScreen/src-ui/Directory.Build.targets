@@ -1,0 +1,14 @@
+<Project>
+
+  <!-- CREST Phase Z (extended): override the BUTRModule SDK's destructive
+       auto-deploy targets with no-op stubs. See
+       Bannerlord.Harmony/build/crest-override-sdk.targets for the full
+       explanation. MSBuild's "last target definition wins" rule means our
+       empty targets replace the SDK's CopyBinariesWindows (which wipes
+       Modules/CREST/bin with Clean=true) and CopyModule (which overwrites
+       Modules/CREST/SubModule.xml from per-repo _Module/ templates). -->
+
+  <Target Name="CopyBinariesWindows" />
+  <Target Name="CopyModule" />
+
+</Project>

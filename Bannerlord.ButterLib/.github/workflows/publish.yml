@@ -1,0 +1,153 @@
+name: Publish Module
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  # Disable the .NET logo in the console output.
+  DOTNET_NOLOGO: true
+  # Disable the .NET first time experience to skip caching NuGet packages and speed up the build.
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  # Disable sending .NET CLI telemetry to Microsoft.
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+
+  build-module:
+    name: Build Module
+    runs-on: ubuntu-latest
+    outputs:
+      mod_version: ${{ steps.changelog.outputs.mod_version.test }}
+      mod_description: ${{ steps.changelog.outputs.mod_description.test }}    
+    steps:
+    - name: Setup
+      uses: butr/actions-common-setup@v2
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Build Bannerlord.ButterLib Module
+      run: |
+        $path = $PWD.Path + '/bannerlord';
+
+        $implFX = $PWD.Path + '/bannerlord-implementationsFX';
+        $implCore = $PWD.Path + '/bannerlord-implementationsCore';
+
+        $finalFX = $path + '/Modules/Bannerlord.ButterLib/bin/Win64_Shipping_Client/';
+        $finalCore = $path + '/Modules/Bannerlord.ButterLib/bin/Gaming.Desktop.x64_Shipping_Client/';
+
+        $proj = 'src/Bannerlord.ButterLib.Implementation/Bannerlord.ButterLib.Implementation.csproj';
+
+        $pdllFX = $path + '/Modules/Bannerlord.ButterLib/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.*.dll';
+        $ppdbFX = $path + '/Modules/Bannerlord.ButterLib/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.*.pdb';
+        $pdllCore = $path + '/Modules/Bannerlord.ButterLib/bin/Gaming.Desktop.x64_Shipping_Client/Bannerlord.ButterLib.Implementation.*.dll';
+        $ppdbCore = $path + '/Modules/Bannerlord.ButterLib/bin/Gaming.Desktop.x64_Shipping_Client/Bannerlord.ButterLib.Implementation.*.pdb';
+
+        # The folders are required to be created before executing the script
+        New-Item -ItemType directory -Force -Path $path;
+        New-Item -ItemType directory -Force -Path $implFX;
+        New-Item -ItemType directory -Force -Path $implCore;
+
+        [string[]]$gameversions = Get-Content -Path supported-game-versions.txt;
+        # Last entry is the Minimal version. We will use Bannerlord.ButterLib.dll from there
+        For ($i = 0; $i -le $gameversions.Length - 1; $i++)
+        {
+          $gameversion = $gameversions[$i];
+          $version = $gameversion.substring(1);
+          $constgameversion = $gameversion.replace(".", "");
+          dotnet clean $proj --configuration Release;
+          dotnet build $proj --configuration Release -p:OverrideGameVersion=$gameversion -p:GameFolder="$path" -p:GameVersionConstant="$constgameversion";
+
+          # Copy Implementations to the Implementations folder
+          Copy-Item $pdllFX $implFX/;
+          Copy-Item $ppdbFX $implFX/;
+
+          Copy-Item $pdllCore $implCore/;
+          Copy-Item $ppdbCore $implCore/;
+        }
+
+        # Copy Implementations to the Module
+        Copy-Item $implFX/* $finalFX;
+        Copy-Item $implCore/* $finalCore;
+
+        # Delete Implementations folder
+        Remove-Item -Recurse $implFX;
+        Remove-Item -Recurse $implCore;
+      shell: pwsh
+      env:
+        BANNERLORD_BUTR_UPLOAD_URL: ${{secrets.BANNERLORD_BUTR_UPLOAD_URL}}
+
+    - name: Install and Run ChangelogParser
+      id: changelog
+      run: |
+        dotnet tool install -g Bannerlord.ChangelogParser --ignore-failed-sources
+        vers="$(bannerlord_changelog_parser latestversion -f "$PWD/changelog.txt")"
+        echo "::set-output name=mod_version::$vers"
+        desc="$(bannerlord_changelog_parser fulldescription -f "$PWD/changelog.txt")"
+        desc="${desc//'%'/'%25'}"
+        desc="${desc//$'\n'/'%0A'}"
+        desc="${desc//$'\r'/'%0D'}"
+        echo "::set-output name=mod_description::$desc"
+
+    - name: Upload bannerlord folder
+      uses: actions/upload-artifact@v4
+      with:
+        name: bannerlord
+        path: ./bannerlord/
+
+###########################
+#        NUGET/GPR        #
+###########################
+  publish-on-nuget:
+    needs: ["build-module"]
+    uses: BUTR/workflows/.github/workflows/release-nuget.yml@master
+    with:
+      project_path: src/Bannerlord.ButterLib/Bannerlord.ButterLib.csproj
+    secrets:
+      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+
+###########################
+#        NEXUSMODS        #
+###########################
+  publish-on-nexusmods:
+    needs: ["build-module"]
+    uses: BUTR/workflows/.github/workflows/release-nexusmods.yml@master
+    with:
+      nexusmods_game_id: mountandblade2bannerlord
+      nexusmods_mod_id: 2018
+      nexusmods_file_group_id: 2468845
+      mod_filename: ButterLib
+      mod_version: ${{ needs.build-module.outputs.mod_version }}
+      mod_description: ${{ needs.build-module.outputs.mod_description }}
+      artifact_name: bannerlord
+    secrets:
+      NEXUSMODS_APIKEY: ${{ secrets.ARAGAS_NEXUSMODS_API_KEY }}
+
+###########################
+#          STEAM          #
+###########################
+  publish-on-steam:
+    needs: ["build-module"]
+    uses: BUTR/workflows/.github/workflows/release-steam.yml@master
+    with:
+      workshop_id: 2859232415
+      mod_id: Bannerlord.ButterLib
+      mod_description: ${{ needs.build-module.outputs.mod_description }}
+      artifact_name: bannerlord
+    secrets:
+      STEAM_LOGIN: ${{ secrets.STEAM_WORKSHOP_LOGIN }}
+      STEAM_PASSWORD: ${{ secrets.STEAM_WORKSHOP_PASSWORD }}
+      STEAM_AUTH_CODE: ${{ secrets.STEAM_WORKSHOP_AUTH_CODE }}
+
+###########################
+#         GITHUB          #
+###########################
+  publish-on-github:
+    needs: ["build-module"]
+    uses: BUTR/workflows/.github/workflows/release-github.yml@master
+    with:
+      mod_id: Bannerlord.ButterLib
+      mod_version: ${{ needs.build-module.outputs.mod_version }}
+      mod_description: ${{ needs.build-module.outputs.mod_description }}
+      artifact_name: bannerlord

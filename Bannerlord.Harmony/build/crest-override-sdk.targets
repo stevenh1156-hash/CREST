@@ -1,0 +1,29 @@
+<Project>
+
+  <!--
+    CREST Phase Z (extended): override the BUTRModule SDK's destructive
+    auto-deploy targets with no-op stubs. The SDK's Basic.targets defines
+    CopyBinariesWindows (which wipes Modules/CREST/bin with Clean=true and
+    repopulates from the current csproj's TargetDir) and CopyModule (which
+    overwrites Modules/CREST/SubModule.xml from this repo's _Module/
+    template). All 5 Crest.* repos share ModuleId=CREST so they take turns
+    clobbering each other's deploys; whichever builds last wins.
+
+    Phase Z's <DisableModuleCopy>true</DisableModuleCopy> only skipped the
+    SDK's PostBuildCopyToModules orchestrator. The two child targets are
+    each independently bound via AfterTargets="PostBuildEvent" and have no
+    DisableModuleCopy gate, so they fire anyway.
+
+    The fix: redeclare both targets here. MSBuild's "last target definition
+    wins" rule means our empty targets replace the SDK's. Directory.Build.targets
+    in src/ imports ../build/*.targets, which gets evaluated AFTER the SDK
+    NuGet's Basic.targets, so we win.
+
+    Manual deploy is handled by phase-w*.ps1's Verify-Copy step (additive,
+    no Clean=true), and SubModule.xml is canonical-restored by phase-z*.ps1.
+  -->
+
+  <Target Name="CopyBinariesWindows" />
+  <Target Name="CopyModule" />
+
+</Project>

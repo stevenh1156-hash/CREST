@@ -1,0 +1,104 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>12.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputType>library</OutputType>
+    <AssemblyName>Bannerlord.BLSE.Shared</AssemblyName>
+    <DefineConstants>$(DefineConstants);SHARED;</DefineConstants>
+
+    <GameConfiguration Condition="$(GameConfiguration) == '' AND Exists('$(GameFolder)\bin\Win64_Shipping_Client')">Win64_Shipping_Client</GameConfiguration>
+    <GameConfiguration Condition="$(GameConfiguration) == '' AND Exists('$(GameFolder)\bin\Gaming.Desktop.x64_Shipping_Client')">Gaming.Desktop.x64_Shipping_Client</GameConfiguration>
+
+    <!-- Set to true via AdditionalProperties on a transitive ProjectReference to suppress PostBuildFramework's copy of Shared.dll into GameFolder. Used by Bannerlord.BLSE.Loaders.AppDomainManager so its CI matrix job does not publish a second Shared.dll into the artifact pool. -->
+    <PreventSharedCopy Condition="$(PreventSharedCopy) == ''">false</PreventSharedCopy>
+
+    <ILRepackTargetConfigurations>Release</ILRepackTargetConfigurations>
+    <ILRepackAllowDuplicateResources>false</ILRepackAllowDuplicateResources>
+    <ILRepackMergeDebugSymbols>true</ILRepackMergeDebugSymbols>
+    <!-- No. No. LauncherExData is inaccessible due to its protection level. -->
+    <ILRepackPerformInternalize>false</ILRepackPerformInternalize>
+    <ILRepackCopyAttributes>true</ILRepackCopyAttributes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ILRepack" Version="2.0.44" PrivateAssets="all" />
+    <PackageReference Include="ILRepack.FullAuto" Version="1.6.0" PrivateAssets="all" />
+
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion).*-*" IncludeAssets="compile" PrivateAssets="all" />
+
+    <PackageReference Include="Bannerlord.BUTR.Shared" Version="$(BUTRSharedVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <!-- We need our own implementation of Bannerlord.ModuleManager.Source so won't load it from Bannerlord.LauncherEx that is dynamically resolved -->
+    <PackageReference Include="Bannerlord.ModuleManager.Source" PrivateAssets="all" Version="$(BUTRModuleManagerVersion)" />
+    <PackageReference Include="Harmony.Extensions" Version="$(HarmonyExtensionsVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="IsExternalInit" Version="1.0.3" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+
+    <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.2.229-beta" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Mono.Cecil" Version="0.11.6" IncludeAssets="compile" PrivateAssets="all" />
+    <PackageReference Include="System.Memory" Version="4.5.5" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bannerlord.BLSE\Bannerlord.BLSE.csproj" Private="true" />
+  </ItemGroup>
+  <ItemGroup Condition="$(Configuration) == 'Debug'">
+    <ProjectReference Include="..\Bannerlord.LauncherEx\Bannerlord.LauncherEx.csproj" Private="true" />
+  </ItemGroup>
+  <ItemGroup Condition="$(Configuration) == 'Release'">
+    <ProjectReference Include="..\Bannerlord.LauncherEx\Bannerlord.LauncherEx.csproj" Private="false" IncludeAssets="compile" PrivateAssets="all" />
+  </ItemGroup>
+
+  <Target Name="PostBuildFramework" AfterTargets="CopyFilesToOutputDirectory" Condition="Exists($(GameFolder)) AND '$(PreventSharedCopy)' != 'true'">
+    <ItemGroup>
+      <FilesDebug Include="Bannerlord.LauncherEx.dll" />
+      <FilesDebug Include="Bannerlord.BLSE.dll" />
+      <FilesCopy Include="$(MSBuildProjectDirectory)\$(OutputPath)\%(FilesDebug.Identity)" />
+      <FilesDelete Include="$(GameFolder)\bin\$(GameConfiguration)\%(FilesDebug.Identity)" />
+      
+      <Files Include="$(MSBuildProjectDirectory)\$(OutputPath)\$(AssemblyName).dll" />
+    </ItemGroup>
+    <Copy SourceFiles="@(Files)" DestinationFolder="$(GameFolder)\bin\$(GameConfiguration)" />
+    
+    <Copy Condition="$(Configuration) == 'Debug'" SourceFiles="@(FilesCopy)" DestinationFolder="$(GameFolder)\bin\$(GameConfiguration)" />
+    <Delete Condition="$(Configuration) == 'Release'" Files="@(FilesDelete)" />
+  </Target>
+
+  <!-- Embedding multiple versions of LauncherEx -->
+  <ItemGroup Condition="$(Configuration) == 'Release'">
+    <!-- From highest to lowest. Don't ask why. -->
+    <GameAPIVersion Include="v1.4.0-v1.4.1"  GameVersion="1.4.0" Version="v1.4.0" Flat="140" Visible="false" />
+    <GameAPIVersion Include="v1.3.0-v1.3.15" GameVersion="1.3.4" Version="v1.3.4" Flat="130" Visible="false" />
+    <GameAPIVersion Include="v1.2.0-v1.2.12" GameVersion="1.2.0" Version="v1.2.0" Flat="120" Visible="false" />
+    <GameAPIVersion Include="v1.1.0-v1.1.4"  GameVersion="1.1.0" Version="v1.1.0" Flat="110" Visible="false" />
+    <GameAPIVersion Include="v1.0.0-v1.0.3"  GameVersion="1.0.0" Version="v1.0.0" Flat="100" Visible="false" />
+    <EmbeddedResource Include="@(GameAPIVersion->'..\Bannerlord.LauncherEx\bin\$(Configuration)_%(Flat)\netstandard2.0\Bannerlord.LauncherEx.dll')" Visible="false">
+      <Link>Bannerlord.LauncherEx_%(Version).dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Target Condition="$(Configuration) == 'Release'" Name="BeforeBuildLauncherEx" BeforeTargets="BeforeBuild">
+    <PropertyGroup>
+      <LauncherExProject>$(MSBuildThisFileDirectory)..\Bannerlord.LauncherEx\Bannerlord.LauncherEx.csproj</LauncherExProject>
+      <LauncherExProjectFull>"$([System.IO.Path]::GetFullPath('$(LauncherExProject)'))"</LauncherExProjectFull>
+    </PropertyGroup>
+    <Message Text="dotnet clean $(LauncherExProjectFull) -p:Configuration=$(Configuration)_%(GameAPIVersion.Flat)" Importance="High" />
+    <Exec Command="dotnet clean $(LauncherExProjectFull) -p:Configuration=$(Configuration)_%(GameAPIVersion.Flat)" />
+    <Message Text="dotnet build $(LauncherExProjectFull) -p:Configuration=$(Configuration)_%(GameAPIVersion.Flat) -p:GameVersion=%(GameAPIVersion.GameVersion)" Importance="High" />
+    <Exec Command="dotnet build $(LauncherExProjectFull) -p:Configuration=$(Configuration)_%(GameAPIVersion.Flat) -p:GameVersion=%(GameAPIVersion.GameVersion)" />
+  </Target>
+  <Target Condition="$(Configuration) == 'Release'" Name="BeforeBuildCompress" AfterTargets="BeforeBuildLauncherEx">
+    <GZip Files="@(EmbeddedResource)">
+      <Output ItemName="GZipEmbeddedResource" TaskParameter="Result" />
+    </GZip>
+    <Message Text="Source EmbeddedResources: @(EmbeddedResource)" Importance="High" />
+    <Message Text="GZipped EmbeddedResources: @(GZipEmbeddedResource)" Importance="High" />
+    <!-- Round-trip every .gz to catch a truncated/corrupted resource at build time, before it is embedded and shipped. -->
+    <VerifyGZip Files="@(GZipEmbeddedResource)" />
+    <ItemGroup>
+      <EmbeddedResource Remove="@(EmbeddedResource)" />
+      <EmbeddedResource Include="@(GZipEmbeddedResource)" />
+    </ItemGroup>
+  </Target>
+
+</Project>

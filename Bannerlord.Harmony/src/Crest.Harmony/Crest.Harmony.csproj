@@ -1,0 +1,122 @@
+<!--EXTERNAL_PROPERTIES: GameVersion;HarmonyVersion;BuildResourcesVersion-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;net6</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Platforms>x64</Platforms>
+    <BuildForWindows>false</BuildForWindows>
+    <BuildForWindowsStore>false</BuildForWindowsStore>
+
+    <AssemblyName>Crest.Harmony</AssemblyName>
+    <RootNamespace>Bannerlord.Harmony</RootNamespace>
+
+    <Configurations>Stable_Debug;Stable_Release;Beta_Debug;Beta_Release</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(TargetFramework) == 'net472'">
+    <BuildForWindows>true</BuildForWindows>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(TargetFramework) == 'net6'">
+    <BuildForWindowsStore>true</BuildForWindowsStore>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <!--Windows Forms-->
+  <ItemGroup Condition="$(TargetFramework) == 'net472'">
+    <Reference Include="System.Windows.Forms" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup Condition="$(TargetFramework) == 'net6'">
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App" PrivateAssets="all" />
+  </ItemGroup>
+  <!--Windows Forms-->
+
+  <!-- Phase Y.3: CompanionHotswap absorption needs MissionView/MissionScreen/TimeSpeedRequest
+       which live in TaleWorlds.MountAndBlade.View.dll. The BUTR Core reference assemblies
+       package doesn't include View, so reference the game's View.dll directly. The path
+       resolves at build time using BANNERLORD_GAME_DIR if set, else falls back to the
+       default Steam install. -->
+  <!-- Phase Y.3: View.dll reference removed. CompanionHotswap absorption uses
+       reflection (AccessTools2.TypeByName + Method/Property) for MissionView,
+       MissionScreen, MBWindowManager so we don't get tagged by BLSE for an
+       undeclared cross-module assembly dependency. -->
+
+  
+  <!--Module Creation-->
+  <PropertyGroup>
+    <ModuleId>CREST</ModuleId>
+    <ModuleName>CREST Harmony</ModuleName>
+  </PropertyGroup>
+  <!--Module Creation-->
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony.Thin" Version="$(HarmonyVersion)" />
+    
+    <PackageReference Include="Bannerlord.BuildResources" Version="$(BuildResourcesVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Bannerlord.BUTR.Analyzers" Version="$(BUTRAnalyzerVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Bannerlord.BUTR.Shared" Version="$(BUTRSharedVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Bannerlord.ModuleManager.Source" Version="$(BUTRModuleManagerVersion)" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion).*-*" PrivateAssets="All" />
+    <PackageReference Include="Harmony.Extensions" Version="$(HarmonyExtensionsVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="IsExternalInit" Version="1.0.3" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+      <_Parameter1>HarmonyVersion</_Parameter1>
+      <_Parameter2>$(HarmonyVersion)</_Parameter2>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <!-- v0.9.1 Option B: grant Crest.Harmony.Beta access to internals so the
+       linked CrestBattleConvergenceLogic.cs can reach internal helper types
+       in the main DLL (CrestBattleConvergenceDialogueBehavior, CrestBattleHornCue,
+       etc.). Without this the Beta DLL fails CS0122 on cross-assembly access. -->
+  <ItemGroup>
+    <InternalsVisibleTo Include="Crest.Harmony.Beta" />
+  </ItemGroup>
+
+
+  <Target Name="SetVersion" BeforeTargets="PrepareForBuild" DependsOnTargets="RunResolvePackageDependencies">
+    <PropertyGroup>
+      <Version>$(HarmonyVersion)</Version>
+    </PropertyGroup>
+
+    <SetVersion2 VersionIn="$(Version)" VersionCI="$(GITHUB_RUN_NUMBER)">
+      <Output TaskParameter="VersionOut" PropertyName="Version" />
+    </SetVersion2>
+  </Target>
+
+  <UsingTask TaskName="SetVersion2" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <ParameterGroup>
+      <VersionIn ParameterType="System.String" Required="true" />
+      <VersionCI ParameterType="System.String" Required="true" />
+      <VersionOut ParameterType="System.String" Required="false" Output="true" />
+    </ParameterGroup>
+    <Task>
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
+          var version = System.Version.Parse(VersionIn);
+          var versionCI = int.Parse(VersionCI);
+          if (version.Revision == -1)
+          {
+            VersionOut = VersionIn + "." + VersionCI;
+          }
+          else if (version.Revision == 0)
+          {
+            version = new Version(version.Major, version.Minor, version.Build, versionCI);
+            VersionOut = version.ToString();
+          }
+          else
+          {
+            VersionOut = VersionIn + VersionCI;
+          }
+        ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+
+</Project>

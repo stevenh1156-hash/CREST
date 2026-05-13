@@ -1,0 +1,9 @@
+<Brushes>
+
+  <Brush Name="Crest.MCM.Cancel.Button" BaseBrush="Popup.Cancel.Button"/>
+
+  <Brush Name="Crest.MCM.Done.Button" BaseBrush="Popup.Done.Button"/>
+
+  <Brush Name="Crest.MCM.Button.Text" BaseBrush="Popup.Button.Text"/>
+
+</Brushes>

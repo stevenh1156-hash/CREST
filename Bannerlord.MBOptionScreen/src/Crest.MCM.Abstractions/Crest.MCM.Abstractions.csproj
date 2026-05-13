@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <DefineConstants>$(DefineConstants);BUTRDEPENDENCYINJECTION_PUBLIC</DefineConstants>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Bannerlord.ModuleManager.Source" Version="$(BUTRModuleManagerVersion)" PrivateAssets="all" />
+    <PackageReference Include="BUTR.DependencyInjection" Version="$(BUTRDependencyInjectionVersion)" PrivateAssets="all" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" PrivateAssets="all" IncludeAssets="compile" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Crest.MCM.Common\Crest.MCM.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Crest.MCM.Implementation" />
+    <InternalsVisibleTo Include="Crest.MCM.Bannerlord" />
+  </ItemGroup>
+
+</Project>

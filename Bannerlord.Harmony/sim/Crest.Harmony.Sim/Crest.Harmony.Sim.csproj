@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Crest.Harmony.Sim — Tier-2 scenario runner for Y.54 / Y.56 formation rules.
+
+    Architecture: we DO NOT project-reference Crest.Harmony.csproj, because
+    that would pull TaleWorlds reference assemblies into this sim's restore
+    graph (and the multi-target build assets file caused real failures).
+
+    Instead we share the rules SOURCE FILE directly via Compile/Link. The
+    file lives in Crest.Harmony so it compiles into the production DLL too;
+    Link makes it appear as a top-level file in this project as well. One
+    source of truth, zero cross-project dependency overhead.
+  -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Crest.Harmony.Sim</RootNamespace>
+    <AssemblyName>Crest.Harmony.Sim</AssemblyName>
+
+    <!-- Don't inherit the parent Directory.Build.props chain (it's set up
+         for the production multi-target Crest.Harmony tree, not for a
+         standalone sim console). -->
+    <ImportDirectoryBuildProps>false</ImportDirectoryBuildProps>
+    <ImportDirectoryBuildTargets>false</ImportDirectoryBuildTargets>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Share the rules source file with Crest.Harmony. Single source of
+         truth: production and sim run the EXACT SAME bytes. By targeting
+         the same framework as production (net472), we also catch any
+         accidental net6+ API usage in the rules file at sim build time. -->
+    <Compile Include="..\..\src\Crest.Harmony\CrestFormationRules.cs" Link="CrestFormationRules.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Newtonsoft.Json instead of System.Text.Json: STJ isn't in the BCL
+         on net472 and STJ 6.0 has a known CVE. Newtonsoft is already used
+         elsewhere in the CREST tree (CrestConfig serialization etc) and
+         is the path of least resistance for net472. -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="scenarios\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

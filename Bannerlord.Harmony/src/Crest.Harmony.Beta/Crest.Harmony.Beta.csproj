@@ -1,0 +1,114 @@
+<!--EXTERNAL_PROPERTIES: GameVersion;HarmonyVersion;BuildResourcesVersion-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Crest.Harmony.Beta : optional companion DLL loaded only on
+    Bannerlord e1.4.x+. Holds CREST features that depend on TaleWorlds
+    API surface added in the 1.4 line:
+
+      * CrestBattleConvergenceLogic (the Total-War-style mass-battle
+        joiner system; default-off via EnableBattleConvergence flag,
+        slated for re-enable in v1.0.0)
+      * CrestBattleSizeBetaPatches (cavalry-aware spawn limiter that
+        binds DefaultBattleMissionAgentSpawnLogic.Init)
+
+    The Public Crest.Harmony.dll (e1.3.x compatible) probes the game
+    version at OnSubModuleLoad and Assembly.LoadFrom's this DLL when
+    appropriate. CrestBetaBridge holds the cross-assembly delegates
+    that BetaBootstrap.Initialize wires up.
+
+    GameVersion=1.4.2 always (overrides the Stable_Release config
+    based downshift). The Beta DLL is, by design, the 1.4-line build.
+  -->
+
+  <PropertyGroup>
+    <TargetFrameworks>net472</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Platforms>x64</Platforms>
+
+    <AssemblyName>Crest.Harmony.Beta</AssemblyName>
+    <RootNamespace>Bannerlord.Harmony.Beta</RootNamespace>
+
+    <!-- Force Beta-line targeting regardless of Configuration. -->
+    <GameVersion>1.4.2</GameVersion>
+  </PropertyGroup>
+
+  <!--Windows Forms-->
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" PrivateAssets="all" />
+  </ItemGroup>
+
+  <!--Project reference: Beta DLL needs CrestDiag, CrestConfig,
+      CrestBetaBridge, etc. from the main DLL. The Public Crest.Harmony.dll
+      is shipped alongside this DLL in the same folder so runtime
+      assembly resolution succeeds.
+
+      SetConfiguration + Properties: force the ProjectReference rebuild
+      of Crest.Harmony to use the SAME config the actual Public build uses
+      (Stable_Release with PublicGameVersion=1.3.15). Without this, the
+      Beta-triggered rebuild defaults to Release+GameVersion=1.4.2 which
+      DOES define BANNERLORD_API_1_4_PLUS and therefore INCLUDES
+      CrestBattleConvergenceLogic in the resulting DLL. That collides
+      with the same class compiled into Crest.Harmony.Beta.dll via the
+      Compile Include link below (CS0436 type conflicts with imported
+      type). Forcing the same Public config keeps the rebuilt main DLL
+      free of the 1.4-only class so the Beta DLL is its sole owner.
+  -->
+  <ItemGroup>
+    <ProjectReference Include="..\Crest.Harmony\Crest.Harmony.csproj">
+      <SetConfiguration>Configuration=Stable_Release</SetConfiguration>
+      <SetTargetFramework>TargetFramework=net472</SetTargetFramework>
+      <Properties>PublicGameVersion=1.3.15</Properties>
+    </ProjectReference>
+  </ItemGroup>
+
+  <!--Linked source: CrestBattleConvergenceLogic.cs lives in the main
+      project's source folder (single source of truth) but is wrapped in
+      #if BANNERLORD_API_1_4_PLUS so the main DLL never compiles it.
+      The Beta project DOES define BANNERLORD_API_1_4_PLUS (via common.props
+      auto-detect on GameVersion=1.4.2), so the link compiles here.-->
+  <ItemGroup>
+    <Compile Include="..\Crest.Harmony\CrestBattleConvergenceLogic.cs" Link="CrestBattleConvergenceLogic.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony.Thin" Version="$(HarmonyVersion)" />
+    <PackageReference Include="Bannerlord.BuildResources" Version="$(BuildResourcesVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion).*-*" PrivateAssets="All" />
+    <PackageReference Include="IsExternalInit" Version="1.0.3" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+  </ItemGroup>
+
+  <!--
+    Harmony.Extensions is intentionally NOT a direct PackageReference here.
+    It ships AccessTools2.cs (and friends) as contentFiles, compiled into
+    every consuming assembly. Both Crest.Harmony.dll and Crest.Harmony.Beta.dll
+    would then carry their own AccessTools2, leading to CS0436 "type
+    conflicts with imported type" warnings and CS0121 ambiguous-call errors
+    at compile time. The Beta DLL gets HarmonyLib.BUTR.Extensions.AccessTools2
+    via its ProjectReference to Crest.Harmony (which compiled the
+    contentFiles into its own assembly). Dropping the package here keeps
+    AccessTools2 a single-source type at link time.
+  -->
+
+
+  <!--
+    Bannerlord.BUTR.Shared is intentionally NOT a direct PackageReference
+    here. Its contentFiles ship cs source files (ModuleInfoExtendedHelper.cs,
+    ModuleInfoHelper.cs) that reference INTERNAL types in the BUTR.Shared
+    assembly. Those types aren't exposed to consuming assemblies via IVT,
+    so importing them into Crest.Harmony.Beta yields CS0122 protection-level
+    errors. The main Crest.Harmony.csproj keeps BUTR.Shared because its
+    contentFiles compiled cleanly when first added; whatever IVT or build
+    target made that work doesn't extend to a sibling project.
+
+    Crest.Harmony.Beta doesn't actually reference any BUTR.Shared types
+    directly. The linked CrestBattleConvergenceLogic.cs uses only
+    HarmonyLib.BUTR.Extensions (from Harmony.Extensions) and TaleWorlds
+    APIs. Dropping the package here both fixes the build and avoids
+    duplicating helper compile output between the two DLLs.
+  -->
+
+
+</Project>

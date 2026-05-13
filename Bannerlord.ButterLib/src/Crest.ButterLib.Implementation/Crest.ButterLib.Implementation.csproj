@@ -1,0 +1,91 @@
+<!--EXTERNAL_PROPERTIES: GameVersion;HarmonyVersion;BuildResourcesVersion;AdditionalConstants-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;net6.0-windows</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <BuildForWindows>false</BuildForWindows>
+    <BuildForWindowsStore>false</BuildForWindowsStore>
+
+    <Configurations>Stable_Debug;Stable_Release;Beta_Debug;Beta_Release</Configurations>
+    <DefineConstants>$(DefineConstants);$(GameVersionConstant);X64</DefineConstants>
+
+    <AssemblyName>Crest.ButterLib.Implementation</AssemblyName>
+    <RootNamespace>Bannerlord.ButterLib.Implementation</RootNamespace>
+    <SkipDependencies>false</SkipDependencies>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(TargetFramework) == 'net472'">
+    <BuildForWindows>true</BuildForWindows>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(TargetFramework) == 'net6.0-windows'">
+    <BuildForWindowsStore>true</BuildForWindowsStore>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+  
+  <!--Module Creation-->
+  <PropertyGroup>
+    <ModuleId>CREST</ModuleId>
+    <ModuleName>CREST ButterLib</ModuleName>
+  </PropertyGroup>
+  <!--Module Creation-->
+
+  <!--NuGet References-->
+  <ItemGroup>
+    <PackageReference Include="Bannerlord.BuildResources" Version="$(BuildResourcesVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+
+    <PackageReference Include="Lib.Harmony" Version="$(HarmonyVersion)" PrivateAssets="all" IncludeAssets="compile" />
+    <!-- Disable MonoMod.Backports since we don't need it for compilation -->
+    <PackageReference Include="MonoMod.Backports" Version="*" PrivateAssets="all" IncludeAssets="none" />
+
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion).*-*" PrivateAssets="all" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Native" Version="$(GameVersion).*-*" PrivateAssets="all" />
+
+    <PackageReference Include="IsExternalInit" Version="1.0.3" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+  </ItemGroup>
+  <!--NuGet References-->
+
+  <!--
+  <ItemGroup>
+      <Reference Include="$(GameFolder)\bin\Win64_Shipping_Client\Newtonsoft.Json.dll">
+          <HintPath>%(Identity)</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.*.dll" Exclude="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.Native.dll">
+          <HintPath>%(Identity)</HintPath>
+          <Private>False</Private>
+      </Reference>
+      <Reference Include="$(GameFolder)\Modules\Native\bin\Win64_Shipping_Client\*.dll">
+          <HintPath>%(Identity)</HintPath>
+          <Private>False</Private>
+      </Reference>
+  </ItemGroup>
+  -->
+  
+  <!-- Distribute the native dependencies -->
+  <ItemGroup>
+    <PackageReference Include="BUTR.CrashReport.Renderer.ImGui" Version="$(CrashReportVersion)" PrivateAssets="all" IncludeAssets="none" GeneratePathProperty="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Crest.ButterLib\Crest.ButterLib.csproj" />
+  </ItemGroup>
+  
+  <!--InternalsVisibleTo-->
+  <ItemGroup>
+    <InternalsVisibleTo Include="Crest.ButterLib.Tests" />
+    <InternalsVisibleTo Include="Crest.ButterLib.Implementation.Tests" />
+  </ItemGroup>
+  <!--InternalsVisibleTo-->
+  
+  <Target Name="CopyNativeDependencies" BeforeTargets="BeforeBuild">
+    <ItemGroup>
+      <NativeFilesToCopy Include="$(PkgBUTR_CrashReport_Renderer_ImGui)\runtimes\win-x64\native\*.dll" />
+    </ItemGroup>
+    <Copy SourceFiles="@(NativeFilesToCopy)" DestinationFolder="$(ProjectDir)\_Module\bin\Win64_Shipping_Client" />
+    <Copy SourceFiles="@(NativeFilesToCopy)" DestinationFolder="$(ProjectDir)\_Module\bin\Gaming.Desktop.x64_Shipping_Client" />
+  </Target>
+
+</Project>

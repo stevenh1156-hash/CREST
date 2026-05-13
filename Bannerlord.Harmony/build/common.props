@@ -1,0 +1,105 @@
+<!--EXTERNAL_PROPERTIES: BANNERLORD_GAME_DIR;BANNERLORD_STABLE_DIR;BANNERLORD_BETA_DIR-->
+<Project>
+
+  <!--CREST Phase Z: disable BUTRModule SDK auto-deploy.
+      The SDK's PostBuildCopyToModules target copies _Module/SubModule.xml
+      into Modules/CREST/SubModule.xml on every build, clobbering the
+      canonical bundle XML. All 5 Crest.* repos share ModuleId=CREST so
+      they take turns overwriting it. We deploy DLLs and SubModule.xml
+      manually via the phase-w4 build script. -->
+  <PropertyGroup>
+    <DisableModuleCopy>true</DisableModuleCopy>
+  </PropertyGroup>
+
+  <!--Development Variables-->
+  <PropertyGroup>
+    <!--Module Version-->
+    <Version>0.0.1.0</Version>
+    <!--Harmony Version-->
+    <HarmonyExtensionsVersion>3.2.0.77</HarmonyExtensionsVersion>
+    <HarmonyVersion>2.4.2.0</HarmonyVersion>
+    <HarmonyAnalyzerVersion>1.0.1.50</HarmonyAnalyzerVersion>
+    <BuildResourcesVersion>1.1.0.129</BuildResourcesVersion>
+    <BUTRAnalyzerVersion>1.0.1.12</BUTRAnalyzerVersion>
+    <BUTRSharedVersion>3.0.0.142</BUTRSharedVersion>
+    <BUTRModuleManagerVersion>6.0.247</BUTRModuleManagerVersion>
+    <!--Bannerlord game version that this build targets. The BUTR
+        Bannerlord.ReferenceAssemblies.Core NuGet package is keyed off
+        this value: Version="$(GameVersion).*-*" in each csproj.
+
+        Default = 1.4.2 (BUTR Beta branch — current Bannerlord beta opt-in
+        is e1.4.x; this is what CREST has historically targeted).
+
+        Configuration-specific overrides:
+          Beta_Release  → 1.4.2  (current default; matches current Beta branch)
+          Stable_Release → uses $(PublicGameVersion), defaulting to 1.3.15
+                          (matches Bannerlord's current public Steam release).
+
+        Pass -p:GameVersion=X.Y.Z to override regardless of Configuration.
+        Pass -p:PublicGameVersion=X.Y.Z to change just the Public default.
+    -->
+    <PublicGameVersion Condition="'$(PublicGameVersion)' == ''">1.3.15</PublicGameVersion>
+    <GameVersion>1.4.2</GameVersion>
+    <GameVersion Condition="('$(Configuration)' == 'Stable_Debug' OR '$(Configuration)' == 'Stable_Release') AND '$(GameVersion)' == '1.4.2'">$(PublicGameVersion)</GameVersion>
+    <GameVersionWithPrefix>v$(GameVersion)</GameVersionWithPrefix>
+
+    <!--Conditional-compilation flag for 1.4-and-newer-only TaleWorlds API.
+        CREST's CrestBattleSize uses DefaultBattleMissionAgentSpawnLogic
+        and MissionBattleSideSpawnContext, which were added to TaleWorlds.
+        MountAndBlade in the 1.4 line. On a Public/1.3.x build the symbols
+        don't exist, so wrap the call sites in #if BANNERLORD_API_1_4_PLUS.
+        Numeric version comparison via MSBuild's [Version] type. -->
+    <DefineConstants Condition="$(GameVersion.StartsWith('1.4')) Or $(GameVersion.StartsWith('1.5')) Or $(GameVersion.StartsWith('1.6')) Or $(GameVersion.StartsWith('1.7')) Or $(GameVersion.StartsWith('2.'))">$(DefineConstants);BANNERLORD_API_1_4_PLUS</DefineConstants>
+    <!--Bannerlord's Root Folder. Leave empty if you want it to be tried to be autoresolved.-->
+    <GameFolder Condition="$(Configuration) == 'Stable_Debug' OR $(Configuration) == 'Stable_Release'">$(BANNERLORD_STABLE_DIR)</GameFolder>
+    <GameFolder Condition="$(Configuration) == 'Beta_Debug' OR $(Configuration) == 'Beta_Release'">$(BANNERLORD_BETA_DIR)</GameFolder>
+    <GameFolder Condition="$(BANNERLORD_STABLE_DIR) == '' AND $(BANNERLORD_BETA_DIR) == ''">$(BANNERLORD_GAME_DIR)</GameFolder>
+    <!-- -->
+    <GITHUB_RUN_NUMBER Condition="$(GITHUB_RUN_NUMBER) == ''">0</GITHUB_RUN_NUMBER>
+  </PropertyGroup>
+
+  <!--Automatic Path Resolution-->
+  <PropertyGroup>
+    <!--Windows-->
+    <!--Get from Registry (not working with dotnet right now)-->
+    <GameFolder Condition="!Exists($(GameFolder)) AND $(OS) == 'Windows_NT'">$(registry:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 261550@InstallLocation)</GameFolder>
+    <!--Set a default value if registry value is missing-->
+    <GameFolder Condition="!Exists($(GameFolder)) AND $(OS) == 'Windows_NT'">C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord</GameFolder>
+    <!--Unix-->
+    <!--Set a default value if registry value is missing-->
+    <GameFolder Condition="!Exists($(GameFolder)) AND $(OS) == 'Unix'">~/.steam/root/steamapps/common/Mount &amp; Blade II Bannerlord</GameFolder>
+  </PropertyGroup>
+
+
+  <!--NuGet SorceLink-->
+  <PropertyGroup>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+  <!--SorceLink-->
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+  <!--SorceLink-->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+  <!--CI Builds-->
+  <ItemGroup Condition="$(TargetFramework) == 'net472' AND $(OS) != 'Windows_NT'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(GITHUB_ACTIONS)' != 'true'">
+    <PackageReference Include="BUTR.Harmony.Analyzer" Version="$(HarmonyAnalyzerVersion)">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

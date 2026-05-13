@@ -1,0 +1,50 @@
+<!--EXTERNAL_PROPERTIES: DefineConstantsGameVersion;ButterLibVersion;HarmonyVersion;ButterLibVersion;BuildResourcesVersion-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Crest.MCM</AssemblyName>
+    <RootNamespace>MCM</RootNamespace>
+    <Authors>Aragas, mipen</Authors>
+    <Configurations>Debug;Release</Configurations>
+    <DefineConstants>$(DefineConstants);BUTRDEPENDENCYINJECTION_PUBLIC;BANNERLORDMCM_PUBLIC;BANNERLORDMCM_INCLUDE_IN_CODE_COVERAGE;BANNERLORDMCM_NOT_SOURCE</DefineConstants>
+  </PropertyGroup>
+
+  <!--NuGet Package-->
+  <PropertyGroup>
+    <PackageId>Crest.MCM</PackageId>
+    <PackageDescription>A library for easy Setting integration. Is a self sufficient library, requires the Standalone module to show the settings in the UI!</PackageDescription>
+    <Title>Mod Configuration Menu</Title>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>MCM-128-w-2.png</PackageIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../../resources/MCM-128-w-2.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <!--NuGet Package-->
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="$(HarmonyVersion)" IncludeAssets="compile" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion).*-*" PrivateAssets="all" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" PrivateAssets="all" IncludeAssets="compile" />
+
+    <PackageReference Include="Bannerlord.BUTR.Shared" Version="$(BUTRSharedVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Bannerlord.ModuleManager.Source" Version="$(BUTRModuleManagerVersion)" PrivateAssets="all" />
+    <PackageReference Include="BUTR.DependencyInjection" Version="$(BUTRDependencyInjectionVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="LightInject.Source" Version="$(LightInjectVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Harmony.Extensions" Version="$(HarmonyExtensionsVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Crest.MCM.UnitTests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Crest.MCM.Abstractions\**\*.cs" Exclude="..\Crest.MCM.Abstractions\obj\**\*;..\Crest.MCM.Abstractions\bin\**\*" LinkBase="Abstractions" />
+    <Compile Include="..\Crest.MCM.Common\**\*.cs" Exclude="..\Crest.MCM.Common\obj\**\*;..\Crest.MCM.Common\bin\**\*" LinkBase="Common" />
+    <Compile Include="..\Crest.MCM.Bannerlord\**\*.cs" Exclude="..\Crest.MCM.Bannerlord\obj\**\*;..\Crest.MCM.Bannerlord\bin\**\*" LinkBase="Bannerlord" />
+    <Compile Include="..\Crest.MCM.Implementation\**\*.cs" Exclude="..\Crest.MCM.Implementation\obj\**\*;..\Crest.MCM.Implementation\bin\**\*" LinkBase="Implementation" />
+  </ItemGroup>
+
+</Project> 

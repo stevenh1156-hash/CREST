@@ -1,0 +1,24 @@
+{
+  "name": "wandering-archers",
+  "description": "Brotherhood archers march past anchor toward distant enemies AFTER all closer engagements are dead. Y.68 threshold (enemyD>250) means they only get clamped when truly stranded with no engagement within 250m. The original real-battle case (anchorD=143 enemyD=124) is now considered legitimate transit -- archers can engage at 124m. The new wander case requires enemyD>250.",
+  "ticks": [
+    { "at":  0, "formations": [
+      { "poolId": "ally.0", "class": "arch", "units": 219, "pos": [231, 308], "anchorD":   0, "enemyD":  50, "engineMove": "Advance", "captain": "Arboreal", "expectAction": "none" }
+    ]},
+    { "at":  5, "formations": [
+      { "poolId": "ally.0", "class": "arch", "units": 219, "pos": [255, 350], "anchorD":  60, "enemyD":  80, "engineMove": "Advance", "captain": "Arboreal", "expectAction": "none" }
+    ]},
+    { "at": 10, "formations": [
+      { "poolId": "ally.0", "class": "arch", "units": 219, "pos": [275, 410], "anchorD": 122, "enemyD": 280, "engineMove": "Advance", "captain": "Sprout",   "expectAction": "wander-clamp" }
+    ]},
+    { "at": 15, "formations": [
+      { "poolId": "ally.0", "class": "arch", "units": 219, "pos": [310, 400], "anchorD": 134, "enemyD": 320, "engineMove": "Advance", "captain": "Sprout",   "expectAction": "wander-clamp" }
+    ]},
+    { "at": 20, "formations": [
+      { "poolId": "ally.0", "class": "arch", "units": 219, "pos": [325, 403], "anchorD": 143, "enemyD": 410, "engineMove": "Advance", "captain": "Sprout",   "expectAction": "wander-clamp" }
+    ]},
+    { "at": 25, "formations": [
+      { "poolId": "ally.0", "class": "arch", "units": 219, "pos": [325, 403], "anchorD": 143, "enemyD": 200, "engineMove": "Advance", "captain": "Sprout",   "expectAction": "none" }
+    ]}
+  ]
+}

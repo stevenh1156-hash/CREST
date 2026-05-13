@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prefab>
+  <Constants>
+    <Constant Name="Entry.Height" Value="26" />
+
+    <Constant Name="ModToggle.Width" BrushName="Launcher.Mods.ModToggle" BrushLayer="Default" BrushValueType="Width" />
+    <Constant Name="ModToggle.Height" BrushName="Launcher.Mods.ModToggle" BrushLayer="Default" BrushValueType="Height" />
+
+    <Constant Name="ModSorter.Width" BrushName="Launcher.Mods.ModSorter" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="ModSorter.Height" BrushName="Launcher.Mods.ModSorter" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="VersionText.Width" Value="150" />
+
+    <Constant Name="ModuleType.Width" Value="27" />
+
+    <Constant Name="Icon.Size" Value="20" />
+
+    <Constant Name="Margin.Left" Value="5" />
+  </Constants>
+  <Window>
+    <ListPanel LayoutImp.LayoutMethod="VerticalBottomToTop" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+      <Children>
+
+        <ListPanel Id="EntryPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="!Entry.Height" MarginBottom="5" AcceptDrag="true" DragWidget="DragWidget" IsVisible="@IsVisible">
+          <Children>
+            
+            <!-- Toggle -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="!ModToggle.Width"  SuggestedHeight="!ModToggle.Height" VerticalAlignment="Center" >
+              <Children>
+                <Launcher.ToggleButton WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.Click="ExecuteSelect" IsSelected="@IsSelected" ManualToggle="true" IsDisabled="@IsNotSelectable" />
+              </Children>
+            </Widget>
+            <!-- Drag Drop -->
+            <ButtonWidget WidthSizePolicy="Fixed"     HeightSizePolicy="Fixed"           SuggestedWidth="!ModSorter.Width"  SuggestedHeight="!ModSorter.Height" VerticalAlignment="Center" MarginLeft="10" Brush="Launcher.Mods.ModSorter" IsDisabled="true"/>
+            <!-- Module Type Icon -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="!ModToggle.Width"  SuggestedHeight="!ModToggle.Height" VerticalAlignment="Center" MarginLeft="!Margin.Left">
+              <Children>
+                <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="18" VerticalAlignment="Center" Brush="Launcher.Official" IsVisible="@IsOfficial">
+                  <Children>
+                    <LauncherHintTriggerWidget DataSource="{DependencyHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </BrushWidget>
+                <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="18" VerticalAlignment="Center" Brush="Launcher.Community" IsHidden="@IsOfficial">
+                  <Children>
+                    <LauncherHintTriggerWidget DataSource="{DependencyHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </BrushWidget>
+              </Children>
+            </Widget>
+            <!-- Dangerous -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="!ModToggle.Width"  SuggestedHeight="!ModToggle.Height" VerticalAlignment="Center" MarginLeft="!Margin.Left">
+              <Children>
+                <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Launcher.Error" IsVisible="@IsDangerous">
+                  <Children>
+                    <LauncherHintTriggerWidget DataSource="{DangerousHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </BrushWidget>
+              </Children>
+            </Widget>
+            <!-- Mod Name -->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"                                                                        VerticalAlignment="Center" MarginLeft="!Margin.Left">
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@Name" Brush="Launcher.Mods.ModNameText" Brush.TextHorizontalAlignment="Left" Brush.FontSize="26" IsDisabled="true" />
+              </Children>
+            </Widget>
+            <!-- Mod Version -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="StretchToParent" SuggestedWidth="!VersionText.Width"  >
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@VersionText" Brush="Launcher.Mods.ModNameText" Brush.FontSize="26" IsDisabled="true" />
+              </Children>
+            </Widget>
+            <!-- Issue Expand Indicator -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="30"                SuggestedHeight="30"                VerticalAlignment="Center" MarginLeft="!Margin.Left" >
+              <Children>
+                <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ButtonType="Toggle" Brush="Launcher.Mods.ExpandIndicator" IsSelected="@IsExpanded" IsHidden="@IsValid" />
+              </Children>
+            </Widget>
+            <!-- Update Info -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="!ModToggle.Width"  SuggestedHeight="!ModToggle.Height" VerticalAlignment="Center" MarginLeft="!Margin.Left" >
+              <Children>
+                <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Launcher.Info" IsVisible="@IsUpdateHintHigh">
+                  <Children>
+                    <LauncherHintTriggerWidget DataSource="{UpdateHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </BrushWidget>
+                <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Launcher.Warning" IsVisible="@IsUpdateHintMedium">
+                  <Children>
+                    <LauncherHintTriggerWidget DataSource="{UpdateHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </BrushWidget>
+                <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Launcher.Error" IsVisible="@IsUpdateHintLow">
+                  <Children>
+                    <LauncherHintTriggerWidget DataSource="{UpdateHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </BrushWidget>
+              </Children>
+            </Widget>
+            <!-- Folder Icon -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="!ModToggle.Width"  SuggestedHeight="!ModToggle.Height" VerticalAlignment="Center" MarginLeft="!Margin.Left" MarginRight="20" >
+              <Children>
+                <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Launcher.Folder" Command.Click="ExecuteOpen"/>
+              </Children>
+            </Widget>
+           
+            <!-- Drag Widget -->
+            <Widget Id="DragWidget" DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" SuggestedHeight="50" HorizontalAlignment="Center" VerticalAlignment="Center" IsDisabled="true" IsVisible="false">
+              <Children>
+                <TextWidget Text="@Name" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Launcher.Mods.ModNameText" Brush.TextHorizontalAlignment="Left" />
+              </Children>
+            </Widget>
+            
+          </Children>
+        </ListPanel>
+
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="30" IsDisabled="true" IsVisible="@IsExpanded">
+          <Children>
+            <TextWidget Text="@IssuesText" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" SuggestedHeight="500" MarginBottom="10" Brush="Launcher.Mods.IssueText" Brush.TextHorizontalAlignment="Left" />
+          </Children>
+        </Widget>
+
+      </Children>
+    </ListPanel>
+  </Window>
+</Prefab>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prefab>
+  <Constants>
+    <Constant Name="ModToggle.Width"  BrushName="Launcher.Mods.ModToggle" BrushLayer="Default" BrushValueType="Width" />
+    <Constant Name="ModToggle.Height" BrushName="Launcher.Mods.ModToggle" BrushLayer="Default" BrushValueType="Height" />
+
+    <Constant Name="VersionText.Width" Value="150" />
+
+    <Constant Name="ModuleType.Width" Value="27" />
+    
+    <Constant Name="Icon.Size" Value="20" />
+    
+    <Constant Name="Margin.Left" Value="5" />
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsDisabled="@IsDisabled2">
+      <Children>
+
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="26" MarginTop="10" MarginLeft="30">
+          <Children>
+
+            <!-- Force Sorted Hint -->
+            <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Icon.Size" SuggestedHeight="!Icon.Size" VerticalAlignment="Center" MarginLeft="10" PositionYOffset="2" IsVisible="@IsForceSorted" Brush="Launcher.Error" >
+              <Children>
+                <LauncherHintTriggerWidget DataSource="{ForceSortedHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+              </Children>
+            </BrushWidget>
+            
+            <!-- Toggle All -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="!ModToggle.Width"  SuggestedHeight="!ModToggle.Height" VerticalAlignment="Center"                           PositionYOffset="2">
+              <Children>
+                <Launcher.ToggleButton WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.Click="ExecuteGlobalCheckbox" IsSelected="@GlobalCheckboxState" ManualToggle="true">
+                  <Children>
+                    <LauncherHintTriggerWidget DataSource="{GlobalCheckboxHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </Launcher.ToggleButton>
+              </Children>
+            </Widget>
+            <!-- Refresh / Module Type Icon Offset -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="!ModToggle.Width"  SuggestedHeight="!ModToggle.Height" VerticalAlignment="Center" MarginLeft="!Margin.Left" >
+              <Children>
+                <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Launcher.Refresh" Command.Click="ExecuteRefresh">
+                  <Children>
+                    <LauncherHintTriggerWidget DataSource="{RefreshHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </ButtonWidget>
+              </Children>
+            </Widget>
+            <!-- Dangerous Offset -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="!ModToggle.Width"  SuggestedHeight="!ModToggle.Height" VerticalAlignment="Center" MarginLeft="!Margin.Left" />
+            <!-- Mod Name -->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"                                                                                                   MarginLeft="!Margin.Left" >
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@NameCategoryText2" Brush="Launcher.Mods.ModNameText" Brush.TextHorizontalAlignment="Left" />
+              </Children>
+            </Widget>
+            <!-- Mod Search -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="200"               SuggestedHeight="30"                VerticalAlignment="Center" MarginLeft="!Margin.Left" >
+              <Children>
+                <Launcher.SearchBox WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SearchText="@SearchText" />
+              </Children>
+            </Widget>
+            <!-- Mod Version -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="StretchToParent" SuggestedWidth="!VersionText.Width"                                                               MarginLeft="!Margin.Left" >
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@VersionCategoryText2" Brush="Launcher.Mods.ModNameText" />
+              </Children>
+            </Widget>
+            <!-- Issue Expand Indicator Offset -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="30"                SuggestedHeight="30"                VerticalAlignment="Center" MarginLeft="!Margin.Left" />
+            <!-- Update Info Button -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="!ModToggle.Width"  SuggestedHeight="!ModToggle.Height" VerticalAlignment="Center" MarginLeft="!Margin.Left" >
+              <Children>
+                <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Launcher.Refresh" Command.Click="ExecuteUpdateCheck" >
+                  <Children>
+                    <LauncherHintTriggerWidget DataSource="{UpdateInfoHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </ButtonWidget>
+              </Children>
+            </Widget>
+            <!-- Folder Icon Offset -->
+            <Widget WidthSizePolicy="Fixed"           HeightSizePolicy="Fixed"           SuggestedWidth="!ModToggle.Width"  SuggestedHeight="!ModToggle.Height" VerticalAlignment="Center" MarginLeft="!Margin.Left" MarginRight="20" />
+            
+          </Children>
+        </ListPanel>
+
+        <ScrollablePanel Id="ScrollablePanel" HeightSizePolicy="StretchToParent" WidthSizePolicy="StretchToParent" MarginLeft="30" MarginTop="46" InnerPanel="ScrollablePanelClipRect\InnerPanel" ClipRect="ScrollablePanelClipRect" VerticalScrollbar="..\Scrollbar" AutoHideScrollBars="true" AcceptDrop="true">
+          <Children>
+            <Widget Id="ScrollablePanelClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" ClipContents="true">
+              <Children>
+                <ListPanel Id="InnerPanel" DataSource="{Modules2}" LayoutImp.LayoutMethod="VerticalBottomToTop" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" AcceptDrop="true" Command.Drop="..\OnDrop" CommandParameter.Drop="Module">
+                  <ItemTemplate>
+                    <Launcher.Mods.ModuleTuple2 />
+                  </ItemTemplate>
+                </ListPanel>
+              </Children>
+            </Widget>
+          </Children>
+        </ScrollablePanel>
+
+        <Launcher.Scrollbar Id="Scrollbar" MarginTop="46" MarginBottom="23" MarginRight="@ScrollbarOffset"/>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

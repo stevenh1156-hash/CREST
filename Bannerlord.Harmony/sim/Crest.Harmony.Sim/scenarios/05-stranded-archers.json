@@ -1,0 +1,24 @@
+{
+  "name": "stranded-archers",
+  "description": "Real-battle case: archer formation at anchorD=77 enemyD=262 -- truly stranded with no engagement within 262m. Y.68 raised enemyD threshold from 100 to 250, so the wander-clamp now requires enemyD>250. Boundary tests: enemyD=249 (no fire), enemyD=251 (fires).",
+  "ticks": [
+    { "at":  0, "formations": [
+      { "poolId": "ally.0", "class": "arch", "units": 253, "pos": [240, 320], "anchorD":  20, "enemyD":  80, "engineMove": "Advance", "captain": "Sprout", "expectAction": "none" }
+    ]},
+    { "at":  5, "formations": [
+      { "poolId": "ally.0", "class": "arch", "units": 253, "pos": [248, 340], "anchorD":  40, "enemyD": 150, "engineMove": "Advance", "captain": "Sprout", "expectAction": "none" }
+    ]},
+    { "at": 10, "formations": [
+      { "poolId": "ally.0", "class": "arch", "units": 253, "pos": [253, 350], "anchorD":  60, "enemyD": 200, "engineMove": "Advance", "captain": "Sprout", "expectAction": "none" }
+    ]},
+    { "at": 15, "formations": [
+      { "poolId": "ally.0", "class": "arch", "units": 253, "pos": [255, 355], "anchorD":  60, "enemyD": 249, "engineMove": "Advance", "captain": "Sprout", "expectAction": "none" }
+    ]},
+    { "at": 20, "formations": [
+      { "poolId": "ally.0", "class": "arch", "units": 253, "pos": [256, 360], "anchorD":  60, "enemyD": 251, "engineMove": "Advance", "captain": "Sprout", "expectAction": "wander-clamp" }
+    ]},
+    { "at": 25, "formations": [
+      { "poolId": "ally.0", "class": "arch", "units": 253, "pos": [260, 367], "anchorD":  77, "enemyD": 262, "engineMove": "Advance", "captain": "Sprout", "expectAction": "wander-clamp" }
+    ]}
+  ]
+}

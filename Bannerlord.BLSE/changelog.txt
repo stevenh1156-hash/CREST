@@ -1,0 +1,259 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.6.5
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x,v1.4.x
+* Improved decimal parsing, prevents crashing now
+---------------------------------------------------------------------------------------------------
+Version: 1.6.4
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x,v1.4.x
+* Fixed Mod oder in Beta
+---------------------------------------------------------------------------------------------------
+Version: 1.6.3
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x,v1.4.x
+* Adapted to Beta
+---------------------------------------------------------------------------------------------------
+Version: 1.6.2
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x
+* EGS workaround wasn't correctly done
+---------------------------------------------------------------------------------------------------
+Version: 1.6.1
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x
+* Fixed Game version comparison
+---------------------------------------------------------------------------------------------------
+Version: 1.6.0
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x
+* Inject BLSE into vanilla launcher if Epic Games Store is detected to avoid workarounds
+* Fixed the decimal.Parse issue for certain locales
+* Added Spanish (LA) localization
+---------------------------------------------------------------------------------------------------
+Version: 1.5.12
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x
+* NavalDLC should be named War Sails
+* Fixed bugs reported by Kriegtooth and Splashrandom
+---------------------------------------------------------------------------------------------------
+Version: 1.5.11
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x
+* Fixed crash related to Chinese, Japanese and Korean localizations\
+* Updated Tpac asset reading based on new fork https://github.com/hunharibo/TpacTool
+---------------------------------------------------------------------------------------------------
+Version: 1.5.10
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x
+* Fixed an issue with Standalone
+---------------------------------------------------------------------------------------------------
+Version: 1.5.9
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x
+* Added support for v1.3.4 and further
+* Fixed Save continuation
+---------------------------------------------------------------------------------------------------
+Version: 1.5.8
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x
+* Added support for v1.3.x
+* Force Exceptions to be in English
+* Added French localization
+---------------------------------------------------------------------------------------------------
+Version: 1.5.7
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* BETA Release!
+* Better implementation for GPU Acceleration Hints
+---------------------------------------------------------------------------------------------------
+Version: 1.5.6
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* BETA Release!
+* Added back support for GPU Acceleration Hints
+---------------------------------------------------------------------------------------------------
+Version: 1.5.5
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* BETA Release!
+* Added support for GPU Acceleration Hints
+---------------------------------------------------------------------------------------------------
+Version: 1.5.4
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* BETA Release!
+* Updated Chinese Simplified translation
+---------------------------------------------------------------------------------------------------
+Version: 1.5.3
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* BETA Release!
+* Update Recommendations now display the current and recommended compatibility score
+---------------------------------------------------------------------------------------------------
+Version: 1.5.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* BETA Release!
+* Update Recommendations now have color grading
+* Fixed mod dragging
+---------------------------------------------------------------------------------------------------
+Version: 1.5.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* BETA Release!
+* Fixed Update Recommendations
+---------------------------------------------------------------------------------------------------
+Version: 1.5.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* BETA Release!
+* Switched to new launcher manager backend
+* Added Update Recommendations - based on BUTR Analytics Server (based on ButterLib Crash Reports)
+---------------------------------------------------------------------------------------------------
+Version: 1.4.12
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.9
+* Adapted to v1.2.9. Thanks to jzebedee!
+* Added Ukrainian and Japanese localization
+---------------------------------------------------------------------------------------------------
+Version: 1.4.11
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.5
+* Localizations are now shown in LauncherEx
+* Potential System.Memory load fix
+---------------------------------------------------------------------------------------------------
+Version: 1.4.10
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.5
+* Added Traditional Chinese
+---------------------------------------------------------------------------------------------------
+Version: 1.4.9
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.0,v1.2.1,v1.2.2,v1.2.3,v1.2.4
+* Removed redundant error logs
+---------------------------------------------------------------------------------------------------
+Version: 1.4.8
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1,v1.2.2,v1.2.3
+* Better descriptions for certain misinstallation cases
+---------------------------------------------------------------------------------------------------
+Version: 1.4.7
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Fixed ReShade and Special K loading. At the moment they do not work together
+* Launcher will have DPI Aware, Exception Interceptor, Watchdog Disabler, ReShade and Special K support enabled
+---------------------------------------------------------------------------------------------------
+Version: 1.4.6
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Added proper Watchdog integration
+* Added experimental Special K support. It requires SpecialK64.dll to be present instead of dxgi.dll
+---------------------------------------------------------------------------------------------------
+Version: 1.4.5
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Returning AutoGen catching with excluding the hot calls
+---------------------------------------------------------------------------------------------------
+Version: 1.4.4
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Added ReShade support. Don't forget that the DirectX 10/11/12 installation is needed
+---------------------------------------------------------------------------------------------------
+Version: 1.4.3
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* More installation checks
+---------------------------------------------------------------------------------------------------
+Version: 1.4.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Disabled AutoGen catching, enabled a more simpler catcher instead
+---------------------------------------------------------------------------------------------------
+Version: 1.4.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Added /enablevanillacrashhandler to enable the v1.2.0 crash handler
+* Standalone properly registers the flags now
+---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Added a global exception handler with integration support and settings
+* Added a temporary Watchdog disabler for v1.2.0
+---------------------------------------------------------------------------------------------------
+Version: 1.3.10
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Fixed translation for loaded before-after messages
+---------------------------------------------------------------------------------------------------
+Version: 1.3.9
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Fixed LauncherEx version detection
+* Added v1.2.0 support
+---------------------------------------------------------------------------------------------------
+Version: 1.3.8
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4
+* Another fix for continuing save files with spaces in names
+---------------------------------------------------------------------------------------------------
+Version: 1.3.7
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4
+* Fixed continuing save files with spaces in names
+* Fixed the vanilla Continue button that launches the last save
+---------------------------------------------------------------------------------------------------
+Version: 1.3.6
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3
+* Show a warning for Game and Engine options for one time launch
+* Engine was showing Game options
+* Importing a list was not saving automatically
+---------------------------------------------------------------------------------------------------
+Version: 1.3.5
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2
+* Fixed Steam running as admin detection
+---------------------------------------------------------------------------------------------------
+Version: 1.3.4
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2
+* Fixed a regression with Xbox where Harmony 2.2.2.* wasn't working correctly
+* On Xbox, Harmony 2.2 will slow down the game due to JIT optimization disabling
+* On Xbox, Harmony 2.3 beta and beyond will keep native speed
+---------------------------------------------------------------------------------------------------
+Version: 1.3.3
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2
+* Xbox version CTD fix
+---------------------------------------------------------------------------------------------------
+Version: 1.3.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2
+* Added EnableDPIScaling setting to remove DPI scaling on high resolution
+* Updated LauncherManager library
+---------------------------------------------------------------------------------------------------
+Version: 1.3.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2
+* Improved game's performance
+* Added support for the future version of MonoMod reorg
+---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2
+* Switched back to Lib.Harmony
+---------------------------------------------------------------------------------------------------
+Version: 1.2.4
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2
+* Unblock Bannerlord.Harmony automatically
+---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2
+* Unblock Bannerlord.BLSE.Shared.dll automatically
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Added Steam UAC check
+---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Fixed possible GamePass crash
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Reverted native code
+* Added AccessViolationException handling support
+* Fixed Singleplayer not being shown by default
+* Better error messages
+* Added /forcenetcore for Steam/GOG/Epic
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* The launchers are now native code instead of C#, but for the cost of increased size
+* Fixed Singleplayer not being shown by default
+* Better error messages
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Show a message if the save game failed to load via the Continue feature
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Always try to unblock .dll files on startup
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Should fix MessageBox dialog not being shown
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* LauncherEx fixes: Importing wasn't working and export was not considering a custom file name
+* Disabled the remaining Xbox integration, save files and settings are now stored where Steam/GOG/Epic store them
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Public release
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Experimental release
+---------------------------------------------------------------------------------------------------

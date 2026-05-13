@@ -1,0 +1,68 @@
+<!--EXTERNAL_PROPERTIES: GameVersion;HarmonyVersion;BuildResourcesVersion-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <Platforms>x64</Platforms>
+    <BuildForWindows>true</BuildForWindows>
+    <BuildForWindowsStore>true</BuildForWindowsStore>
+
+    <AssemblyName>Crest.UIExtenderEx</AssemblyName>
+    <RootNamespace>Bannerlord.UIExtenderEx</RootNamespace>
+
+    <Configurations>Stable_Debug;Stable_Release;Beta_Debug;Beta_Release</Configurations>
+    <DefineConstants>$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+
+  <!--Module Creation-->
+  <PropertyGroup>
+    <ModuleId>CREST</ModuleId>
+    <ModuleName>CREST UIExtenderEx</ModuleName>
+  </PropertyGroup>
+  <!--Module Creation-->
+
+  <!--NuGet Package-->
+  <PropertyGroup>
+    <PackageId>Crest.UIExtenderEx</PackageId>
+    <PackageDescription>A library that enables multiple mods to alter standard game interface. Built against v$(GameVersion).</PackageDescription>
+    <Title>UIExtenderEx</Title>
+    <Authors>BUTR, shdwp</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
+    <PackageIcon>Butter.png</PackageIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../../resources/Butter.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <!--NuGet Package-->
+
+  <ItemGroup>
+    <!-- Keep Bannerlord.Lib.Harmony intil we upgrade to v2.3.3 or higher -->
+    <PackageReference Include="Bannerlord.Lib.Harmony" Version="$(HarmonyVersion)" PrivateAssets="all" IncludeAssets="compile" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion).*" PrivateAssets="all" IncludeAssets="compile" GeneratePathProperty="true" />
+    <PackageReference Include="BUTR.MessageBoxPInvoke" Version="1.0.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" PrivateAssets="all" />
+   
+    <PackageReference Include="Bannerlord.BuildResources" Version="$(BuildResourcesVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Bannerlord.BUTR.Shared" Version="$(BUTRSharedVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Bannerlord.ModuleManager.Source" Version="$(BUTRModuleManagerVersion)" PrivateAssets="all" />
+    <PackageReference Include="Harmony.Extensions" Version="$(HarmonyExtensionsVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Nullable" Version="1.3.1" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="IsExternalInit" Version="1.0.3" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+
+    <!--
+    <PackageReference Include="Bannerlord.MCM.Source" Version="$(MCMVersion)"  PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="BUTR.DependencyInjection" Version="2.0.0.43" />
+    <PackageReference Include="BUTR.DependencyInjection.LightInject" Version="2.0.0.43" />
+    <PackageReference Include="LightInject.Source" Version="6.6.1" />
+    -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Crest.UIExtenderEx.Tests" />
+  </ItemGroup>
+  
+</Project>

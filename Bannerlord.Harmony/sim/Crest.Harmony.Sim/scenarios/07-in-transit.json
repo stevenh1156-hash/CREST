@@ -1,0 +1,21 @@
+{
+  "name": "in-transit",
+  "description": "Real-battle false-positive case from Y.60d battle: ally.spot[1] at anchorD=144 enemyD=137 -- formation marching from spawn TOWARD engagement (closing on enemy). Pre-Y.68 this fired wander-clamp because enemyD > 100; battle had 196 such fires in 107s. Y.68 raised threshold to enemyD > 250 so transit-state formations don't false-fire. None of these ticks should fire wander-clamp.",
+  "ticks": [
+    { "at":  0, "formations": [
+      { "poolId": "ally.spot[1]", "class": "inf", "units": 121, "pos": [248, 340], "anchorD":  60, "enemyD": 230, "engineMove": "Advance", "captain": "Asgotha", "expectAction": "none" }
+    ]},
+    { "at":  5, "formations": [
+      { "poolId": "ally.spot[1]", "class": "inf", "units": 121, "pos": [253, 360], "anchorD": 100, "enemyD": 180, "engineMove": "Advance", "captain": "Asgotha", "expectAction": "none" }
+    ]},
+    { "at": 10, "formations": [
+      { "poolId": "ally.spot[1]", "class": "inf", "units": 121, "pos": [258, 380], "anchorD": 144, "enemyD": 137, "engineMove": "Advance", "captain": "Asgotha", "expectAction": "none" }
+    ]},
+    { "at": 15, "formations": [
+      { "poolId": "ally.spot[1]", "class": "inf", "units": 119, "pos": [262, 400], "anchorD": 180, "enemyD":  90, "engineMove": "Advance", "captain": "Asgotha", "expectAction": "none" }
+    ]},
+    { "at": 20, "formations": [
+      { "poolId": "ally.spot[1]", "class": "inf", "units": 117, "pos": [265, 415], "anchorD": 200, "enemyD":  40, "engineMove": "Advance", "captain": "Asgotha", "expectAction": "none" }
+    ]}
+  ]
+}

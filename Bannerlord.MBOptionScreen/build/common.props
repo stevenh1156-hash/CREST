@@ -1,0 +1,25 @@
+<!--EXTERNAL_PROPERTIES: BANNERLORD_GAME_DIR;BANNERLORD_STABLE_DIR;BANNERLORD_BETA_DIR-->
+<Project>
+
+  <!--CREST Phase Z: disable BUTRModule SDK auto-deploy. See sibling repos. -->
+  <PropertyGroup>
+    <DisableModuleCopy>true</DisableModuleCopy>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <LangVersion>preview</LangVersion>
+    <Nullable>enable</Nullable>
+
+    <Version>5.11.4</Version>
+    
+    <HarmonyVersion>2.2.2</HarmonyVersion>
+    <ButterLibVersion>2.10.2</ButterLibVersion>
+    <UIExtenderExVersion>2.13.1</UIExtenderExVersion>
+    <BUTRSharedVersion>3.0.0.142</BUTRSharedVersion>
+    <BUTRDependencyInjectionVersion>2.0.0.52</BUTRDependencyInjectionVersion>
+    <BUTRModuleManagerVersion>5.0.221</BUTRModuleManagerVersion>
+    <HarmonyExtensionsVersion>3.2.0.77</HarmonyExtensionsVersion>
+    <HarmonyAnalyzerVersion>1.0.1.50</HarmonyAnalyzerVersion>
+  </PropertyGroup>
+
+</Project>

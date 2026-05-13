@@ -1,0 +1,64 @@
+<!--EXTERNAL_PROPERTIES: GameFolder;GameVersion-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+
+    <Configurations>Stable_Debug;Stable_Release;Beta_Debug;Beta_Release</Configurations>
+    <DefineConstants>$(DefineConstants);$(GameVersionConstant)</DefineConstants>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.13.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+
+    <PackageReference Include="Lib.Harmony" Version="$(HarmonyVersion)" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Crest.ButterLib\Crest.ButterLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="_TestData\BaseLibrary.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="_TestData\BaseLibrary.Incompatible.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="_TestData\ImplementationLibrary.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup Condition="!Exists($(GameFolder))">
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion).*" PrivateAssets="All" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Native" Version="$(GameVersion).*" PrivateAssets="All" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.StoryMode" Version="$(GameVersion).*" PrivateAssets="All" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.SandBox" Version="$(GameVersion).*" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup Condition="Exists($(GameFolder))">
+    <Reference Include="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.*.dll" Exclude="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.Native.dll">
+      <HintPath>%(Identity)</HintPath>
+    </Reference>
+    <Reference Include="$(GameFolder)\Modules\Native\bin\Win64_Shipping_Client\*.dll">
+      <HintPath>%(Identity)</HintPath>
+    </Reference>
+    <Reference Include="$(GameFolder)\Modules\SandBox\bin\Win64_Shipping_Client\*.dll">
+      <HintPath>%(Identity)</HintPath>
+    </Reference>
+    <Reference Include="$(GameFolder)\Modules\StoryMode\bin\Win64_Shipping_Client\*.dll">
+      <HintPath>%(Identity)</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

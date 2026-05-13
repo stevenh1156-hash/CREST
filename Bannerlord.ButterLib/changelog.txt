@@ -1,0 +1,566 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.10.4
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x,v1.4.x
+* Beta support
+---------------------------------------------------------------------------------------------------
+Version: 2.10.3
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x
+* Corrected SubModuleWrappers2 implementation
+---------------------------------------------------------------------------------------------------
+Version: 2.10.2
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.x
+* Added support for v1.3.5, v1.3.6
+---------------------------------------------------------------------------------------------------
+Version: 2.10.1
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.4
+* Added support for v1.3.4
+---------------------------------------------------------------------------------------------------
+Version: 2.10.0
+Game Versions: v1.0.x,v1.1.x,v1.2.x,v1.3.0
+* Added support for v1.3.0
+---------------------------------------------------------------------------------------------------
+Version: 2.9.18
+Game Versions: v1.0.x,v1.1.x,v1.2.x
+* Removed Crash Report duplicates being shown after closing
+* BEW should not be involved anymore when Finalizer is used
+---------------------------------------------------------------------------------------------------
+Version: 2.9.17
+Game Versions: v1.0.x,v1.1.x,v1.2.x
+* Crash reports were not correctly identifying game assemblies, better path data
+---------------------------------------------------------------------------------------------------
+Version: 2.9.16
+Game Versions: v1.0.x,v1.1.x,v1.2.x
+* Some crashes were not intercepted without BLSE
+---------------------------------------------------------------------------------------------------
+Version: 2.9.15
+Game Versions: v1.0.x,v1.1.x,v1.2.x
+* Fixed a regression that prevented crash reports from being shown
+---------------------------------------------------------------------------------------------------
+Version: 2.9.14
+Game Versions: v1.0.x,v1.1.x,v1.2.x
+* Fixed a possible crash related to trace logging
+* Updated crash reports path anonymization
+---------------------------------------------------------------------------------------------------
+Version: 2.9.13
+Game Versions: v1.0.x,v1.1.x,v1.2.x
+* Better Wine detection
+* Fixed Launcher line on HTML crash report
+---------------------------------------------------------------------------------------------------
+Version: 2.9.12
+Game Versions: v1.0.x,v1.1.x,v1.2.x
+* Added OS info in the Crash Report renders
+---------------------------------------------------------------------------------------------------
+Version: 2.9.11
+Game Versions: v1.0.x,v1.1.x,v1.2.x
+* Updated Crash Reporter to v14
+* OS Type/Version and loaded Native Modules are now saved in the crash report
+* Fixed methods not being debuggable when Debugger is attached (Thanks Cephas369)
+---------------------------------------------------------------------------------------------------
+Version: 2.9.10
+Game Versions: v1.0.x,v1.1.x,v1.2.x
+* Fixed double key press issue
+---------------------------------------------------------------------------------------------------
+Version: 2.9.9
+Game Versions: v1.0.x,v1.1.x,v1.2.x
+* Fixed SyncAsJson not serializing game types
+---------------------------------------------------------------------------------------------------
+Version: 2.9.8
+Game Versions: v1.0.x,v1.1.x,v1.2.x
+* Improvements to DistanceMatrix
+---------------------------------------------------------------------------------------------------
+Version: 2.9.7
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* Fixed UpdateInfo parsing for Crash Reports
+---------------------------------------------------------------------------------------------------
+Version: 2.9.6
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* More Crash Report related fixes. Fixed WinForms renderer
+---------------------------------------------------------------------------------------------------
+Version: 2.9.5
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* More Crash Report related fixes. Involved modules were incorrectly rendered
+---------------------------------------------------------------------------------------------------
+Version: 2.9.4
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* More Crash Report related fixes. Improved the Html renderer
+---------------------------------------------------------------------------------------------------
+Version: 2.9.3
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* More Crash Report related fixes. Improved the Html renderer
+---------------------------------------------------------------------------------------------------
+Version: 2.9.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* BETA release!
+* Fixed the Html report renderer and the BLSE and LauncherEx metadata
+---------------------------------------------------------------------------------------------------
+Version: 2.9.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* BETA release!
+* Xbox was missing new Crash Reporter dependencies
+---------------------------------------------------------------------------------------------------
+Version: 2.9.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* BETA release!
+* Added new Crash Report system
+* Added Ukrainian and German localization
+---------------------------------------------------------------------------------------------------
+Version: 2.8.16
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.x
+* Switched the order of IsPressed and IsDown hotkey checks
+---------------------------------------------------------------------------------------------------
+Version: 2.8.15
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.4
+* Fixed an issue with the new JsonSerializer overload
+---------------------------------------------------------------------------------------------------
+Version: 2.8.14
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.1.6,v1.2.4
+* Added a SyncDataAsJson overload that takes a JsonSerializer
+---------------------------------------------------------------------------------------------------
+Version: 2.8.13
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1,v1.2.2,v1.2.3
+* Might have fixed a reported save issue
+* Reflection improvement
+---------------------------------------------------------------------------------------------------
+Version: 2.8.12
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1,v1.2.2,v1.2.3
+* Improved logging
+---------------------------------------------------------------------------------------------------
+Version: 2.8.11
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1
+* Better Clipboard handling
+---------------------------------------------------------------------------------------------------
+Version: 2.8.10
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1
+* Japanese language update
+---------------------------------------------------------------------------------------------------
+Version: 2.8.9
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1
+* Fixed unintentional crash with Distance Matrix
+* Further unintentional crash fixes
+* Added Chinese Simplified and Japanese
+---------------------------------------------------------------------------------------------------
+Version: 2.8.8
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0,v1.2.1
+* Support for v1.2.1
+* Proper Watchdog disabling
+---------------------------------------------------------------------------------------------------
+Version: 2.8.7
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Small performance improvement
+* Moved AutoGen catching to BLSE
+---------------------------------------------------------------------------------------------------
+Version: 2.8.6
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Disabled AutoGen catch, seem to have a more severe performance impact than expected
+---------------------------------------------------------------------------------------------------
+Version: 2.8.5
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Fixed BLSE detection
+---------------------------------------------------------------------------------------------------
+Version: 2.8.4
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* ButterLib is not able to disable v1.2.0 Watchdog, BLSE is required
+* Added integration with BLSE's better exception intercepter
+---------------------------------------------------------------------------------------------------
+Version: 2.8.3
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* The UseVanillaCrashHandler setting wasn't set correctly
+---------------------------------------------------------------------------------------------------
+Version: 2.8.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* v1.2.0 - Suppress the new TW debugger so ButterLib's Crash Reporter can work
+---------------------------------------------------------------------------------------------------
+Version: 2.8.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2,v1.1.3,v1.1.4,v1.1.5,v1.2.0
+* Added support for v1.2.0
+---------------------------------------------------------------------------------------------------
+Version: 2.8.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1,v1.1.2
+* Switched back to Lib.Harmony
+* Added support for v1.1.2
+---------------------------------------------------------------------------------------------------
+Version: 2.7.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Added back Ben.Demystifier
+* Updated Crash report to contain more valuable data
+---------------------------------------------------------------------------------------------------
+Version: 2.7.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Game Pass PC was missing implementation files. Thanks dzpliu for noticing!
+---------------------------------------------------------------------------------------------------
+Version: 2.7.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0,v1.1.1
+* Support for Game Pass PC
+* Added Spanish translation
+---------------------------------------------------------------------------------------------------
+Version: 2.6.3
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0
+* Compatibility with NovusLauncher and ModOrganizer
+* Fixed copying crash report to Clipboard
+* Improvements to LocalizationHelper.SetListVariable
+---------------------------------------------------------------------------------------------------
+Version: 2.6.2
+Game Versions: v1.0.0,v1.0.1,v1.0.2,v1.0.3,v1.1.0
+* Adapted for v1.1.0
+* Added some localizations
+* Improvements to BetterExceptionWindow compatibility
+---------------------------------------------------------------------------------------------------
+Version: 2.6.1
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* v1.0.2 stealth update fix. We ship Newtonsoft.Json 13 for backwards compatibility
+---------------------------------------------------------------------------------------------------
+Version: 2.6.0
+Game Versions: v1.0.0,v1.0.1,v1.0.2
+* StoryMode is now an optional dependency
+* Support for including save file and screenshot with a local crash report
+* MiniDump inclusion decision moved from settings to the crash report
+* Better SubSystem descriptions
+* Added Ben.Demystifier for better exceptions
+* Added DynamicAPI implementation
+* Debug.Print is handled as Debug level now instead of Information
+* Limited default log file size per day to 5MB, max 7 files; others to 3MB, max 5 files
+* Limited logs in Crash Report to 2000 lines
+* ExceptionHandler was still showing CrashReport when asked not to in options
+---------------------------------------------------------------------------------------------------
+Version: 2.5.1
+Game Versions: v1.0.0,v1.0.1
+* Fixed DelayedSubModuleManager check
+---------------------------------------------------------------------------------------------------
+Version: 2.5.0
+Game Versions: v1.0.0,v1.0.1
+* Extended DelayedSubModuleManager with a non generic variant
+---------------------------------------------------------------------------------------------------
+Version: 2.4.1
+Game Versions: v1.0.0
+* Removed unnecessary collision for HotKeys
+* Better explanation of why a crash report failed to upload
+---------------------------------------------------------------------------------------------------
+Version: 2.4.0
+Game Versions: v1.0.0
+* HotKey system overhaul
+---------------------------------------------------------------------------------------------------
+Version: 2.3.6
+Game Versions: v1.0.0
+* Disabled "Catch Native->Managed Code Exceptions", seems to be causing issues for some players
+---------------------------------------------------------------------------------------------------
+Version: 2.3.5
+Game Versions: v1.0.0
+* Fixed CTD when failing to serialize ButterLib's settings
+---------------------------------------------------------------------------------------------------
+Version: 2.3.4
+Game Versions: v1.0.0
+* Another potential CTD fix
+---------------------------------------------------------------------------------------------------
+Version: 2.3.3
+Game Versions: v1.0.0
+* Added "Catch Native->Managed Code Exceptions"
+* Fixed path being incorrect
+---------------------------------------------------------------------------------------------------
+Version: 2.3.2
+Game Versions: v1.0.0
+* Language data fix
+---------------------------------------------------------------------------------------------------
+Version: 2.3.1
+Game Versions: v1.0.0
+* Adapted for v1.0.0, removed legacy code
+* Language fix
+---------------------------------------------------------------------------------------------------
+Version: 2.3.0
+Game Versions: v1.0.0
+* Adapted for v1.0.0, removed legacy code
+---------------------------------------------------------------------------------------------------
+Version: 2.2.10
+Game Versions: e1.7.2,e1.8.0,e1.8.1,e1.9.0
+* Quick update for e1.9.0
+---------------------------------------------------------------------------------------------------
+Version: 2.2.9
+Game Versions: e1.7.2,e1.8.0,e1.8.1,e1.9.0
+* Crash Reporter now has info about the launcher and BUTRLoader
+* Reduced size of minidumps
+---------------------------------------------------------------------------------------------------
+Version: 2.2.8
+Game Versions: e1.7.2,e1.8.0,e1.8.1,e1.9.0
+* Added External metadata to Crash Report, states that module is from Workshop
+---------------------------------------------------------------------------------------------------
+Version: 2.2.7
+Game Versions: e1.7.2,e1.8.0,e1.8.1,e1.9.0
+* Added better Involvement filtering
+* Added MiniDump feature when saving locally
+---------------------------------------------------------------------------------------------------
+Version: 2.2.6
+Game Versions: e1.7.2,e1.8.0,e1.8.1,e1.9.0
+* Added better debugger detection
+* Added IL offset reporting
+* Added enhanced stracktrace
+---------------------------------------------------------------------------------------------------
+Version: 2.2.5
+Game Versions: e1.7.2,e1.8.0,e1.8.1,e1.9.0
+* Added better debugger detection
+* Added IL offset reporting
+* Added enhanced stracktrace
+---------------------------------------------------------------------------------------------------
+Version: 2.2.4
+Game Versions: e1.7.2,e1.8.0,e1.8.1,e1.9.0
+* Adapted for e1.9.0
+---------------------------------------------------------------------------------------------------
+Version: 2.2.3
+Game Versions: e1.7.2,e1.8.0
+* Fixed localization loader
+---------------------------------------------------------------------------------------------------
+Version: 2.2.2
+Game Versions: e1.7.2,e1.8.0
+* Updated dependencies
+---------------------------------------------------------------------------------------------------
+Version: 2.2.1
+Game Versions: e1.7.2,e1.8.0
+* Localization fix
+---------------------------------------------------------------------------------------------------
+Version: 2.2.0
+Game Versions: e1.7.2,e1.8.0
+* Added settings for subsystems
+* Minor code adjustments
+* Better module resolution
+---------------------------------------------------------------------------------------------------
+Version: 2.1.13
+Game Versions: e1.7.2,e1.8.0
+* Crash report was not showing in some cases, better filtering
+---------------------------------------------------------------------------------------------------
+Version: 2.1.12
+Game Versions: e1.7.2,e1.8.0
+* e1.8.0 hotfix broke ABI, recompilation
+---------------------------------------------------------------------------------------------------
+Version: 2.1.11
+Game Versions: e1.7.2,e1.8.0
+* Updated crash upload url
+---------------------------------------------------------------------------------------------------
+Version: 2.1.10
+Game Versions: e1.7.2,e1.8.0
+* Updated crash upload url
+---------------------------------------------------------------------------------------------------
+Version: 2.1.9
+Game Versions: e1.7.2,e1.8.0
+* Second workaround for the language issue
+---------------------------------------------------------------------------------------------------
+Version: 2.1.8
+Game Versions: e1.7.2,e1.8.0
+* Second workaround for the language issue
+---------------------------------------------------------------------------------------------------
+Version: 2.1.7
+Game Versions: e1.7.2,e1.8.0
+* Workaround for the language issue
+---------------------------------------------------------------------------------------------------
+Version: 2.1.6
+Game Versions: e1.7.2,e1.8.0
+* Restored translation, fixed SubModule metadata
+---------------------------------------------------------------------------------------------------
+Version: 2.1.5
+Game Versions: e1.7.2,e1.8.0
+* InformationManager fix
+---------------------------------------------------------------------------------------------------
+Version: 2.1.4
+Game Versions: e1.7.2,e1.8.0
+* Possible crash fix
+---------------------------------------------------------------------------------------------------
+Version: 2.1.3
+Game Versions: e1.7.2,e1.8.0
+* Adapted for e1.8.0
+---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Game Versions: e1.7.2
+* Fixed trace listener
+---------------------------------------------------------------------------------------------------
+Version: 2.1.1
+Game Versions: e1.7.2
+* Fixed unintended crashes when running on pre e1.7.2
+* Added message when running on pre e1.7.2
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Game Versions: e1.7.2
+* Dependency fixes
+* Removed CampaignIdentifier, there's an in-game one now
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Game Versions: e1.7.2
+* Removed old code and old workarounds
+* Crash reports now include logs from last 60 minutes
+---------------------------------------------------------------------------------------------------
+Version: 1.0.38
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Include logs in the crash report
+---------------------------------------------------------------------------------------------------
+Version: 1.0.37
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Fixed debug issues
+---------------------------------------------------------------------------------------------------
+Version: 1.0.36
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Involved mods fix
+---------------------------------------------------------------------------------------------------
+Version: 1.0.35
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Build fix
+---------------------------------------------------------------------------------------------------
+Version: 1.0.34
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Fixed AccessTools2.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.33
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Fixed TW save changes for the modding community.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.32
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0,e1.7.1
+* Fixed TW save changes for the modding community.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.31
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5,e1.7.0
+* Compatibility with e1.7.0
+---------------------------------------------------------------------------------------------------
+Version: 1.0.30
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4,e1.6.5
+* Compatibility with e1.6.4 and e1.6.5
+---------------------------------------------------------------------------------------------------
+Version: 1.0.29
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2,e1.6.3,e1.6.4
+* Compatibility with e1.6.3 and e1.6.4
+* Some general code improvements
+* IMBSubModuleBaseEx
+* Built-in list aggregation for LocalizationHelper
+---------------------------------------------------------------------------------------------------
+Version: 1.0.28
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1,e1.6.2
+* Compatibility with e1.6.2
+* Improvements to mod order validation
+* Improved stability for exception catching
+---------------------------------------------------------------------------------------------------
+Version: 1.0.27
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1
+* Fixed possible crash on load caused by MBSubModuleBaseEx
+---------------------------------------------------------------------------------------------------
+Version: 1.0.26
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1
+* Saving system fix
+---------------------------------------------------------------------------------------------------
+Version: 1.0.25
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0,e1.6.1
+* Compatibility with e1.6.1
+* MBSubModuleBaseEx
+* Small numerals fix for LocalizationHelper
+---------------------------------------------------------------------------------------------------
+Version: 1.0.24
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0
+* DistanceMatrix fix for e1.6.0
+* DistanceMatrix is disabled by default
+* Better exception catching
+---------------------------------------------------------------------------------------------------
+Version: 1.0.23
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10,e1.6.0
+* Compatibility with e1.6.0
+* Fixed Localization
+---------------------------------------------------------------------------------------------------
+Version: 1.0.22
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7,e1.5.8,e1.5.9,e1.5.10
+* Added explicit localization files
+* Better internal Harmony usage
+---------------------------------------------------------------------------------------------------
+Version: 1.0.21
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7
+* Compatibility with new e1.5.7 and e1.5.8
+* CampaignIdentifier uses the game's provided Id system starting from e1.5.4
+---------------------------------------------------------------------------------------------------
+Version: 1.0.20
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6,e1.5.7
+* Compatibility with e1.5.7
+---------------------------------------------------------------------------------------------------
+Version: 1.0.19
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5,e1.5.6
+* Compatibility with e1.5.6
+* Added BUTR crash uploader service
+* Fixed compatibility with EnhancedBattleTest
+---------------------------------------------------------------------------------------------------
+Version: 1.0.18
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5
+* Better compatibility with BetterExceptionWindow
+* AssemblyLoader is obsolete
+* Added SubSystem abstraction
+---------------------------------------------------------------------------------------------------
+Version: 1.0.17
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5
+* Improved version support
+* Fixed compatibility issues
+---------------------------------------------------------------------------------------------------
+Version: 1.0.16
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5
+* Fixed Harmony Patch report tree
+* Added "Copy As HTML" button for the report
+* Added switchable font sizes in the report for better readability
+---------------------------------------------------------------------------------------------------
+Version: 1.0.15
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4,e1.5.5
+* Added HotKeys from BannerLib
+* Added a better ExceptionHandler inspired by BetterExceptionWindow
+* More complete AccessTools2 extensions (support for parameter and generic argument overloading)
+* Enabled SaveSystem to support ca. quadruple the number of standard .NET containers (must still
+  define them in a SaveableTypeDefiner of course)
+  * NOTE: Besides arrays, the original TaleWorlds.SaveSystem only supported List<T>, Queue<T>,
+    and Dictionary<TKey, TVal>. If you're using another container like
+    ConcurrentDictionary<TKey, TVal> or SortedList<T>, that's only possible because of ButterLib.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.14
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4
+ * Fixed serialization issue
+---------------------------------------------------------------------------------------------------
+Version: 1.0.13
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3,e1.5.4
+ * Support for e1.5.4
+ * More AccessTools extensions
+---------------------------------------------------------------------------------------------------
+Version: 1.0.12
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3
+ * Fixed crash
+---------------------------------------------------------------------------------------------------
+Version: 1.0.11
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3
+ * Added the ability to save classes via JSON instead of the games binary serialization
+ * Better logging
+ * Better AppDomain setup
+---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3
+* Switched serialization from binary to json
+---------------------------------------------------------------------------------------------------
+Version: 1.0.9
+Game Versions: e1.4.3,e1.5.0,e1.5.1,e1.5.2,e1.5.3
+* Better nullable handling
+---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Added GetDelegate from ConstructorInfo
+---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Restored Delegate method
+---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Added new Delegate extensions in AccessTools2
+* Added new ConstructorInfo extensions in SymbolExtensions2
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Added an empty AppDomainManager to prevent Fixed Launcher issues
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Fixed binary serialization
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Fixed Version comparator
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Game Versions: e1.4.3,e1.5.0,e1.5.1
+* Added the ability to get a persistent and deterministic Campaign Id.
+* Added the distance matriñes with default implementation for heroes, settlements, clans and kingdoms.
+* Several helper classes and extensions.
+---------------------------------------------------------------------------------------------------

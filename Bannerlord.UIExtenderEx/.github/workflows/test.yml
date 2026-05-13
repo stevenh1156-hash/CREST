@@ -1,0 +1,83 @@
+name: Test
+
+on:
+  repository_dispatch:
+    types: [game_version_update, game_version_update_patch]
+  push:
+    branches:
+      - dev
+    paths:
+      - '.github/workflows/test.yml'
+      - 'src/**'
+      - 'build/**'
+      - 'tests/**'
+  pull_request:
+    branches:
+      - dev
+    # will be triggered when undrafting or requesting review
+    types: [review_requested, ready_for_review]
+    paths:
+      - '.github/workflows/test.yml'
+      - 'src/**'
+      - 'build/**'
+  workflow_dispatch:
+
+env:
+  # Disable the .NET logo in the console output.
+  DOTNET_NOLOGO: true
+  # Disable the .NET first time experience to skip caching NuGet packages and speed up the build.
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  # Disable sending .NET CLI telemetry to Microsoft.
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+  TEST_FILTERS: "+[Bannerlord.UIExtenderEx*]* -[Bannerlord.UIExtenderEx*.Tests]* -[*]System.Diagnostics.CodeAnalysis* -[*]BUTR.DependencyInjection* -[*]Bannerlord.BUTR.Shared* -[*]HarmonyLib.BUTR*"
+
+jobs:
+  test:
+    name: Test
+    runs-on: windows-latest
+    steps:
+    - name: Tests Setup
+      uses: butr/actions-tests-setup@v1
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        steam-login: ${{secrets.STEAM_LOGIN}}
+        steam-password: ${{secrets.STEAM_PASSWORD}}
+        stable-version: ${{vars.GAME_VERSION_STABLE}}
+
+    - name: Test
+      run: >-
+          $game_version=$env:STABLE_VERSION;
+          $game_version=$game_version.substring(1);
+          dotnet test tests/Bannerlord.UIExtenderEx.Tests/Bannerlord.UIExtenderEx.Tests.csproj --configuration Debug -p:GameVersion=$game_version -p:GameFolder="$PWD/bannerlord";
+          dotnet test tests/Bannerlord.UIExtenderEx.Tests/Bannerlord.UIExtenderEx.Tests.csproj --configuration Release -p:GameVersion=$game_version -p:GameFolder="$PWD/bannerlord";
+      env:
+        STABLE_VERSION: ${{vars.GAME_VERSION_STABLE}}
+      shell: pwsh
+
+    - name: Test Coverage
+      run: >-
+          opencover/OpenCover.Console.exe -register -target:"dotnet.exe" -targetargs:"test tests/Bannerlord.UIExtenderEx.Tests/Bannerlord.UIExtenderEx.Tests.csproj --configuration Debug --no-build" -filter:"${{env.TEST_FILTERS}}" -excludebyattribute:"*.ExcludeFromCodeCoverage*" -output:coverage_uiextenderex_debug.xml -mergebyhash;
+          opencover/OpenCover.Console.exe -register -target:"dotnet.exe" -targetargs:"test tests/Bannerlord.UIExtenderEx.Tests/Bannerlord.UIExtenderEx.Tests.csproj --configuration Release --no-build" -filter:"${{env.TEST_FILTERS}}" -excludebyattribute:"*.ExcludeFromCodeCoverage*" -output:coverage_uiextenderex_release.xml -mergebyhash;
+      shell: pwsh
+
+    - name: ReportGenerator
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.4.13
+      with:
+        reports: 'coverage_uiextenderex_debug.xml;coverage_uiextenderex_release.xml'
+        targetdir: 'coveragereport'
+        reporttypes: 'HtmlInline;Cobertura'
+        sourcedirs: './'
+        tag: '${{ github.run_number }}_${{ github.run_id }}' # Optional tag or build version.
+
+    - name: Upload ReportGenerator to GitHub
+      uses: actions/upload-artifact@v4
+      with:
+        name: coverage-report
+        path: coveragereport
+
+    - name: Upload ReportGenerator to CodeCov
+      uses: codecov/codecov-action@v5.5.1
+      with:
+        token: ${{secrets.CODECOV_TOKEN}}
+        file: coveragereport/Cobertura.xml
+        fail_ci_if_error: true

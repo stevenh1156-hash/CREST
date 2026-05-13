@@ -1,0 +1,10 @@
+<Project>
+
+  <!-- CREST Phase Z (extended): see Bannerlord.Harmony/build/crest-override-sdk.targets
+       for the full explanation. Empty same-name target overrides the SDK's
+       destructive CopyBinariesWindows and CopyModule. -->
+
+  <Target Name="CopyBinariesWindows" />
+  <Target Name="CopyModule" />
+
+</Project>

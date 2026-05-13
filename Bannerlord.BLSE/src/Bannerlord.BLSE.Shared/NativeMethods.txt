@@ -1,0 +1,13 @@
+MessageBox
+DeleteFile
+GetConsoleWindow
+ShowWindow
+SetProcessDPIAware
+OpenProcessToken
+GetTokenInformation
+NtQueryInformationProcess
+LoadLibrary
+VirtualProtect
+AddVectoredExceptionHandler
+RemoveVectoredExceptionHandler
+SetThreadStackGuarantee

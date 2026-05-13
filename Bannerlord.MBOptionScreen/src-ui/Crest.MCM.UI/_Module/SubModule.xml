@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Module xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/BUTR/Bannerlord.XmlSchemas/master/SubModule.xsd">
+  <Id value="CREST" />
+  <Name value="CREST" />
+  <Version value="v1.0.0" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <ModuleType value="Community" />
+  <Url value="https://github.com/trashpanda/CREST" />
+  <DependedModules />
+  <ModulesToLoadAfterThis>
+    <Module Id="Native" />
+    <Module Id="SandBoxCore" />
+    <Module Id="Sandbox" />
+    <Module Id="StoryMode" />
+    <Module Id="CustomBattle" />
+  </ModulesToLoadAfterThis>
+  <DependedModuleMetadatas />
+  <SubModules>
+    <SubModule>
+      <Name value="CREST Harmony" />
+      <DLLName value="Crest.Harmony.dll" />
+      <SubModuleClassType value="Bannerlord.Harmony.SubModule" />
+      <Assemblies>
+        <Assembly value="0Harmony.dll" />
+        <Assembly value="Mono.Cecil.dll" />
+        <Assembly value="Mono.Cecil.Mdb.dll" />
+        <Assembly value="Mono.Cecil.Pdb.dll" />
+        <Assembly value="Mono.Cecil.Rocks.dll" />
+        <Assembly value="MonoMod.Core.dll" />
+        <Assembly value="MonoMod.Backports.dll" />
+        <Assembly value="MonoMod.Iced.dll" />
+        <Assembly value="MonoMod.ILHelpers.dll" />
+        <Assembly value="MonoMod.Utils.dll" />
+        <!--
+          Phase H compatibility shims. These are tiny TypeForwardedTo-only DLLs
+          that let community mods compiled against upstream BUTR find their
+          types via assembly redirect to our Crest.X.dll. Listed here so the
+          engine preloads them at module startup; otherwise consumer mods'
+          Assembly.Load("MCMv5") / etc. fail because the CLR doesn't probe
+          our bin folder by default.
+        -->
+        <Assembly value="Bannerlord.Harmony.dll" />
+        <Assembly value="Bannerlord.ButterLib.dll" />
+        <Assembly value="Bannerlord.UIExtenderEx.dll" />
+        <Assembly value="MCMv5.dll" />
+      </Assemblies>
+      <Tags />
+    </SubModule>
+    <SubModule>
+      <Name value="CREST ButterLib" />
+      <DLLName value="Crest.ButterLib.dll" />
+      <SubModuleClassType value="Bannerlord.ButterLib.ButterLibSubModule" />
+      <Assemblies>
+        <Assembly value="Microsoft.Bcl.HashCode.dll" />
+        <Assembly value="Serilog.dll" />
+        <Assembly value="Serilog.Extensions.Logging.dll" />
+        <Assembly value="Serilog.Sinks.File.dll" />
+      </Assemblies>
+      <Tags />
+    </SubModule>
+    <SubModule>
+      <!--
+        Phase H: replace the dynamic ImplementationLoaderSubModule with a
+        direct reference to the implementation's SubModule class. The
+        upstream loader scans the bin folder for Bannerlord.ButterLib.Implementation.*.dll
+        files (one per supported game version), but CREST only ships a
+        single Crest.ButterLib.Implementation.dll for game v1.4.1, so the
+        dynamic search returns "No implementations found" and ButterLib
+        never initializes. Skipping the loader is correct for CREST.
+      -->
+      <Name value="CREST ButterLib Implementation" />
+      <DLLName value="Crest.ButterLib.Implementation.dll" />
+      <SubModuleClassType value="Bannerlord.ButterLib.Implementation.SubModule" />
+      <Assemblies />
+      <Tags />
+    </SubModule>
+    <SubModule>
+      <Name value="CREST UIExtenderEx" />
+      <DLLName value="Crest.UIExtenderEx.dll" />
+      <SubModuleClassType value="Bannerlord.UIExtenderEx.SubModule" />
+      <Tags />
+    </SubModule>
+    <SubModule>
+      <Name value="CREST MCM" />
+      <DLLName value="Crest.MCM.dll" />
+      <SubModuleClassType value="MCM.MCMSubModule" />
+      <Assemblies />
+      <Tags />
+    </SubModule>
+    <SubModule>
+      <Name value="CREST MCM Basic Implementation" />
+      <DLLName value="Crest.MCM.dll" />
+      <SubModuleClassType value="MCM.Internal.MCMImplementationSubModule" />
+      <Assemblies />
+      <Tags />
+    </SubModule>
+    <SubModule>
+      <!--
+        Phase H final piece: MCM UI. Builds the in-game Mod Options menu
+        (gauntlet screen, brushes, prefabs). The compiled DLL is named
+        CREST.v1.4.1.dll because the BUTRModule SDK rewrites the output
+        name to <ModuleId>.v<GameVersion>.dll. The accompanying
+        Crest.MCM.UI.Adapter.MCMv5.dll is preloaded as <Assembly> so
+        consumer mods written against MCMv5 settings types resolve.
+
+        ValidateLoadOrder in MCMUISubModule has been neutered (was killing
+        the process under CREST since legacy module IDs aren't separately
+        loaded), and a CrestEnabled gate lets users disable this submodule
+        via Modules\CREST\crest.json without losing the rest of CREST.
+      -->
+      <Name value="CREST MCM UI" />
+      <DLLName value="CREST.v1.4.1.dll" />
+      <SubModuleClassType value="MCM.UI.MCMUISubModule" />
+      <Assemblies>
+        <Assembly value="Crest.MCM.UI.Adapter.MCMv5.dll" />
+      </Assemblies>
+      <Tags />
+    </SubModule>
+    <SubModule>
+      <Name value="CREST MCM UI Adapter" />
+      <DLLName value="CREST.v1.4.1.dll" />
+      <SubModuleClassType value="MCM.UI.MCMUIAdapterSubModule" />
+      <Assemblies />
+      <Tags />
+    </SubModule>
+  </SubModules>
+</Module>

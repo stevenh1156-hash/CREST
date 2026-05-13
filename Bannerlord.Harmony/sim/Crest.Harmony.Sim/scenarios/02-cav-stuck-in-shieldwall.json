@@ -1,0 +1,18 @@
+{
+  "name": "cav-stuck-in-shieldwall",
+  "description": "When a pool variant flips to ShieldWall (parity < -100), all three formations including cav get StandYourGround. enemy.0.cav has 70 mounted units -- they should NOT be standing in shield wall. Y.54 cav-unstuck rule should fire and flip them to Charge/Skein.",
+  "ticks": [
+    { "at":  0, "formations": [
+      { "poolId": "enemy.0", "class": "inf", "units": 80, "pos": [247, 644], "anchorD":   0, "enemyD":  20, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": "Vlandian Recruit", "retreatWeight": 1.20, "expectAction": "none" },
+      { "poolId": "enemy.0", "class": "cav", "units": 70, "pos": [245, 638], "anchorD":  17, "enemyD":  10, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": "Servic", "chargeWeight": 1.75, "expectAction": "cav-unstuck" }
+    ]},
+    { "at":  5, "formations": [
+      { "poolId": "enemy.0", "class": "inf", "units": 75, "pos": [247, 642], "anchorD":   2, "enemyD":  18, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": "Vlandian Recruit", "retreatWeight": 1.50, "expectAction": "none" },
+      { "poolId": "enemy.0", "class": "cav", "units": 66, "pos": [245, 640], "anchorD":  15, "enemyD":  12, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": "Servic", "chargeWeight": 1.75, "expectAction": "cav-unstuck" }
+    ]},
+    { "at": 10, "formations": [
+      { "poolId": "enemy.0", "class": "inf", "units": 60, "pos": [247, 642], "anchorD":   3, "enemyD":  15, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": "Vlandian Recruit", "retreatWeight": 2.00, "expectAction": "none" },
+      { "poolId": "enemy.0", "class": "cav", "units":  3, "pos": [240, 638], "anchorD":  20, "enemyD":  10, "engineMove": "StandYourGround", "engineArr": "ShieldWall", "wantMove": "StandYourGround", "wantArr": "ShieldWall", "captain": null, "chargeWeight": 1.20, "expectAction": "none" }
+    ]}
+  ]
+}

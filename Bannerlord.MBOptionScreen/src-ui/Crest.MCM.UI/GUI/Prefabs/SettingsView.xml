@@ -1,0 +1,20 @@
+﻿<Prefab>
+  <Window>
+    <Widget HeightSizePolicy="CoverChildren" WidthSizePolicy="StretchToParent" VerticalAlignment="Top" HorizontalAlignment="Left">
+      <Children>
+
+        <!-- Phase Y.22b: was VerticalBottomToTop (Y.10 missed this prefab) which
+             flipped the order of root SettingPropertyGroups so GroupOrder=N appeared
+             at the bottom and GroupOrder=1 at the top of the list inverted.
+             Use VerticalTopToBottom so source/Order matches on-screen order. -->
+        <ListPanel Id="SettingPropertiesList" DataSource="{SettingPropertyGroups}" HeightSizePolicy="CoverChildren" WidthSizePolicy="StretchToParent"
+                   LayoutImp.LayoutMethod="VerticalTopToBottom" VerticalAlignment="Top">
+          <ItemTemplate>
+            <SettingsPropertyGroupView />
+          </ItemTemplate>
+        </ListPanel>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

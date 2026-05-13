@@ -1,0 +1,18 @@
+{
+  "name": "no-los-engagement",
+  "description": "Y.66: HoldNoLOS rule. Formation in Advance with enemy close (within 100m) but blocked by terrain/structures (LOS=false) should hold position. Once LOS is restored, advance resumes (no override). Boundary: enemy at 99m no-LOS fires; same enemy with LOS=true does NOT fire; enemy at 110m no-LOS does NOT fire (rule only triggers in close range where LOS matters).",
+  "ticks": [
+    { "at":  0, "formations": [
+      { "poolId": "ally.spot[0]", "class": "inf", "units":  80, "pos": [240, 480], "anchorD":   0, "enemyD": 200, "engineMove": "Advance", "captain": "Asgotha", "losToEnemy": false, "expectAction": "none" }
+    ]},
+    { "at":  5, "formations": [
+      { "poolId": "ally.spot[0]", "class": "inf", "units":  80, "pos": [248, 500], "anchorD":  20, "enemyD": 110, "engineMove": "Advance", "captain": "Asgotha", "losToEnemy": false, "expectAction": "none" }
+    ]},
+    { "at": 10, "formations": [
+      { "poolId": "ally.spot[0]", "class": "inf", "units":  80, "pos": [255, 520], "anchorD":  40, "enemyD":  99, "engineMove": "Advance", "captain": "Asgotha", "losToEnemy": false, "expectAction": "no-los" }
+    ]},
+    { "at": 15, "formations": [
+      { "poolId": "ally.spot[0]", "class": "inf", "units":  80, "pos": [255, 520], "anchorD":  40, "enemyD":  99, "engineMove": "Advance", "captain": "Asgotha", "losToEnemy": true,  "expectAction": "none" }
+    ]}
+  ]
+}

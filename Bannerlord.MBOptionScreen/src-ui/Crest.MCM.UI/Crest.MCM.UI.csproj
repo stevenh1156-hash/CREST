@@ -1,0 +1,113 @@
+<!--EXTERNAL_PROPERTIES: Version;GameVersion;ButterLibVersion;HarmonyVersion;UIExtenderExVersion-->
+<Project Sdk="Bannerlord.BUTRModule.Sdk/1.1.0.128">
+
+  <PropertyGroup>
+    <Authors>Aragas, mipen</Authors>
+    <AssemblyName>Crest.MCM.UI</AssemblyName>
+    <!--
+      Phase Y.16: stop BUTRModule SDK from rewriting AssemblyName to
+      "$(ModuleId).$(GameVersionWithPrefix)" (which produced CREST.v1.4.1.dll
+      and forced updating every SubModule.xml DLLName + Crest-Doctor literal
+      on every game version bump). With OverrideAssemblyName=false the SDK
+      respects our explicit AssemblyName, so the output is the stable
+      "Crest.MCM.UI.dll" regardless of game version.
+    -->
+    <OverrideAssemblyName>false</OverrideAssemblyName>
+    <!--
+      Phase H Round 2: RootNamespace must match the source's namespace
+      declarations (MCM.UI / MCM.UI.*) so embedded resources are emitted with
+      manifest names like 'MCM.UI.GUI.Brushes.ButtonBrushes.xml'. Upstream
+      ResourceInjector hardcodes that prefix and a mismatch makes
+      ResourceInjector.Load throw MCMUIEmbedResourceNotFoundException, which
+      cascades to a hard crash when the user opens Mod Options.
+    -->
+    <RootNamespace>MCM.UI</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ExtendedBuild>false</ExtendedBuild>
+  </PropertyGroup>
+
+  <!--Module Creation-->
+  <PropertyGroup>
+    <ModuleId>CREST</ModuleId>
+    <ModuleName>CREST MCM</ModuleName>
+    <ModuleUrl>https://www.nexusmods.com/mountandblade2bannerlord/mods/612</ModuleUrl>
+  </PropertyGroup>
+  <!--Module Creation-->
+
+  <!-- Development Variables -->
+  <PropertyGroup>
+    <BUTRModuleLoaderVersion>1.0.1.50</BUTRModuleLoaderVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DisableReferenceAssemblies>true</DisableReferenceAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion).*-*" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Native" Version="$(GameVersion).*-*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="GUI\Brushes\ButtonBrushes.xml" />
+    <EmbeddedResource Include="GUI\Brushes\CompatibilityBrushes.xml" />
+    <EmbeddedResource Include="GUI\Brushes\DividerBrushes.xml" />
+    <EmbeddedResource Include="GUI\Brushes\ExpandIndicator.xml" />
+    <EmbeddedResource Include="GUI\Brushes\SettingsBrush.xml" />
+    <EmbeddedResource Include="GUI\Brushes\TextBrushes.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\DropdownWithHorizontalControl.Checkbox.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\ModOptionsPageView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\ModOptionsView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\Properties\SettingsPropertyBoolView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\Properties\SettingsPropertyButtonView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\Properties\SettingsPropertyCheckboxDropdownView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\Properties\SettingsPropertyDropdownView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\Properties\SettingsPropertyFloatView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\Properties\SettingsPropertyIntView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\Properties\SettingsPropertyStringView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\SettingsItemView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\SettingsPropertyDisplayValueView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\SettingsPropertyGroupView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\SettingsPropertyView.xml" />
+    <EmbeddedResource Include="GUI\Prefabs\SettingsView.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Crest.MCM.UnitTests" />
+  </ItemGroup>
+
+  <!--Windows Forms-->
+  <ItemGroup Condition="$(TargetFramework) == 'net472'">
+    <Reference Include="System.Windows.Forms" PrivateAssets="all" />
+  </ItemGroup>
+  <PropertyGroup Condition="$(TargetFramework) == 'net6-windows'">
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <!--Windows Forms-->
+  
+  <ItemGroup Condition="$(TargetFramework) == 'net472'">
+    <PackageReference Include="System.IO.Compression" Version="4.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="BUTR.DependencyInjection.ButterLib" Version="$(BUTRDependencyInjectionVersion)" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="BUTR.MessageBoxPInvoke" Version="1.0.0.1" />
+
+
+    <!-- Phase H: suppress upstream Bannerlord.ButterLib / Bannerlord.UIExtenderEx that BUTR.DependencyInjection.ButterLib pulls in transitively. After namespace revert our Crest.* DLLs define types under Bannerlord.* namespace which would collide with the upstream NuGets. ExcludeAssets="all" makes the upstream NuGet contribute nothing. -->
+    <PackageReference Include="Bannerlord.ButterLib" Version="*" ExcludeAssets="all" PrivateAssets="all" />
+    <PackageReference Include="Bannerlord.UIExtenderEx" Version="*" ExcludeAssets="all" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Crest.MCM\Crest.MCM.csproj" />
+    <ProjectReference Include="..\Crest.MCM.UI.Adapter.MCMv5\Crest.MCM.UI.Adapter.MCMv5.csproj" />
+    <!-- Cross-fork references to sibling CREST repos (relative path crosses repo boundary). -->
+    <ProjectReference Include="..\..\..\Bannerlord.UIExtenderEx\src\Crest.UIExtenderEx\Crest.UIExtenderEx.csproj">
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Bannerlord.ButterLib\src\Crest.ButterLib\Crest.ButterLib.csproj">
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>

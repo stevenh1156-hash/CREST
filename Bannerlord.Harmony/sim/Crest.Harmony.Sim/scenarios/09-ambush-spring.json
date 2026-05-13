@@ -1,0 +1,21 @@
+{
+  "name": "ambush-spring",
+  "description": "Y.67: AmbushHold rule. Spot tagged as Ambush role holds position until enemy enters trigger radius (40m). Outside trigger radius the rule fires AmbushHold (Stop); inside trigger radius the rule returns None and engine engages normally.",
+  "ticks": [
+    { "at":  0, "formations": [
+      { "poolId": "ally.spot[5]", "class": "inf", "units": 80, "pos": [200, 400], "anchorD":  0, "enemyD": 150, "engineMove": "Advance", "captain": "Asgotha", "spotRole": "Ambush", "expectAction": "ambush-hold" }
+    ]},
+    { "at":  5, "formations": [
+      { "poolId": "ally.spot[5]", "class": "inf", "units": 80, "pos": [200, 400], "anchorD":  0, "enemyD":  80, "engineMove": "Advance", "captain": "Asgotha", "spotRole": "Ambush", "expectAction": "ambush-hold" }
+    ]},
+    { "at": 10, "formations": [
+      { "poolId": "ally.spot[5]", "class": "inf", "units": 80, "pos": [200, 400], "anchorD":  0, "enemyD":  41, "engineMove": "Advance", "captain": "Asgotha", "spotRole": "Ambush", "expectAction": "ambush-hold" }
+    ]},
+    { "at": 15, "formations": [
+      { "poolId": "ally.spot[5]", "class": "inf", "units": 80, "pos": [200, 400], "anchorD":  0, "enemyD":  39, "engineMove": "Advance", "captain": "Asgotha", "spotRole": "Ambush", "expectAction": "none" }
+    ]},
+    { "at": 20, "formations": [
+      { "poolId": "ally.spot[5]", "class": "inf", "units": 75, "pos": [205, 395], "anchorD":  7, "enemyD":  20, "engineMove": "Advance", "captain": "Asgotha", "spotRole": "Ambush", "expectAction": "none" }
+    ]}
+  ]
+}

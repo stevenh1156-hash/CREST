@@ -1,0 +1,13 @@
+{
+  "name": "healthy-baseline",
+  "description": "Two healthy pools engaged at standard ranges. NO rule should fire. Smoke test for false positives -- if any override fires here we've over-tightened a threshold and would clobber normal battles.",
+  "ticks": [
+    { "at": 0, "formations": [
+      { "poolId": "ally.1",  "class": "inf",  "units": 300, "pos": [240, 650], "anchorD":  9, "enemyD": 25, "engineMove": "Advance", "captain": "Asgotha", "expectAction": "none" },
+      { "poolId": "ally.1",  "class": "arch", "units":  78, "pos": [248, 656], "anchorD":  0, "enemyD": 30, "engineMove": "Advance", "captain": "Nord Huntsman", "expectAction": "none" },
+      { "poolId": "ally.1",  "class": "cav",  "units":   9, "pos": [235, 642], "anchorD":  6, "enemyD": 22, "engineMove": "Advance", "captain": "Sturgian Brigand", "expectAction": "none" },
+      { "poolId": "enemy.0", "class": "inf",  "units":  72, "pos": [249, 642], "anchorD":  2, "enemyD": 12, "engineMove": "Advance", "captain": "Vlandian Recruit", "retreatWeight": 0.50, "expectAction": "none" },
+      { "poolId": "enemy.0", "class": "cav",  "units":  66, "pos": [245, 638], "anchorD": 17, "enemyD": 10, "engineMove": "Advance", "captain": "Servic", "chargeWeight": 1.50, "expectAction": "none" }
+    ]}
+  ]
+}
