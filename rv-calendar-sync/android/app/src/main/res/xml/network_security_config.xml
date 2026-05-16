@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  We allow cleartext HTTP because the app is configured at runtime to point at
+  whatever rv-calendar-sync host the user runs (emulator loopback 10.0.2.2, LAN
+  IPs, ngrok tunnels). The app only ever contacts the URL the user configured
+  in Settings. Production deployments should use HTTPS.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

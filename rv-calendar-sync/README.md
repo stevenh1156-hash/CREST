@@ -132,6 +132,10 @@ pytest
 
 Tests don't hit the network — HTTP calls are mocked with `respx`.
 
+## Android app
+
+A Jetpack Compose front end lives in [`android/`](./android). It talks to this server's REST API to manage properties, sources, and bookings, and lets you trigger sync from your phone. See `android/README.md`.
+
 ## License
 
 MIT.
